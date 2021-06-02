@@ -60,6 +60,7 @@ bower.json
 .powenv
 .byebug_history
 node_modules/
+/config/master.key
 /public/packs
 /public/packs-test
 /public/assets

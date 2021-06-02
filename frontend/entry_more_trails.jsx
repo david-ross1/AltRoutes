@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // let mo = {
-//   fname: 'mo',
-//   lname: 'jo',
+//   first_name: 'mo',
+//   last_name: 'jo',
 //   email: 'email',
 //   password: 123456
 // }

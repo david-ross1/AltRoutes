@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from 'react-router-dom';
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
@@ -17,8 +17,8 @@ class SessionForm extends React.Component {
     e.preventDefault();
     this.props.processForm(this.state);
     this.setState({
-      fname: '',
-      lname: '',
+      first_name: '',
+      last_name: '',
       email: '',
       password: ''
     })
@@ -43,14 +43,14 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    const fnameLname =
+    const first_namelast_name =
       this.props.formType === "Sign Up" ? (
         <>
           <label>
             <input
               type="text"
-              value={this.state.fname}
-              onChange={this.update("fname")}
+              value={this.state.first_name}
+              onChange={this.update("first_name")}
               className="login-input"
               placeholder='first name'
             />
@@ -59,8 +59,8 @@ class SessionForm extends React.Component {
           <label>
             <input
               type="text"
-              value={this.state.lname}
-              onChange={this.update("lname")}
+              value={this.state.last_name}
+              onChange={this.update("last_name")}
               className="login-input"
               placeholder='last name'
             />
@@ -78,7 +78,7 @@ class SessionForm extends React.Component {
           {this.renderErrors()}
           <div className="login-form">
             <br />
-            {fnameLname}
+            {first_namelast_name}
             <br />
             <label>
               <input

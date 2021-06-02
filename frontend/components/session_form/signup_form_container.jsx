@@ -9,8 +9,8 @@ const mapStateToProps = ({ errors }) => ({
   formHeader: "Create your free account",
   formType: "Sign Up",
   form: {
-    fname: "",
-    lname: "",
+    first_name: "",
+    last_name: "",
     email: "",
     password: "",
   },

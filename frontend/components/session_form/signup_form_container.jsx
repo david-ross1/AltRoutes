@@ -1,12 +1,12 @@
 import { connect } from "react-redux";
 import React from "react";
 import { Link } from "react-router-dom";
-import { signup } from "../../actions/session_actions";
+import { signup, login } from "../../actions/session_actions";
 import SessionForm from "./session_form";
 
 const mapStateToProps = ({ errors }) => ({
   errors: errors.session,
-  formHeader: "Sign up for more trails!",
+  formHeader: "Create your free account",
   formType: "Sign Up",
   form: {
     fname: "",
@@ -14,7 +14,8 @@ const mapStateToProps = ({ errors }) => ({
     email: "",
     password: "",
   },
-  navLink: <Link to="/login">log in instead</Link>,
+  alternativeFormText: "Already have an account?",
+  navLink: <Link to="/login">log in</Link>,
 });
 
 const mapDispatchToProps = (dispatch) => ({

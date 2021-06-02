@@ -47,22 +47,22 @@ class SessionForm extends React.Component {
       this.props.formType === "Sign Up" ? (
         <>
           <label>
-            First Name
             <input
               type="text"
               value={this.state.fname}
               onChange={this.update("fname")}
               className="login-input"
+              placeholder='first name'
             />
           </label>
           <br />
           <label>
-            Last Name
             <input
               type="text"
               value={this.state.lname}
               onChange={this.update("lname")}
               className="login-input"
+              placeholder='last name'
             />
           </label>
         </>
@@ -75,15 +75,14 @@ class SessionForm extends React.Component {
         <h1>{this.props.formHeader}</h1>
         <form onSubmit={this.handleSubmit} className="login-form-box">
           <br />
-          Please {this.props.formType} or {this.props.navLink}
           {this.renderErrors()}
           <div className="login-form">
             <br />
             {fnameLname}
             <br />
             <label>
-              Email:
               <input
+                placeholder="email"
                 type="text"
                 value={this.state.email}
                 onChange={this.update("email")}
@@ -92,12 +91,12 @@ class SessionForm extends React.Component {
             </label>
             <br />
             <label>
-              Password:
               <input
                 type="password"
                 value={this.state.password}
                 onChange={this.update("password")}
                 className="login-input"
+                placeholder="password"
               />
             </label>
             <br />
@@ -108,6 +107,11 @@ class SessionForm extends React.Component {
             />
           </div>
         </form>
+        <p>
+          {this.props.alternativeFormText}
+          &nbsp;{this.props.navLink}
+        </p>
+        {/* Please {this.props.formType} or {this.props.navLink} */}
       </div>
     );
   }

@@ -10,7 +10,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchSearch: (entry) => dispatch(fetchSearch(entry)),
+  fetchSearch: (entry) => dispatch(fetchSearch(query)),
   clearSearch: () => dispatch(clearSearch()),
 });
 

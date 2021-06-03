@@ -30,5 +30,5 @@ class Trail < ApplicationRecord
   has_many :reviews 
   has_many :reviewers, 
     through: :reviews, 
-    source: :reviewer 
+    source: :reviewer  
 end

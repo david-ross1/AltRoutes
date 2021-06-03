@@ -117,7 +117,7 @@ class SessionForm extends React.Component {
           {/* Please {this.props.formType} or {this.props.navLink} */}
 
           <p>
-            Roam anyway as a&nbsp; <button className="session-submit" onClick={this.demo}>
+            Roam anyway as a&nbsp; <button className="demo-text" onClick={this.demo}>
               demo user
             </button>
           </p>

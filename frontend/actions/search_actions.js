@@ -16,3 +16,4 @@ export const fetchSearchResuts = (query) => (dispatch) =>
   SearchApiUtil.fetchSearchResults(query).then((results) =>
     dispatch(receiveSearchResults(results))
   );
+ 

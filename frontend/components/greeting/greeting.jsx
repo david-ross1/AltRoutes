@@ -5,7 +5,7 @@ import { Route, Redirect } from 'react-router-dom';
 const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <nav className="login-signup">
-    <Route exact path='/'> <Redirect to='/login'/></Route>
+    {/* <Route exact path='/'> <Redirect to='/login'/></Route> */}
       
       <Link to="/login">Login</Link>
       <Link to="/signup">Sign up!</Link>

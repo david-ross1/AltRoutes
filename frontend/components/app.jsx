@@ -11,7 +11,7 @@ const App = () => (
     <header>
       <NavBarContainer />
       <h1>More Trails</h1>
-      <GreetingContainer />
+      {/* <GreetingContainer /> */}
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
     </header>

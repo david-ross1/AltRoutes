@@ -6,12 +6,6 @@ import Root from "./components/root";
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
-<<<<<<< HEAD
-  const store = configureStore();
-  ReactDOM.render(<Root store={store} />, root);
-});
-
-=======
 
 
   let store;
@@ -28,22 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     store = configureStore();
   }
 
-  //! TESTING
-  window.store = store;
-  window.getState = store.getState;
-  window.dispatch = store.dispatch;
-  window.login = login;
-  window.signup = signup;
-  window.logout = logout;
-
   ReactDOM.render(<Root store={store} />, root);
 });
 
-// let mo = {
-//   first_name: 'mo',
-//   last_name: 'jo',
-//   email: 'email',
-//   password: 123456
-// }
 
->>>>>>> react_second_setup

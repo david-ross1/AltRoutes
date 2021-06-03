@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Route, Redirect } from 'react-router-dom';
 
 const Greeting = ({ currentUser, logout }) => {
   const sessionLinks = () => (
     <nav className="login-signup">
+    <Route exact path='/'> <Redirect to='/login'/></Route>
       
       <Link to="/login">Login</Link>
       <Link to="/signup">Sign up!</Link>
@@ -22,3 +24,4 @@ const Greeting = ({ currentUser, logout }) => {
 };
 
 export default Greeting;
+

@@ -8,7 +8,21 @@ import { signup, login, logout } from "./util/session_api_util";
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
-  const store = configureStore();
+
+
+  let store;
+  if (window.currentUser) {
+    const preloadedState = {
+      entities: {
+        users: { [window.currentUser.id]: window.currentUser },
+      },
+      session: { currentUserId: window.currentUser.id },
+    };
+    store = configureStore(preloadedState);
+    delete window.currentUser;
+  } else {
+    store = configureStore();
+  }
 
   //! TESTING
   window.store = store;
@@ -27,3 +41,4 @@ document.addEventListener("DOMContentLoaded", () => {
 //   email: 'email',
 //   password: 123456
 // }
+

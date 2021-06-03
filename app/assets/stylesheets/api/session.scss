@@ -1,12 +1,17 @@
-// *{
-//   color: blue
-// }
+.session-form {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  width: 480px; 
+  position: absolute; 
+  margin-left: 50px;
+}
 
-// .session-form-bg {
-//   background-color: gray
-// }
+.session-form > h1 {
+  font-size: 24px; 
+}
 
-// .session-form {
-
-// }
- 
+.session-form input {
+  width: 100%;
+  font-size: 14px; 
+}

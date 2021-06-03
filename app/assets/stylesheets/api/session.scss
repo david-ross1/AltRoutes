@@ -1,27 +1,7 @@
-// .session-form {
-//   display: flex; 
-//   flex-direction: column;
-//   align-items: center; 
-//   width: 480px; 
-//   position: absolute; 
-//   margin-left: 50px;
-//   border-radius: 20px; 
-// }
-
-// .session-form > h1 {
-//   font-size: 24px; 
-// }
-
-// .session-form input {
-//   width: 100%;
-//   font-size: 14px; 
-//   margin: 10px;
-// }
 
 
 .session-bg {
     background: image-url('point_reyes.jpeg');
-    // background-image: url(../../images/point_reyes.jpeg);
     background-size: cover;
     position: relative;
     width: 100%;
@@ -88,34 +68,17 @@
 }
 
 
-
 .session-form label {
     margin: 7px 0;
     padding: 10px 0;
     height: 50px;
 }
 
-//////
 
-// .floater {
-//     color: red;
-// }
-
-// .input-container {
-//     border: $inputBorder;
-//     border-radius: 8px;
-//     cursor: text;
-//     width: 100%;
-// }
-
-
-
-///////
 .session-form input::placeholder {
     color: rgb(184, 171, 171);
     font-size: 14px;
 }
-
 
 
 .primary-button:hover {
@@ -137,13 +100,6 @@ textarea {
     border: gray;
 }
 
-// .form-errors {
-//     font-size: 14px;
-//     color: red;
-//     margin-bottom: 15px;
-//     padding-bottom: 10px;
-//     text-align: center;
-// }
 
 .form-input {
     border: gray;

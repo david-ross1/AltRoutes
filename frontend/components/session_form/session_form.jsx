@@ -108,11 +108,7 @@ class SessionForm extends React.Component {
               />
             </label>
             <br />
-            <input
-              className="session-submit"
-              type="submit"
-              value={this.props.formType}
-            />
+            <button className="primary-button">{this.props.formType}</button>
           </form>
           <p>
             {this.props.alternativeFormText}
@@ -122,7 +118,7 @@ class SessionForm extends React.Component {
 
           <p>
             Want to sign up later? Roam anyway as a&nbsp;
-            <button className="inline-link" onClick={this.demo}>
+            <button className="session-submit" onClick={this.demo}>
               demo user
             </button>
           </p>

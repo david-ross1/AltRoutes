@@ -88,7 +88,7 @@ class SessionForm extends React.Component {
             <br />
             <label className="form-input">
               <input
-                placeholder='Email'
+                placeholder="Email"
                 type="text"
                 value={this.state.email}
                 onChange={this.update("email")}
@@ -117,8 +117,7 @@ class SessionForm extends React.Component {
           {/* Please {this.props.formType} or {this.props.navLink} */}
 
           <p>
-            Want to sign up later? Roam anyway as a&nbsp;
-            <button className="session-submit" onClick={this.demo}>
+            Roam anyway as a&nbsp; <button className="session-submit" onClick={this.demo}>
               demo user
             </button>
           </p>

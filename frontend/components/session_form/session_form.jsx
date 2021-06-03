@@ -112,12 +112,12 @@ class SessionForm extends React.Component {
           </form>
           <p>
             {this.props.alternativeFormText}
-            &nbsp;{this.props.navLink}
+            &nbsp;<span className='demo-text'>{this.props.navLink}</span>
           </p>
-          {/* Please {this.props.formType} or {this.props.navLink} */}
 
           <p>
-            Roam anyway as a&nbsp; <button className="demo-text" onClick={this.demo}>
+            Roam anyway as a&nbsp;
+            <button className="demo-text" onClick={this.demo}>
               demo user
             </button>
           </p>

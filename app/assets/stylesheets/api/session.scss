@@ -1,20 +1,159 @@
+// .session-form {
+//   display: flex; 
+//   flex-direction: column;
+//   align-items: center; 
+//   width: 480px; 
+//   position: absolute; 
+//   margin-left: 50px;
+//   border-radius: 20px; 
+// }
+
+// .session-form > h1 {
+//   font-size: 24px; 
+// }
+
+// .session-form input {
+//   width: 100%;
+//   font-size: 14px; 
+//   margin: 10px;
+// }
+
+
+// .session-background {
+//     background-image: image_url('IMG_1635.jpeg');
+//     background-size: cover;
+//     position: relative;
+//     width: 100%;
+//     height: 700px;
+//     color: white;
+// }
+
 .session-form {
-  display: flex; 
-  flex-direction: column;
-  align-items: center; 
-  width: 480px; 
-  position: absolute; 
-  margin-left: 50px;
-  border-radius: 20px; 
+    width: 480px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    font-family: 'Montserrat';
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
+    background-color: white;
 }
 
-.session-form > h1 {
-  font-size: 24px; 
+.session-form h1 {
+    font-size: 22px;
+    color: rgb(67, 64, 64);
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.session-form p {
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.session-form form {
+    width: 85%;
+}
+
+
+
+.session-form .primary-button {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
 }
 
 .session-form input {
-  width: 100%;
-  font-size: 14px; 
-  margin: 10px;
+    color: darkgrey;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid gray; 
+    height: 50px; 
+    border-radius: 8px;
+    padding-left: 10px; 
+}
+
+
+
+.session-form label {
+    margin: 25px 0;
+    padding: 15px;
+    height: 50px;
+}
+
+//////
+
+// .floater {
+//     color: red;
+// }
+
+// .input-container {
+//     border: $inputBorder;
+//     border-radius: 8px;
+//     cursor: text;
+//     width: 100%;
+// }
+
+
+
+///////
+.session-form input::placeholder {
+    color: gray;
+    font-size: 14px;
+}
+
+
+
+.primary-button:hover {
+    background-color: green;
+}
+
+.inline-link {
+    color: green;
+    font-weight: 600;
+}
+
+.inline-link:hover {
+    color: green;
+}
+
+
+textarea {
+    border: gray;
+}
+
+.form-errors {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.form-input {
+    border: gray;
+    border-radius: 8px;
+    cursor: text;
+    width: 100%;
+}
+
+.form-input:hover {
+    border: 1px solid green;
+}
+
+.form-input:focus-within {
+    border: 2px solid green;
 }
 

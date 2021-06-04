@@ -25,7 +25,7 @@ class User < ApplicationRecord
 
   before_validation :ensure_session_token
 
-  has_one_attached :profile_photo
+  has_one_attached :photo
 
   has_many :photos, 
     foreign_key: :user_id,

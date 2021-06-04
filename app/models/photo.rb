@@ -17,7 +17,7 @@
 class Photo < ApplicationRecord
   # validate :file_type 
 
-  has_one_attached :photo
+  # has_one_attached :photo
   belongs_to :trail
   belongs_to :user 
 

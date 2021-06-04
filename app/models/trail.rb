@@ -25,7 +25,7 @@ class Trail < ApplicationRecord
   validates :difficulty, inclusion: { in: ['easy', 'moderate', 'difficult', 'hard'] }
   validates :route_type, inclusion: { in: ['Loop', 'Out & back', 'Point to point'] }
 
-  has_many_attached :photos
+  # has_many_attached :photos
   
   belongs_to :park, 
     foreign_key: :park_id,

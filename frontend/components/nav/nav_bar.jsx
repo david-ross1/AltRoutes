@@ -3,20 +3,16 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMountain, faHiking } from "@fortawesome/free-solid-svg-icons";
 
+
 const Nav = ({ currentUser, logout }) => {
-  const userNav = currentUser ? (
+  const navButtons = currentUser ? (
     <>
-      <div className="dropdown-select">
-        <div className="profile-pic">
-          <FontAwesomeIcon icon={faHiking} />
-        </div>
-        <p>{currentUser.first_name}</p>
+      <div>
+        <p>Hi, {currentUser.first_name}</p>
       </div>
-      <ul className="user-dropdown">
-        <li>
-          <button onClick={logout}>Logout</button>
-        </li>
-      </ul>
+      {/* <ul className="user-dropdown"> */}
+          <button className='logout-button' onClick={logout}>Logout</button>
+      {/* </ul> */}
     </>
   ) :  
   (
@@ -39,7 +35,7 @@ const Nav = ({ currentUser, logout }) => {
           <h2>MoreTrails</h2>
         </Link>
       </div>
-      <div className="user-nav">{userNav}</div>
+      <div className="nav-buttons">{navButtons}</div>
     </nav>
   );
 };

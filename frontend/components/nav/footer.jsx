@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="footer-logo">
           <Link to="/">
             <FontAwesomeIcon icon={faMountain} className="footer-mountain-logo"/>
-            <h2>More Trails</h2>
+            <h2>(Footer moretrails)</h2>
           </Link>
         </div>
        </div>

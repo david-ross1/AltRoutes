@@ -1,9 +1,11 @@
+@import '../vars.scss';
 
 
 .nav-bar {
     display: flex;
     height: 70px;
     margin: 0 8px;
+    font-family: $mainFont;
 }
 
 .logo-title-div {
@@ -22,7 +24,7 @@
     align-items: center;
 }
 
-.user-nav {
+.nav-buttons{
     flex: 1;
     display: flex;
     justify-content: flex-end;
@@ -33,7 +35,8 @@
     display: flex;
     align-items: center;
     font-size: 30px;
-    font-weight: 500;
+    font-stretch: extra-condensed;
+    font-weight: 600;
 }
 
 .mountain-logo {
@@ -42,8 +45,21 @@
     font-size: 25px;
 }
 
-.login-button {
+
+  .login-button {
     font-size: 16px;
+    margin-right:3px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-left: 8px;
+    border: 2px solid rgb(29, 124, 192);
+    color:  rgb(41, 127, 189);
+}
+
+.logout-button,
+.login-button {
+    font-size: 14px;
     margin-right:3px;
     font-weight: bold;
     padding: 10px 15px;
@@ -58,8 +74,14 @@
     border: 2px solid  rgb(87, 149, 194);
 }
 
+.login-button:hover {
+    color: rgb(87, 149, 194);
+    border: 2px solid  rgb(87, 149, 194);
+}
+
+
 .sign-up-button {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     padding: 10px 15px;
     border-radius: 8px;
@@ -74,50 +96,38 @@
     border: 2px solid rgb(106, 190, 243);
 }
 
-.profile-pic {
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
-    color: gray;
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
-    margin-right: 8px;
-}
 
-.user-dropdown {
-    display: none;
-    position: absolute;
-    margin-top: 140px;
-    background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
-    border-radius: 8px;
-    width: 180px;
-    z-index: 1;
-    color: darkgray;
+// .user-dropdown {
+//     display: none;
+//     position: absolute;
+//     margin-top: 140px;
+//     background-color: white;
+//     box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
+//     border-radius: 8px;
+//     width: 180px;
+//     z-index: 1;
+//     color: darkgray;
 
-    button {
-        display: block;
-        padding: 15px 20px;
-        width: 100%;
-        cursor: pointer;
-    }
+//     button {
+//         display: block;
+//         padding: 15px 20px;
+//         width: 100%;
+//         cursor: pointer;
+//     }
 
-    li:hover {
-        background-color: gray
+//     li:hover {
+//         background-color: gray
   
-    }
+//     }
 
-    li:first-child {
-        margin-top: 16px;
-    }
+//     li:first-child {
+//         margin-top: 16px;
+//     }
 
-    li:last-child {
-        margin-bottom: 16px;
-    }
-}
+//     li:last-child {
+//         margin-bottom: 16px;
+//     }
+// }
 
 .user-dropdown:hover {
     display: block;
@@ -136,20 +146,20 @@
 }
 
 
-.dropdown-select:hover + .user-dropdown {
-    cursor: pointer;
-    display: block;
-    background-color: white;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
-    border-radius: 8px;
-    width: 180px;
-    z-index: 3;
+// .dropdown-select:hover + .user-dropdown {
+//     cursor: pointer;
+//     display: block;
+//     background-color: white;
+//     box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
+//     border-radius: 8px;
+//     width: 180px;
+//     z-index: 3;
 
-    button {
-        display: block;
-        padding: 15px 20px;
-        width: 100%;
-        cursor: pointer;
-    }
+//     button {
+//         display: block;
+//         padding: 15px 20px;
+//         width: 100%;
+//         cursor: pointer;
+//     }
 
-}
+// }

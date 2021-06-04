@@ -11,7 +11,6 @@ const App = () => (
   <div>
     <header>
       <NavBarContainer />
-      <h1>More Trails</h1>
       <GreetingContainer />
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />

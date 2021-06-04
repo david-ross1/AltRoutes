@@ -70,7 +70,7 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 /public/uploads
-credentials.yml.enc
+# credentials.yml.enc
 
  
  node_modules/

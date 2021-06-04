@@ -15,5 +15,14 @@
 #  index_photos_on_user_id   (user_id)
 #
 class Photo < ApplicationRecord
+  validate :file_type 
 
+  has_one_attached :photo
+  belongs_to :trail
+  belongs_to :user 
+
+  def file_type 
+    errors[:photo] << "filetype must be .jpeg, .png, or .jpg" unless 
+        self.photo.content_typ.in?(['image/png', 'image/jpeg'])
+  end
 end

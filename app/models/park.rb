@@ -15,7 +15,7 @@
 #
 class Park < ApplicationRecord
   validates :acreage, :contact, presence: true 
-  validates :park_type, inclusion: { in: %w(Local Regional State National) }
+  validates :park_type, inclusion: { in: ['Local', 'Regional', 'State', 'National'] }
   
   has_many :trails 
 end

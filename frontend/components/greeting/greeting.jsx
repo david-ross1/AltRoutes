@@ -28,7 +28,7 @@ import { Route, Redirect } from 'react-router-dom';
 
 
 const Greeting = () => (
-  <></>
+  <div className='main-background'></div>
 )
 
 

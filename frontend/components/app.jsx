@@ -11,9 +11,9 @@ const App = () => (
   <div>
     <header>
       <NavBarContainer />
-      <GreetingContainer />
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
+      <GreetingContainer />
     </header>
     <Footer />
   </div>

@@ -7,8 +7,8 @@ const Greeting = ({ currentUser, logout }) => {
     <nav className="login-signup">
     {/* <Route exact path='/'> <Redirect to='/login'/></Route> */}
       
-      <Link to="/login">Login</Link>
-      <Link to="/signup">Sign up!</Link>
+      {/* <Link to="/login">Login</Link>
+      <Link to="/signup">Sign up!</Link> */}
     </nav>
   );
   const personalGreeting = () => (

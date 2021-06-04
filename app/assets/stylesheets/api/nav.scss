@@ -1,0 +1,155 @@
+
+
+.nav-bar {
+    display: flex;
+    height: 70px;
+    margin: 0 8px;
+}
+
+.logo-title-div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 25px;
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.mountain-logo {
+    color: rgb(46, 163, 46);
+    margin-right: 2px; 
+    font-size: 25px;
+}
+
+.login-button {
+    font-size: 16px;
+    margin-right:3px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-left: 8px;
+    border: 2px solid rgb(29, 124, 192);
+    color:  rgb(41, 127, 189);
+}
+
+.login-button:hover {
+    color: rgb(87, 149, 194);
+    border: 2px solid  rgb(87, 149, 194);
+}
+
+.sign-up-button {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-left: 8px;
+    background-color: #219AD8;
+    border: 2px solid #219AD8;
+    color: white;
+}
+
+.sign-up-button:hover {
+    background-color:  rgb(106, 190, 243);
+    border: 2px solid rgb(106, 190, 243);
+}
+
+.profile-pic {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: gray;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    margin-right: 8px;
+}
+
+.user-dropdown {
+    display: none;
+    position: absolute;
+    margin-top: 140px;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
+    border-radius: 8px;
+    width: 180px;
+    z-index: 1;
+    color: darkgray;
+
+    button {
+        display: block;
+        padding: 15px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    li:hover {
+        background-color: gray
+  
+    }
+
+    li:first-child {
+        margin-top: 16px;
+    }
+
+    li:last-child {
+        margin-bottom: 16px;
+    }
+}
+
+.user-dropdown:hover {
+    display: block;
+}
+
+.dropdown-select {
+    position: relative;
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    padding: 8px;
+
+    p {
+        color: darkgray;
+    }
+}
+
+
+.dropdown-select:hover + .user-dropdown {
+    cursor: pointer;
+    display: block;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
+    border-radius: 8px;
+    width: 180px;
+    z-index: 3;
+
+    button {
+        display: block;
+        padding: 15px 20px;
+        width: 100%;
+        cursor: pointer;
+    }
+
+}

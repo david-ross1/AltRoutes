@@ -26,8 +26,15 @@ class Trail < ApplicationRecord
   validates :route_type, inclusion: { in: ['Loop', 'Out & back', 'Point to point'] }
 
   has_many_attached :photos
-  belongs_to :park 
-  has_many :reviews 
+  
+  belongs_to :park, 
+    foreign_key: :park_id,
+    class_name: 'Park'
+
+  has_many :reviews, 
+    foreign_key: :user_id, 
+    class_name: 'Review'
+
   has_many :reviewers, 
     through: :reviews, 
     source: :reviewer  

@@ -122,11 +122,20 @@ textarea {
 }
 
 .errored {
- border: 2px solid red !important
+ border: 2px solid #f3181c !important
 }
 
 .error-text {
-  color: red; 
-  margin: 3px 0 0 15px; 
+  color: #f71418;
+  margin: 5px 0 0 15px; 
   font-size: 12px;
+}
+
+.form-inputerrored::placeholder {
+  color: blue;
+  font-weight: bold
+}
+
+label .errored::placeholder {
+  color: #f82327;
 }

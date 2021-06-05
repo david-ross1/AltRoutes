@@ -88,7 +88,7 @@ class SessionForm extends React.Component {
             })}
           </label>
           <br />
-          <label className="form-input">
+          <label className={`form-input` + this.setErrorClass("Last")}>
             <input
               type="text"
               value={this.state.last_name}

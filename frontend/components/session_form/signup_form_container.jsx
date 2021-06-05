@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import React from "react";
 import { Link } from "react-router-dom";
-import { signup, login } from "../../actions/session_actions";
+import { signup, clearErrors, login } from "../../actions/session_actions";
 import SessionForm from "./session_form";
 
 const mapStateToProps = ({ errors }) => ({
@@ -21,9 +21,9 @@ const mapStateToProps = ({ errors }) => ({
 const mapDispatchToProps = (dispatch) => ({
   processForm: (user) => dispatch(signup(user)),
   login: (user) => dispatch(login(user)),
+  clearErrors: () => dispatch(clearErrors()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);
 
-
-// heroku 
+// heroku

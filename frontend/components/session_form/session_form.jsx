@@ -11,6 +11,10 @@ class SessionForm extends React.Component {
     this.setErrorClass = this.setErrorClass.bind(this);
   }
 
+  componentDidMount() {
+    this.props.clearErrors();
+  }
+
   update(field) {
     return (e) => this.setState({ [field]: e.currentTarget.value });
   }
@@ -77,7 +81,7 @@ class SessionForm extends React.Component {
 
             {this.props.errors.map((error) => {
               return error.includes("First") ? (
-                <div>Enter your first name.</div>
+                <div className="error-text">Enter your first name.</div>
               ) : (
                 ""
               );
@@ -94,7 +98,7 @@ class SessionForm extends React.Component {
             />
             {this.props.errors.map((error) => {
               return error.includes("Last") ? (
-                <div>Enter your last name.</div>
+                <div className="error-text">Enter your last name.</div>
               ) : (
                 ""
               );
@@ -125,7 +129,7 @@ class SessionForm extends React.Component {
               />
               {this.props.errors.map((error) => {
                 return error.includes("Email") ? (
-                  <div>Email is not valid.</div>
+                  <div className='error-text'>Email is not valid.</div>
                 ) : (
                   ""
                 );
@@ -143,7 +147,9 @@ class SessionForm extends React.Component {
               />
               {this.props.errors.map((error) => {
                 return error.includes("Email") ? (
-                  <div>Password must be 6 characters long.</div>
+                  <div className="error-text">
+                    Password must be 6 characters long.
+                  </div>
                 ) : (
                   ""
                 );

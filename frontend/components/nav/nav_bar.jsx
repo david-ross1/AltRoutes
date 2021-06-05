@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMountain, faHiking } from "@fortawesome/free-solid-svg-icons";
 
 
-const Nav = ({ currentUser, logout }) => {
+const Nav = (props) => {
+  const { currentUser, logout } = props 
   const navButtons = currentUser ? (
     <>
       <div>
-        <p>Hi, {currentUser.first_name}</p>
+        <p>Hi, {currentUser.firstName}</p>
       </div>
       {/* <ul className="user-dropdown"> */}
           <button className='logout-button' onClick={logout}>Logout</button>

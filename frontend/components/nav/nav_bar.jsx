@@ -11,15 +11,7 @@ const Nav = (props) => {
       <button className='upgrade'>Upgrade to Pro</button>
       <div className="dropdown-select">
         <div className="profile-pic"></div>
-        {/* <button className="logout-button" onClick={logout}> */}
-        {/* <p>Hi, {currentUser.firstName}</p> */}
       </div>
-      {/* <ul className="user-dropdown"> */}
-      {/* <button className="logout-button" onClick={logout}> */}
-      {/* Logout */}
-      {/* </button> */}
-      {/* </ul> */}
-
       <ul className="user-dropdown">
         <li>
           <div className="dd-logout" onClick={logout}>

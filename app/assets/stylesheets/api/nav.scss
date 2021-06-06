@@ -3,7 +3,7 @@
 
 .nav-bar {
     display: flex;
-    height: 70px;
+    height: 60px;
     margin: 0 8px;
     font-family: $mainFont;
 }
@@ -58,22 +58,6 @@
 }
 
 
-.login-button {
-    font-size: 14px;
-    margin-right:3px;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-left: 8px;
-    border: 2px solid rgb(29, 124, 192);
-    color:  rgb(41, 127, 189);
-}
-
-.login-button:hover {
-    color: rgb(87, 149, 194);
-    border: 2px solid  rgb(87, 149, 194);
-}
-
 .login-button:hover {
     color: rgb(87, 149, 194);
     border: 2px solid  rgb(87, 149, 194);
@@ -101,17 +85,6 @@
     display: block;
 }
 
-.dropdown-select {
-    position: relative;
-    cursor: pointer;
-    display: flex; 
-    align-items: center;
-    padding: 8px;
-
-    p {
-        color: darkgray;
-    }
-}
 
 .pro-tag {
   width: 60px;
@@ -123,16 +96,6 @@
 
 
 .profile-pic {
-  // border-radius: 50%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // background-color: $backgroundGrey;
-  // color: $grey;
-  // font-size: 20px;
-  // height: 40px;
-  // width: 40px;
-  // margin-right: 8px;
   background: image-url("user_icon.png");
   height: 42px;
   width: 42px;
@@ -143,7 +106,7 @@
 .user-dropdown {
   display: none;
   position: absolute;
-  margin-top: 120px;
+  margin-top: 110px;
   background-color: white;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
   border-radius: 8px;
@@ -174,7 +137,7 @@
   }
 
   li:last-child {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
 }
 
@@ -188,10 +151,6 @@
   display: flex;
   align-items: center;
   padding: 8px;
-
-  p {
-    color: $darkGrey;
-  }
 }
 
 .dropdown-select:hover + .user-dropdown {

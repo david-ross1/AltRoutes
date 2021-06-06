@@ -39,25 +39,8 @@ class SessionForm extends React.Component {
 
   demo(e) {
     e.preventDefault();
-    this.props.login({ email: "demo11", password: "password" });
+    this.props.login({ email: "demo11", password: "passwordz" });
   }
-
-  // renderErrors() {
-  //   return (
-  //     <ul>
-  //       {this.props.errors.map((error, i) => (
-  //         <li key={`error-${i}`}>{error}</li>
-  //       ))}
-  //     </ul>
-  //   );
-  // }
-
-  // renderErrors(keyword) {
-  //   this.props.errors.forEach((error) => {
-  //     if (error.includes(keyword)) return true;
-  //   });
-  //   return false;
-  // }
 
   setErrorClass(keyword) {
     return this.props.errors.join(" ").includes(keyword)
@@ -74,7 +57,6 @@ class SessionForm extends React.Component {
               type="text"
               value={this.state.first_name}
               onChange={this.update("first_name")}
-              // className="login-input"
               placeholder="First name"
               className={this.setErrorClass("First")}
             />
@@ -115,7 +97,6 @@ class SessionForm extends React.Component {
           <h1>{this.props.formHeader}</h1>
           <form onSubmit={this.handleSubmit} className="login-form-box">
             <br />
-            {/* {this.renderErrors()} */}
             <br />
             {firstNameLastNameFormField}
             <br />
@@ -176,12 +157,3 @@ class SessionForm extends React.Component {
 }
 
 export default SessionForm;
-
-// function chek(array, text) {
-//   let res = ''
-//   array.forEach((sub) => {
-//     res += sub + ' ' ;
-//   })
-//   return res
-
-// }

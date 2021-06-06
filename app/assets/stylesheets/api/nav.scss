@@ -46,18 +46,18 @@
 }
 
 
-  .login-button {
-    font-size: 16px;
-    margin-right:3px;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-left: 8px;
-    border: 2px solid rgb(29, 124, 192);
-    color:  rgb(41, 127, 189);
+.login-button {
+  font-size: 16px;
+  margin-right:3px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-left: 8px;
+  border: 2px solid rgb(29, 124, 192);
+  color:  rgb(41, 127, 189);
 }
 
-.logout-button,
+
 .login-button {
     font-size: 14px;
     margin-right:3px;
@@ -80,7 +80,7 @@
 }
 
 
-.sign-up-button {
+.sign-up-button, .upgrade {
     font-size: 14px;
     font-weight: 600;
     padding: 10px 15px;
@@ -96,38 +96,6 @@
     border: 2px solid rgb(106, 190, 243);
 }
 
-
-// .user-dropdown {
-//     display: none;
-//     position: absolute;
-//     margin-top: 140px;
-//     background-color: white;
-//     box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
-//     border-radius: 8px;
-//     width: 180px;
-//     z-index: 1;
-//     color: darkgray;
-
-//     button {
-//         display: block;
-//         padding: 15px 20px;
-//         width: 100%;
-//         cursor: pointer;
-//     }
-
-//     li:hover {
-//         background-color: gray
-  
-//     }
-
-//     li:first-child {
-//         margin-top: 16px;
-//     }
-
-//     li:last-child {
-//         margin-bottom: 16px;
-//     }
-// }
 
 .user-dropdown:hover {
     display: block;
@@ -145,21 +113,95 @@
     }
 }
 
+.pro-tag {
+  width: 60px;
+  height: 37px; 
+  background: image-url('ppro1.png');
+  display: block; 
+  margin-left: 5px;
+}
 
-// .dropdown-select:hover + .user-dropdown {
-//     cursor: pointer;
-//     display: block;
-//     background-color: white;
-//     box-shadow: 0 8px 16px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
-//     border-radius: 8px;
-//     width: 180px;
-//     z-index: 3;
 
-//     button {
-//         display: block;
-//         padding: 15px 20px;
-//         width: 100%;
-//         cursor: pointer;
-//     }
+.profile-pic {
+  // border-radius: 50%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // background-color: $backgroundGrey;
+  // color: $grey;
+  // font-size: 20px;
+  // height: 40px;
+  // width: 40px;
+  // margin-right: 8px;
+  background: image-url("user_icon.png");
+  height: 42px;
+  width: 42px;
+  background-size: cover;
+  margin-left: 20px;
+}
 
-// }
+.user-dropdown {
+  display: none;
+  position: absolute;
+  margin-top: 120px;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  width: 170px;
+  z-index: 1;
+  color: $darkGrey;
+
+  button {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .dd-logout {
+    padding: 10px 0px 10px 20px; 
+    display: block;
+    font-size: 13px;
+    color: #777474;
+  }
+
+  .dd-logout:hover {
+    cursor: pointer;
+  }
+
+  li:first-child {
+    margin-top: 16px;
+  }
+
+  li:last-child {
+    margin-bottom: 16px;
+  }
+}
+
+.user-dropdown:hover {
+  display: block;
+}
+
+.dropdown-select {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+
+  p {
+    color: $darkGrey;
+  }
+}
+
+.dropdown-select:hover + .user-dropdown {
+  cursor: pointer;
+  display: block;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  width: 170px;
+  z-index: 3;
+}
+
+

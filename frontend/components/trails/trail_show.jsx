@@ -7,12 +7,12 @@ class TrailShow extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchTrail(this.props.match.params.hikeId);
+    this.props.fetchTrail(this.props.match.params.trailId);
   }
 
   render() {
 
-    // debugger 
+    debugger 
 
     return(
       <div>

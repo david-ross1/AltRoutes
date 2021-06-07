@@ -21,12 +21,12 @@ const App = () => (
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <GreetingContainer />
 
-      {/* <Route
+       {/* <Route
         path="/trails/:trailId"
         render={(props) => (
-          <TrailShowContainer key={props.match.params.hikeId} {...props} />
+          <TrailShowContainer key={props.match.params.trailId} {...props} />
         )}
-      /> */}
+      />  */}
 
      <Route path='/trails/:trailId' component={TrailShowContainer} /> 
 

@@ -1,12 +1,12 @@
 class Api::TrailsController < ApplicationController
 
-  def index
-      @trails = Trail.all
-      render :index
-  end
-
-  def show
-    @trail = Trail.find(params[:id]);
+  def show 
+    @trail = Trail.find(params[:id])
     render :show
   end
+
+  def index 
+    @trails = Trail.all
+    render :index
+  end  
 end

@@ -38,4 +38,6 @@ class Trail < ApplicationRecord
   has_many :reviewers, 
     through: :reviews, 
     source: :reviewer  
+
+  has_many :photos
 end

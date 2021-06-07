@@ -4,7 +4,7 @@ import configureStore from "./store/store";
 import Root from "./components/root";
 
 
-import {fetchTrail} from './util/trail_api_util'
+import {fetchTrail, fetchTrails} from './actions/trail_actions'
 import { login } from "./util/session_api_util";
 
 
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ReactDOM.render(<Root store={store} />, root);
 
   window.fetchTrail = fetchTrail
+  window.fetchTrails = fetchTrails
   window.dispatch = store.dispatch
   window.store = store 
   window.login = login 

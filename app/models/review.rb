@@ -23,5 +23,7 @@ class Review < ApplicationRecord
     foreign_key: :user_id,
     class_name: "User"
 
-  belongs_to :trail 
+  belongs_to :trail, 
+    foreign_key: :trail_id, 
+    class_name: "Trail" 
 end

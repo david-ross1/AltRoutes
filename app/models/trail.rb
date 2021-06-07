@@ -32,7 +32,7 @@ class Trail < ApplicationRecord
     class_name: 'Park'
 
   has_many :reviews, 
-    foreign_key: :user_id, 
+    foreign_key: :trail_id, 
     class_name: 'Review'
 
   has_many :reviewers, 

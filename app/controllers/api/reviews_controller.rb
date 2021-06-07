@@ -1,6 +1,6 @@
 class Api::ReviewsController < ApplicationController
   def index 
-    @reviews = Review.all.includes(reviewer)
+    @reviews = Review.all.includes(:reviewer)
     render :index 
   end
 

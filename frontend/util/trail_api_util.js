@@ -5,5 +5,5 @@ export const fetchTrail = (trailId) =>
 
 export const fetchTrails = () =>
   $.ajax({
-    url: "/api/trails",
+    url: `/api/trails`,
   });

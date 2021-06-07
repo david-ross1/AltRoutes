@@ -13,10 +13,10 @@ const receiveTrails = (trails) => ({
   trails,
 });
 
-export const fetchTrails = () => (dispatch) =>
+export const fetchTrails = () => dispatch =>
   TrailAPIUtil.fetchTrails().then((trails) => dispatch(receiveTrails(trails)));
 
-export const fetchTrail = (trailId) => (dispatch) =>
+export const fetchTrail = (trailId) => dispatch =>
   TrailAPIUtil.fetchTrail(trailId).then((trail) =>
     dispatch(receiveTrail(trail))
   );

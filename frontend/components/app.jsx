@@ -6,6 +6,7 @@ import SignupFormContainer from "../components/session_form/signup_form_containe
 import { AuthRoute, ProtectedRoute } from "../util/route_util";
 import NavBarContainer from "./nav/nav_container";
 import Footer from "../components/nav/footer";
+import { Redirect } from 'react-router-dom';
 
 import TrailShowContainer from "../components/trails/trails_show_container";
 import MainPageContainer from "./main_page/main_page_container";
@@ -29,7 +30,7 @@ const App = () => (
       />  */}
 
      <Route path='/trails/:trailId' component={TrailShowContainer} /> 
-
+     <Redirect to='/' />
 
 
     </div>

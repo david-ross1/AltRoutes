@@ -51,8 +51,8 @@ t1 = Trail.create!(name: "Alamere Falls via Olema Valley, Bolema, Lake Ranch, Co
                     elevation_gain: 2641,
                     park_id: p1.id)
 
-# t1_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/alamere_falls_1.png")
-# t1.coverPhoto.attach(io: t1_trailpic, filename: "alamere_falls_1.png")
+t1_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/alamere_falls_1.png")
+t1.coverPhoto.attach(io: t1_trailpic, filename: "alamere_falls_1.png")
 
 t2 = Trail.create!(name: "Tomales Point Trail", 
                     description: "Tomales Point Trail is a 9.4 mile heavily trafficked out and back trail located near Marshall, California that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking, walking, running, and horses and is accessible year-round. Horses are also able to use this trail.",

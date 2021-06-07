@@ -7,10 +7,13 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import NavBarContainer from './nav/nav_container';
 import Footer from '../components/nav/footer';
 
+import MainPageContainer from './main_page/main_page_container'
+
 const App = () => (
   <div>
     <header>
       <NavBarContainer />
+      <Route exact path='/' component={MainPageContainer} /> 
       <AuthRoute path="/login" component={LoginFormContainer} />
       <AuthRoute path="/signup" component={SignupFormContainer} />
       <GreetingContainer />

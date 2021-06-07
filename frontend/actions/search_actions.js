@@ -8,7 +8,7 @@ const receiveSearchResults = (results) => ({
   results,
 });
 
-const clearSearchResults = () => ({
+export const clearSearchResults = () => ({
   type: CLEAR_SEARCH_RESULTS,
 });
 

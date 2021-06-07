@@ -57,10 +57,12 @@
   color: rgb(182, 181, 181);
   font-size: 14px;
   width: 100%;
-  border: 1px solid gray;
+  border: 1px solid  rgb(182, 181, 181);
   height: 50px;
   border-radius: 8px;
   padding-left: 10px;
+  font-family: "Montserrat";
+  font-weight: 300;
 }
 
 .session-form label {
@@ -119,7 +121,7 @@ textarea {
 .error-text {
   color: #f71418;
   margin: 5px 0 0 15px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .form-inputerrored::placeholder {
@@ -130,88 +132,3 @@ textarea {
 label .errored::placeholder {
   color: #f82327;
 }
-
-// .profile-pic {
-//   // border-radius: 50%;
-//   // display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-//   // background-color: $backgroundGrey;
-//   // color: $grey;
-//   // font-size: 20px;
-//   // height: 40px;
-//   // width: 40px;
-//   // margin-right: 8px;
-//   background: image-url("user_icon.png");
-//   height: 50px;
-//   width: 50px;
-//   background-size: cover;
-// }
-
-// .user-dropdown {
-//   display: none;
-//   position: absolute;
-//   margin-top: 120px;
-//   background-color: white;
-//   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
-//   border-radius: 8px;
-//   width: 170px;
-//   z-index: 1;
-//   color: $darkGrey;
-
-//   button {
-//     display: block;
-//     padding: 15px 20px;
-//     width: 100%;
-//     cursor: pointer;
-//   }
-
-//   .dd-logout {
-//     padding: 10px 0px 10px 20px; 
-//     display: block;
-//     font-size: 13px;
-//     color: #777474;
-//   }
-
-//   .dd-logout:hover {
-//     cursor: pointer;
-//   }
-
-//   li:first-child {
-//     margin-top: 16px;
-//   }
-
-//   li:last-child {
-//     margin-bottom: 16px;
-//   }
-// }
-
-// .user-dropdown:hover {
-//   display: block;
-// }
-
-// .dropdown-select {
-//   position: relative;
-//   cursor: pointer;
-//   display: flex;
-//   align-items: center;
-//   padding: 8px;
-
-//   p {
-//     color: $darkGrey;
-//   }
-// }
-
-// .dropdown-select:hover + .user-dropdown {
-//   cursor: pointer;
-//   display: block;
-//   background-color: white;
-//   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
-//   border-radius: 8px;
-//   width: 170px;
-//   z-index: 3;
-// }
-
-// .upgrade {
-
-// }

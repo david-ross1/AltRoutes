@@ -18,4 +18,8 @@ class Park < ApplicationRecord
   validates :park_type, inclusion: { in: ['Local', 'Regional', 'State', 'National'] }
   
   has_many :trails 
+
+  has_many :userPhotos, 
+    foreign_key: :trail_id, 
+    class_name: "Photo" 
 end

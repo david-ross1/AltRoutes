@@ -10,12 +10,12 @@ require "open-uri"
 
 User.destroy_all
 
-demo = User.create!(first_name: "demo", last_name: "user", email: "demo11", password: "passwordz")
-u1 = User.create!(first_name: "Rodney", last_name: "Sakaguchi", email: "Sakaguchi@rodney.com", password: "nicebreeze")
+demo = User.create!(first_name: "demo user", last_name: "!", email: "demo11", password: "passwordz")
+u1 = User.create!(first_name: "Rodney", last_name: "Sakaguchi", email: "sakaguchi@rodney.com", password: "nicebreeze")
 u2 = User.create!(first_name: "Julia", last_name: "Follestad", email: "follestad@julia.com", password: "nicebreeze")
-u3 = User.create!(first_name: "Addy", last_name: "Ghi", email: "Ghi@addy.com", password: "nicebreeze")
-u4 = User.create!(first_name: "Jimonte", last_name: "Valdez", email: "Valdez@jimonte.com", password: "nicebreeze")
-u5 = User.create!(first_name: "Priyanka", last_name: "Singh", email: "Singh@priyanka.com", password: "nicebreeze")
+u3 = User.create!(first_name: "Khalil", last_name: "Bey", email: "bey@khalil.com", password: "nicebreeze")
+u4 = User.create!(first_name: "Jimonte", last_name: "Valdez", email: "valdez@jimonte.com", password: "nicebreeze")
+u5 = User.create!(first_name: "Priyanka", last_name: "Singh", email: "singh@priyanka.com", password: "nicebreeze")
 
 
 
@@ -51,8 +51,8 @@ t1 = Trail.create!(name: "Alamere Falls via Olema Valley, Bolema, Lake Ranch, Co
                     elevation_gain: 2641,
                     park_id: p1.id)
 
-# h1_cover = URI.open("https://more-trails-seeds.s3.amazonaws.com/   .jpeg ")
-# t1.coverPhoto.attach(io: t1_cover, filename: "   .jpeg")
+# t1_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/alamere_falls_1.png")
+# t1.coverPhoto.attach(io: t1_trailpic, filename: "alamere_falls_1.png")
 
 t2 = Trail.create!(name: "Tomales Point Trail", 
                     description: "Tomales Point Trail is a 9.4 mile heavily trafficked out and back trail located near Marshall, California that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking, walking, running, and horses and is accessible year-round. Horses are also able to use this trail.",

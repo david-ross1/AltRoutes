@@ -12,4 +12,3 @@ export const fetchTrail = (trailId) => (dispatch) =>
     dispatch(receiveTrail(trail))
   );
 
-  

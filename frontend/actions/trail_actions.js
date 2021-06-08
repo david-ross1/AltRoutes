@@ -4,7 +4,7 @@ export const RECEIVE_TRAIL = "RECEIVE_TRAIL";
 export const RECEIVE_TRAILS = "RECEIVE_TRAILS";
 
 const receiveTrail = (trail) => {
-  debugger 
+
   return {
   type: RECEIVE_TRAIL,
   trail,

@@ -51,8 +51,8 @@ t1 = Trail.create!(name: "Alamere Falls via Olema Valley, Bolema, Lake Ranch, Co
                     elevation_gain: 2641,
                     park_id: p1.id)
 
-t1_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/alamere_falls_1.png")
-t1.coverPhoto.attach(io: t1_trailpic, filename: "alamere_falls_1.png")
+t1_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_1.png")
+t1.coverPhoto.attach(io: t1_trailpic, filename: "t1_1.png")
 
 t2 = Trail.create!(name: "Tomales Point Trail", 
                     description: "Tomales Point Trail is a 9.4 mile heavily trafficked out and back trail located near Marshall, California that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking, walking, running, and horses and is accessible year-round. Horses are also able to use this trail.",
@@ -64,8 +64,8 @@ t2 = Trail.create!(name: "Tomales Point Trail",
                     elevation_gain: 1177,
                     park_id: p1.id)
 
-# t2_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/         .jpeg")
-# t2.coverPhoto.attach(io: t2_cover, filename: "      .jpeg")
+t2_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_2.png")
+t2.coverPhoto.attach(io: t2_trailpic, filename: "t1_2.png")
 
 
 t3 = Trail.create!(name: "Coast Trail to Bass Lake", 
@@ -78,8 +78,8 @@ t3 = Trail.create!(name: "Coast Trail to Bass Lake",
                     elevation_gain: 784,
                     park_id: p1.id)
 
-# t3_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/     .jpeg")
-# t3.coverPhoto.attach(io: t3_cover, filename: "     .jpeg")
+t3_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_3.png")
+t3.coverPhoto.attach(io: t3_trailpic, filename: "t1_3.png")
 
 
 t4 = Trail.create!(name: "Limantour Beach Trail", 
@@ -92,8 +92,8 @@ t4 = Trail.create!(name: "Limantour Beach Trail",
                     elevation_gain: 72,
                     park_id: p1.id)
 
-# t4_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/     .jpeg")
-# t4.coverPhoto.attach(io: t4_cover, filename: "     .jpeg")
+t4_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_4.png")
+t4.coverPhoto.attach(io: t4_trailpic, filename: "t1_4.png")
 
 t5 = Trail.create!(name: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail", 
                     description: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail is a 12.4 mile heavily trafficked loop trail located near Point Reyes Station, California that features beautiful wild flowers and is rated as moderate. The trail offers a number of activity options and is accessible year-round.",
@@ -105,8 +105,8 @@ t5 = Trail.create!(name: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail",
                     elevation_gain: 1548,
                     park_id: p1.id)
 
-# t5_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/     .jpeg")
-# t5.coverPhoto.attach(io: t5_cover, filename: "     .jpeg")
+t5_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_5.png")
+t5.coverPhoto.attach(io: t5_trailpic, filename: "t1_5.png")
 
 
 

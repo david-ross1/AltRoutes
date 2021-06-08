@@ -9,14 +9,14 @@ class TrailShow extends React.Component {
   }
 
   componentDidMount() {
-    debugger
+    
 
     this.props.fetchTrail(this.props.match.params.trailId);
   }
 
   componentDidUpdate(prevProps) {
 
-    debugger 
+
 
     if (this.props.match.params.trailId !== prevProps.match.params.trailId) {
           this.props.fetchTrail(this.props.match.params.trailId);
@@ -26,7 +26,7 @@ class TrailShow extends React.Component {
 
   render() {
 
-    debugger 
+
 
 
     let { trail } = this.props;
@@ -48,6 +48,8 @@ class TrailShow extends React.Component {
         <p>lat:-------------------------- {trail.lat}</p>
         <p>lon:-------------------------- {trail.lon}</p>
 
+        <div className="trail-photo"   />
+
         <div className="background">
           <div className="trail-name">
             <div className="trail-pictainer">
@@ -66,7 +68,9 @@ class TrailShow extends React.Component {
           Trail 9
         </NavLink>
 
-        <button onClick={() => this.props.history.push('/trails/4')}>test link</button>
+        <button onClick={() => this.props.history.push("/trails/4")}>
+          test link
+        </button>
       </div>
     );
   }

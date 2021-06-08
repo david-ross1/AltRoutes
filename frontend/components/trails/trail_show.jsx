@@ -49,6 +49,7 @@ class TrailShow extends React.Component {
         <p>lon:-------------------------- {trail.lon}</p>
 
         <div className="trail-photo"   />
+        <img src={trail.coverPhotoURL} />
 
         <div className="background">
           <div className="trail-name">

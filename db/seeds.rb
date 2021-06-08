@@ -51,8 +51,8 @@ t1 = Trail.create!(name: "Alamere Falls via Olema Valley, Bolema, Lake Ranch, Co
                     elevation_gain: 2641,
                     park_id: p1.id)
 
-t1_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_1.png")
-t1.coverPhoto.attach(io: t1_trailpic, filename: "t1_1.png")
+t1_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/alamere_falls.png")
+t1.coverPhoto.attach(io: t1_trailpic, filename: "alamere_falls.png")
 
 t2 = Trail.create!(name: "Tomales Point Trail", 
                     description: "Tomales Point Trail is a 9.4 mile heavily trafficked out and back trail located near Marshall, California that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking, walking, running, and horses and is accessible year-round. Horses are also able to use this trail.",
@@ -64,8 +64,8 @@ t2 = Trail.create!(name: "Tomales Point Trail",
                     elevation_gain: 1177,
                     park_id: p1.id)
 
-t2_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_2.png")
-t2.coverPhoto.attach(io: t2_trailpic, filename: "t1_2.png")
+t2_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/tomales_point.png")
+t2.coverPhoto.attach(io: t2_trailpic, filename: "tomales_point.png")
 
 
 t3 = Trail.create!(name: "Coast Trail to Bass Lake", 
@@ -78,8 +78,8 @@ t3 = Trail.create!(name: "Coast Trail to Bass Lake",
                     elevation_gain: 784,
                     park_id: p1.id)
 
-t3_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_3.png")
-t3.coverPhoto.attach(io: t3_trailpic, filename: "t1_3.png")
+t3_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/bass_lake.png")
+t3.coverPhoto.attach(io: t3_trailpic, filename: "bass_lake.png")
 
 
 t4 = Trail.create!(name: "Limantour Beach Trail", 
@@ -92,8 +92,8 @@ t4 = Trail.create!(name: "Limantour Beach Trail",
                     elevation_gain: 72,
                     park_id: p1.id)
 
-t4_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_4.png")
-t4.coverPhoto.attach(io: t4_trailpic, filename: "t1_4.png")
+t4_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/04_limantour_beach.png")
+t4.coverPhoto.attach(io: t4_trailpic, filename: "04_limantour_beach.png")
 
 t5 = Trail.create!(name: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail", 
                     description: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail is a 12.4 mile heavily trafficked loop trail located near Point Reyes Station, California that features beautiful wild flowers and is rated as moderate. The trail offers a number of activity options and is accessible year-round.",
@@ -105,8 +105,8 @@ t5 = Trail.create!(name: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail",
                     elevation_gain: 1548,
                     park_id: p1.id)
 
-t5_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/t1_5.png")
-t5.coverPhoto.attach(io: t5_trailpic, filename: "t1_5.png")
+t5_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/muddy_hollow.png")
+t5.coverPhoto.attach(io: t5_trailpic, filename: "muddy_hollow.png")
 
 
 
@@ -121,8 +121,8 @@ t6 = Trail.create!(name: "Mount Whitney Trail",
                     elevation_gain: 6646,
                     park_id: p2.id)
 
-# t6_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/     .jpeg")
-# t6.coverPhoto.attach(io: t6_cover, filename: "     .jpeg")
+t6_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/mt_whitney.png")
+t6.coverPhoto.attach(io: t6_trailpic, filename: "mt_whitney.png")
 
 t7 = Trail.create!(name: "General Sherman Tree Trail", 
                     description: 'General Sherman Tree Trail is a 1.2 mile heavily trafficked loop trail located near Three Rivers, California that features beautiful wild flowers and is good for all skill levels. The trail is primarily used for hiking, walking, and nature trips and is accessible year-round.',
@@ -134,8 +134,8 @@ t7 = Trail.create!(name: "General Sherman Tree Trail",
                     elevation_gain: 196,
                     park_id: p2.id)
 
-# t7_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/     .jpeg")
-# t7.coverPhoto.attach(io: t7_cover, filename: "     .jpeg")
+t7_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/general_sherman.png")
+t7.coverPhoto.attach(io: t7_trailpic, filename: "general_sherman.png")
 
 t8 = Trail.create!(name: "Heather Lake, Emerald Lake, and Pear Lake", 
                     description: 'Heather Lake, Emerald Lake, and Pear Lake is a 12.3 mile heavily trafficked out and back trail located near Three Rivers, California that features a waterfall and is rated as difficult. The trail is primarily used for hiking, camping, and backpacking and is best used from June until October.',
@@ -147,8 +147,8 @@ t8 = Trail.create!(name: "Heather Lake, Emerald Lake, and Pear Lake",
                     elevation_gain: 2936,
                     park_id: p2.id)
 
-# t8_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/     .jpeg")
-# t8.coverPhoto.attach(io: t8_cover, filename: "     .jpeg")
+t8_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/heather_lake.png")
+t8.coverPhoto.attach(io: t8_trailpic, filename: "heather_lake.png")
 
 t9 = Trail.create!(name: "Giant Forest Loop Trail", 
                     description: 'Giant Forest Loop Trail is a 7 mile moderately trafficked loop trail located near Sequoia National Park, California that features beautiful wild flowers and is good for all skill levels. The trail is primarily used for hiking, running, nature trips, and bird watching and is best used from May until October.',
@@ -160,8 +160,8 @@ t9 = Trail.create!(name: "Giant Forest Loop Trail",
                     elevation_gain: 1272,
                     park_id: p2.id)
 
-# t9_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/     .jpeg")
-# t9.coverPhoto.attach(io: t9_cover, filename: "     .jpeg")
+t9_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/giant_forest_loop.png")
+t9.coverPhoto.attach(io: t9_trailpic, filename: "giant_forest_loop.png")
 
 t10 = Trail.create!(name: "Johnsondale Bridge River Trail", 
                     description: 'Johnsondale Bridge River Trail is a 5.2 mile moderately trafficked out and back trail located near Kernville, California that features a waterfall and is rated as moderate. The trail offers a number of activity options and is accessible year-round. Dogs are also able to use this trail but must be kept on leash.',
@@ -173,8 +173,8 @@ t10 = Trail.create!(name: "Johnsondale Bridge River Trail",
                     elevation_gain: 561,
                     park_id: p2.id)
 
-# t10_cover =  URI.open("https://more-trails-seeds.s3.amazonaws.com/     .jpeg")
-# t10.coverPhoto.attach(io: t10_cover, filename: "     .jpeg")
+t10_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/johnsondale.png")
+t10.coverPhoto.attach(io: t10_trailpic, filename: "johnsondale.png")
 
 Review.destroy_all
 

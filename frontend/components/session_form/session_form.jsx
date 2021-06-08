@@ -92,64 +92,103 @@ class SessionForm extends React.Component {
       );
 
     return (
-      <div className="session-bg">
-        <div className="session-form">
-          <h1>{this.props.formHeader}</h1>
-          <form onSubmit={this.handleSubmit} className="login-form-box">
-            <br />
-            <br />
-            {firstNameLastNameFormField}
-            <br />
-            <label className="form-input">
-              <input
-                placeholder="Email"
-                type="text"
-                value={this.state.email}
-                onChange={this.update("email")}
-                className={this.setErrorClass("Email")}
-              />
-              {this.props.errors.map((error) => {
-                return error.includes("Email") ? (
-                  <div className='error-text'>Email is not valid.</div>
-                ) : (
-                  ""
-                );
-              })}
-            </label>
-            <br />
+      <div>
+        <div className="session-bg">
+          <div className="session-form">
+            <h1>{this.props.formHeader}</h1>
+            <form onSubmit={this.handleSubmit} className="login-form-box">
+              <br />
+              <br />
+              {firstNameLastNameFormField}
+              <br />
+              <label className="form-input">
+                <input
+                  placeholder="Email"
+                  type="text"
+                  value={this.state.email}
+                  onChange={this.update("email")}
+                  className={this.setErrorClass("Email")}
+                />
+                {this.props.errors.map((error) => {
+                  return error.includes("Email") ? (
+                    <div className="error-text">Email is not valid.</div>
+                  ) : (
+                    ""
+                  );
+                })}
+              </label>
+              <br />
 
-            <label className="form-input">
-              <input
-                type="password"
-                value={this.state.password}
-                onChange={this.update("password")}
-                placeholder="Password"
-                className={this.setErrorClass("Password")}
-              />
-              {this.props.errors.map((error) => {
-                return error.includes("Email") ? (
-                  <div className="error-text">
-                    Password must be 6 characters long.
-                  </div>
-                ) : (
-                  ""
-                );
-              })}
-            </label>
-            <br />
-            <button className="primary-button">{this.props.formType}</button>
-          </form>
-          <p>
-            {this.props.alternativeFormText}
-            &nbsp;<span className="demo-text">{this.props.navLink}</span>
-          </p>
+              <label className="form-input">
+                <input
+                  type="password"
+                  value={this.state.password}
+                  onChange={this.update("password")}
+                  placeholder="Password"
+                  className={this.setErrorClass("Password")}
+                />
+                {this.props.errors.map((error) => {
+                  return error.includes("Email") ? (
+                    <div className="error-text">
+                      Password must be 6 characters long.
+                    </div>
+                  ) : (
+                    ""
+                  );
+                })}
+              </label>
+              <br />
+              <button className="primary-button">{this.props.formType}</button>
+            </form>
+            <p>
+              {this.props.alternativeFormText}
+              &nbsp;<span className="demo-text">{this.props.navLink}</span>
+            </p>
 
-          <p>
-            Roam anyway as a&nbsp;
-            <button className="demo-text" onClick={this.demo}>
-              demo user
-            </button>
-          </p>
+            <p>
+              Roam anyway as a&nbsp;
+              <button className="demo-text" onClick={this.demo}>
+                demo user
+              </button>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div className="main-page-login">
+            <div className="main-page-content-login">
+              <div className="login-text">
+                <h1 className="h1login">
+                  Whether you’re a hiker, biker or trail runner, we’ll help you
+                  find your next adventure.
+                </h1>
+              </div>
+              {/* <h1>Find your next trail</h1> */}
+              {/* <SearchBarContainer />  */}
+            </div>
+          </div>
+
+          <div>
+            <div className="create-share"></div>
+          </div>
+          <div className="main-page22">
+            <div className="main-page-content22">
+              {/* <h1>more text and stuff</h1> */}
+            </div>
+          </div>
+
+          <div className="main-page-sub">
+            <h2>Pick the right trail for your day</h2>
+            <div className="phone-flex">
+              <div className="phone"></div>
+              <p className="phone-text">
+                All our trails are verified by experts and reviewed by our
+                global community of adventurers like you. <br /> <br />
+                {/* Whether you’re a hiker, biker or
+            trail runner, we’ll help you find your next adventure. */}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     );

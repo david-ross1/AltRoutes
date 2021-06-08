@@ -7,7 +7,7 @@ const MainPage = ({ currentUser }) => {
     <div>
       <div className="main-page">
         <div className="main-page-content">
-          <h1>Find you next trail</h1>
+          <h1>Find your next trail</h1>
           {/* <SearchBarContainer />  */}
         </div>
       </div>

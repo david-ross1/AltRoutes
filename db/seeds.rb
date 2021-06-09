@@ -215,7 +215,7 @@ t11 = Trail.create!(name: "Eagle Peak Loop",
                     route_type: "Loop",
                     lat: 37.92096,
                     lon: -121.94127,
-                    elevation_gain: ,
+                    elevation_gain: 2198,
                     park_id: p3.id)
 
 t11_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/eagle_peak_loop.png")
@@ -347,8 +347,8 @@ t20 = Trail.create!(name: "Nimitz Way",
                     difficulty: "moderate", 
                     distance: 8.2, 
                     route_type: "Out & back",
-                    lat: ,
-                    lon: ,
+                    lat: 37.90546,
+                    lon: -122.24435,
                     elevation_gain: 662,
                     park_id: p4.id)
 

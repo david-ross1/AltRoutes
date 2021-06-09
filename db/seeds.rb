@@ -233,127 +233,127 @@ t12 = Trail.create!(name: "Rock City, Wind Caves, and Sentinel Rock",
                     elevation_gain: 213,
                     park_id: p3.id)
 
-t12_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t12.coverPhoto.attach(io: t12_trailpic, filename: ".png")
+t12_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/rock_city.png")
+t12.coverPhoto.attach(io: t12_trailpic, filename: "rock_city.png")
 
 #______________________________________________________________________________________________
 
-t13 = Trail.create!(name: "", 
-                    description: '',
-                    difficulty: "", 
-                    distance: , 
-                    route_type: "",
-                    lat: ,
-                    lon: ,
-                    elevation_gain: ,
+t13 = Trail.create!(name: "Mitchell Creek to Diablo Summit", 
+                    description: 'Mitchell Creek to Diablo Summit is a 13.1 mile heavily trafficked loop trail located near Clayton, California that features beautiful wild flowers and is only recommended for very experienced adventurers. The trail offers a number of activity options and is best used from September until June',
+                    difficulty: "hard", 
+                    distance: 13.1, 
+                    route_type: "Loop",
+                    lat: 37.91983,
+                    lon: -121.94195,
+                    elevation_gain: 3858,
                     park_id: p3.id)
 
-t13_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t13.coverPhoto.attach(io: t13_trailpic, filename: ".png")
+t13_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/mitchell_creek.png")
+t13.coverPhoto.attach(io: t13_trailpic, filename: "mitchell_creek.png")
 #______________________________________________________________________________________________
 
 
-t14 = Trail.create!(name: "", 
-                    description: '',
-                    difficulty: "", 
-                    distance: , 
-                    route_type: "",
-                    lat: ,
-                    lon: ,
-                    elevation_gain: ,
+t14 = Trail.create!(name: "Riggs Canyon Loop", 
+                    description: 'Riggs Canyon Loop is a 8.2 mile moderately trafficked loop trail located near Danville, California that offers scenic views and is rated as moderate. The trail is primarily used for hiking, walking, nature trips, and bird watching and is accessible year-round.',
+                    difficulty: "moderate", 
+                    distance: 8.2, 
+                    route_type: "Loop",
+                    lat: 37.8131,
+                    lon: -121.85744,
+                    elevation_gain: 1230,
                     park_id: p3.id)
 
-t14_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t14.coverPhoto.attach(io: t14_trailpic, filename: ".png")
+t14_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/riggs_canyon.png")
+t14.coverPhoto.attach(io: t14_trailpic, filename: "riggs_canyon.png")
 
 #______________________________________________________________________________________________
 
-t15 = Trail.create!(name: "", 
-                    description: '',
-                    difficulty: "", 
-                    distance: , 
-                    route_type: "",
-                    lat: ,
-                    lon: ,
-                    elevation_gain: ,
+t15 = Trail.create!(name: "Mount Diablo Grand Loop Trail", 
+                    description: 'Mount Diablo Grand Loop Trail is a 6.2 mile heavily trafficked loop trail located near Clayton, California that features beautiful wild flowers and is rated as difficult. The trail is primarily used for hiking, walking, running, and bird watching and is accessible year-round.',
+                    difficulty: "moderate", 
+                    distance: 6.2, 
+                    route_type: "Loop",
+                    lat: 37.87679,
+                    lon: -121.93099,
+                    elevation_gain: 1797,
                     park_id: p3.id)
 
-t15_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t15.coverPhoto.attach(io: t15_trailpic, filename: ".png")
+t15_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/grand_loop.png")
+t15.coverPhoto.attach(io: t15_trailpic, filename: "grand_loop.png")
 #______________________________________________________________________________________________
 
 
-t16 = Trail.create!(name: "", 
-                    description: '',
-                    difficulty: "", 
-                    distance: , 
-                    route_type: "",
-                    lat: ,
-                    lon: ,
-                    elevation_gain: ,
-                    park_id: p3.id)
+t16 = Trail.create!(name: "Meadows Canyon, Wildcat Gorge and Curran Trail Loop ", 
+                    description: 'Meadows Canyon, Wildcat Gorge and Curran Trail Loop is a 3.4 mile heavily trafficked loop trail located near Berkeley, California that features beautiful wild flowers and is rated as moderate. The trail offers a number of activity options and is accessible year-round. Dogs are also able to use this trail but must be kept on leash.',
+                    difficulty: "moderate", 
+                    distance: 3.4, 
+                    route_type: "Loop",
+                    lat: 37.90515,
+                    lon: -122.2445,
+                    elevation_gain: 518,
+                    park_id: p4.id)
 
-t16_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t16.coverPhoto.attach(io: t16_trailpic, filename: ".png")
-
-#______________________________________________________________________________________________
-
-t17 = Trail.create!(name: "", 
-                    description: '',
-                    difficulty: "", 
-                    distance: , 
-                    route_type: "",
-                    lat: ,
-                    lon: ,
-                    elevation_gain: ,
-                    park_id: p3.id)
-
-t17_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t17.coverPhoto.attach(io: t17_trailpic, filename: ".png")
+t16_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/meadows.png")
+t16.coverPhoto.attach(io: t16_trailpic, filename: "meadows.png")
 
 #______________________________________________________________________________________________
 
-t18 = Trail.create!(name: "", 
-                    description: '',
-                    difficulty: "", 
-                    distance: , 
-                    route_type: "",
-                    lat: ,
-                    lon: ,
-                    elevation_gain: ,
-                    park_id: p3.id)
+t17 = Trail.create!(name: "Grizzly Peak and Tunnel Road Cycling Route", 
+                    description: 'Grizzly Peak and Tunnel Road Cycling Route is a 16 mile heavily trafficked loop trail located near Berkeley, California that features beautiful wild flowers and is good for all skill levels. The trail is primarily used for nature trips and road biking and is accessible year-round.',
+                    difficulty: "easy", 
+                    distance: 16.0, 
+                    route_type: "Loop",
+                    lat: 37.8751,
+                    lon: -122.26006,
+                    elevation_gain: 1745,
+                    park_id: p4.id)
 
-t18_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t18.coverPhoto.attach(io: t18_trailpic, filename: ".png")
+t17_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/cycling.png")
+t17.coverPhoto.attach(io: t17_trailpic, filename: "cycling.png")
+
+#______________________________________________________________________________________________
+
+t18 = Trail.create!(name: "Seaview, Meadows Canyon, Wildcat Gorge",
+                    description: 'Seaview, Meadows Canyon, Wildcat Gorge is a 9 mile moderately trafficked loop trail located near Berkeley, California that features beautiful wild flowers and is rated as moderate. The trail is primarily used for hiking, nature trips, and mountain biking and is accessible year-round. Dogs are also able to use this trail.',
+                    difficulty: "moderate", 
+                    distance: 9.0, 
+                    route_type: "Loop",
+                    lat: 37.8816,
+                    lon: -122.22231,
+                    elevation_gain: 1797,
+                    park_id: p4.id)
+
+t18_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/seaview.png")
+t18.coverPhoto.attach(io: t18_trailpic, filename: "seaview.png")
 
 #______________________________________________________________________________________________
 
-t19 = Trail.create!(name: "", 
-                    description: '',
-                    difficulty: "", 
-                    distance: , 
-                    route_type: "",
-                    lat: ,
-                    lon: ,
-                    elevation_gain: ,
-                    park_id: p3.id)
+t19 = Trail.create!(name: "Lomas Cantadas to Skyline", 
+                    description: 'Lomas Cantadas to Skyline is a 11 mile moderately trafficked out and back trail located near Orinda, California that offers the chance to see wildlife and is rated as moderate. The trail offers a number of activity options and is accessible year-round. Horses are also able to use this trail.',
+                    difficulty: "moderate", 
+                    distance: 11.0, 
+                    route_type: "Out & back",
+                    lat: 370.87979,
+                    lon: 122.22145,
+                    elevation_gain: 2309,
+                    park_id: p4.id)
 
-t19_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t19.coverPhoto.attach(io: t19_trailpic, filename: ".png")
+t19_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/llomas.png")
+t19.coverPhoto.attach(io: t19_trailpic, filename: "llomas.png")
 
 #______________________________________________________________________________________________
-t20 = Trail.create!(name: "", 
-                    description: '',
-                    difficulty: "", 
-                    distance: , 
-                    route_type: "",
+t20 = Trail.create!(name: "Nimitz Way", 
+                    description: 'Nimitz Way is a 8.2 mile heavily trafficked out and back trail located near Berkeley, California that features beautiful wild flowers and is rated as moderate. The trail offers a number of activity options and is accessible year-round. Dogs are also able to use this trail but must be kept on leash.',
+                    difficulty: "moderate", 
+                    distance: 8.2, 
+                    route_type: "Out & back",
                     lat: ,
                     lon: ,
-                    elevation_gain: ,
-                    park_id: p3.id)
+                    elevation_gain: 662,
+                    park_id: p4.id)
 
-t20_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
-t20.coverPhoto.attach(io: t20_trailpic, filename: ".png")
+t20_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/nimitz.png")
+t20.coverPhoto.attach(io: t20_trailpic, filename: "nimitz.png")
 
 
 

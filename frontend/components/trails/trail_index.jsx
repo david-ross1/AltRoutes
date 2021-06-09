@@ -24,10 +24,16 @@ class TrailIndex extends React.Component {
 
     debugger
     return (
-      <div>
-        {trails.map((trail) => (
-          <TrailIndexItem key={trail.id} pic={trail.coverPhotoUrl} trail={trail} />
-        ))}
+      <div className="trail-index-container">
+        <div className='trail-icc'>
+          {trails.map((trail) => (
+            <TrailIndexItem
+              key={trail.id}
+              pic={trail.coverPhotoUrl}
+              trail={trail}
+            />
+          ))}
+        </div>
       </div>
     );
   }

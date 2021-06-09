@@ -12,6 +12,7 @@ const MainPage = ({ currentUser }) => {
           {/* <SearchBarContainer />  */}
         </div>
       </div>
+      <TrailIndexContainer />
 
       <div className="main-page-sub">
         <h2>Pick the right trail for your day</h2>
@@ -30,7 +31,6 @@ const MainPage = ({ currentUser }) => {
           {/* <h1>more text and stuff</h1> */}
         </div>
       </div>
-      <TrailIndexContainer />
     </div>
   );
 }

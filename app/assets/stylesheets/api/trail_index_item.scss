@@ -1,6 +1,21 @@
 .trail-index-item-pic {
   width: 300px;
-  height: 300px; 
-  
-  
+  height: 130px; 
+}
+
+.trail-index-container {
+  display: flex; 
+}
+
+.trail-icc {
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+.trail-info {
+  position: absolute;
+  color: white; 
+  top: 150px; 
+  left: 24px; 
+  margin: auto; 
 }

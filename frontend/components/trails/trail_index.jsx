@@ -11,18 +11,22 @@ class TrailIndex extends React.Component {
     return this.props.fetchTrails();
   }
 
-  render() { 
+  // componentDidUpdate(prevProps) {
+  //   // if (this.props.match.params.trailId !== prevProps.match.params.trailId) {
+  //     this.props.fetchTrails()
+  //   // }
+  // }
 
-
+  render() {
     let { trails } = this.props;
 
-    if (trails === undefined) return null; 
+    if (trails === undefined) return null;
 
-    // debugger 
+    debugger
     return (
       <div>
         {trails.map((trail) => (
-          <TrailIndexItem key={trail.id} trail={trail} />
+          <TrailIndexItem key={trail.id} pic={trail.coverPhotoUrl} trail={trail} />
         ))}
       </div>
     );

@@ -1,14 +1,21 @@
 import React from 'react'; 
 
 const TrailIndexItem = ({ trail }) => {
-  return(
+  debugger 
+  return (
     <div>
       <div>
-        {trail.name} 
-        <img src={trail.coverPhotoURL} />
+        {trail.name}
+        {trail.elevationGain}
+        <div>
+          <img class='trail-index-item-pic' src={trail.coverPhotoURL} />
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
 export default TrailIndexItem; 
+
+
+

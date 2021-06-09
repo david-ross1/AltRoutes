@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { Link } from 'react-router-dom';
 import SearchBarContainer from '../search/search_container'
+import TrailIndexContainer from '../../components/trails/trail_index_container'
 
 const MainPage = ({ currentUser }) => {
   return (
@@ -29,6 +30,7 @@ const MainPage = ({ currentUser }) => {
           {/* <h1>more text and stuff</h1> */}
         </div>
       </div>
+      <TrailIndexContainer />
     </div>
   );
 }

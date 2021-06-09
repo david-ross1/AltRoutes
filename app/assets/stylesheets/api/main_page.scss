@@ -29,6 +29,9 @@ div.phone  {
 
 
 .main-page {
+    font-weight: 600; 
+    font-family: "Montserrat";
+    font-size: 70px;
     background-image: image_url('point_reyes.jpeg');
     background-size: cover;
     position: relative;
@@ -36,8 +39,7 @@ div.phone  {
     height: 550px;
     color: white;
     text-align: center;
-    font-family: "Montserrat";
-    font-size: 70px;
+    margin-bottom: 20px; 
 }
 
 .main-page2 {

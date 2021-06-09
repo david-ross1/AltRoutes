@@ -22,17 +22,35 @@ class TrailIndex extends React.Component {
 
     if (trails === undefined) return null;
 
-    debugger
+    // debugger
     return (
-      <div className="trail-index-container">
-        <div className='trail-icc'>
-          {trails.map((trail) => (
-            <TrailIndexItem
-              key={trail.id}
-              pic={trail.coverPhotoUrl}
-              trail={trail}
-            />
-          ))}
+      <div>
+        <div className="outer-trailtainer">
+          <div className="index-trailtainer">
+            <div className="trail-icc">
+              {trails.map((trail) => (
+                <TrailIndexItem
+                  key={trail.id}
+                  pic={trail.coverPhotoUrl}
+                  trail={trail}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="outer-trailtainer">
+          <div className="index-trailtainer">
+            <div className="trail-icc">
+              {trails.reverse().map((trail) => (
+                <TrailIndexItem
+                  key={trail.id}
+                  pic={trail.coverPhotoUrl}
+                  trail={trail}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );

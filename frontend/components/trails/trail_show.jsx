@@ -35,10 +35,6 @@ class TrailShow extends React.Component {
 
     return (
       <div className="trail-page-background">
-        {/* <SubNavContainer */}
-        {/* parkId={trail.park_id}
-          parkName={trail.parkName} */}
-        {/* /> */}
         <div className="title-box">
           <div className="title-photo-box">
             <img src={trail.coverPhotoURL} alt="trail" />
@@ -49,10 +45,7 @@ class TrailShow extends React.Component {
               <span className={`trail-difficulty ${trail.difficulty}`}>
                 {trail.difficulty}
               </span>
-              {/* <ReactStars {...starOps} /> */}
-              {/* <p>({sortedReviews.length})</p> */}
             </div>
-            {/* <p>{trail.trail.parkName}</p> */}
           </div>
           <div className="trail-actions-wrap">
             <div className="trail-action">
@@ -109,20 +102,15 @@ class TrailShow extends React.Component {
               </div>
             </div>
             <div className="trail-tab">
-              {/* <p>{`Reviews (${numReviews})`}</p> */}
             </div>
-            {/* {writeReview} */}
             <div className="trail-left-4">
-              {/* <ReviewIndex reviews={sortedReviews} /> */}
             </div>
           </div>
           <div className="trail-right">
             <div className="trail-map">
-              {/* <ParkMap parent="trail" location={trail} /> */}
             </div>
             <div className="nearby-trails-wrapper">
               <h3 className="nearby-trails header-text3">Nearby Trails</h3>
-              {/* <NearbytrailIndex trails={nearbytrails} park={trail.parkName} /> */}
             </div>
           </div>
         </div>
@@ -132,6 +120,38 @@ class TrailShow extends React.Component {
 }
 
 export default TrailShow;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // <div>
 //   <p>Description:-------------------{trail.description}</p>

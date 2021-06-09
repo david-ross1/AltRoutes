@@ -20,25 +20,46 @@ u5 = User.create!(first_name: "Priyanka", last_name: "Singh", email: "singh@priy
 
 
 Park.destroy_all
+#______________________________________________________________________________________________
 
 p1 = Park.create!(name: "Point Reyes National Seashore", 
                   description: "Point Reyes is a few miles north of San Francisco and offers a number of great hiking options. There are short hikes to the beach from several entrances, as well as longer backpacking options. There are many campsites near the beaches with water and facilities. The lighthouse on the point is also a major tourist attraction, as are the wildflowers in the spring.",
                   acreage: 71028,
-                  contact: 415-464-5100,
+                  contact: '415-464-5100',
                   park_type: "National",
                   lat: 38.0512, 
                   lon: 122.8663) 
+#______________________________________________________________________________________________
 
 
 p2 = Park.create!(name: "Sequoia National Park", 
                   description: "The beautiful Sequoia National Park features the tallest peak in the continental United States and the largest trees on the planet. Covering an impressive 404,063 acres, there is so much to explore including the Giant Forest. There you will find the world's largest tree, General Sherman, and many of the world's other largest trees. There are numerous caves, Mount Whitney, and the granite dome Moro Rock.",
                   acreage: 404063,
-                  contact: 559-565-3341,
+                  contact: '559-565-3341',
                   park_type: "National",
                   lat: 36.4864, 
                   lon: 118.5658) 
+#______________________________________________________________________________________________
+
+p3 = Park.create!(name: "Mt. Diablo State Park", 
+                  description: "Mount Diablo State Park is one of the ecological treasures of the San Francisco Bay Area. Every season in the park has its special qualities. Discover them for yourself, from the mountain's 3,849-foot summit to its beautiful wildflowers, extensive trail system, fascinating wildlife, and distinctive rock formations.",
+                  acreage: 20000,
+                  contact: '925-837-2525',
+                  park_type: "State",
+                  lat: 37.8816, 
+                  lon: 121.9142) 
+#______________________________________________________________________________________________
+
+p4 = Park.create!(name: "Tilden Regional Park", 
+                  description: "Tilden Nature Area is a 740-acre preserve located just North of Tilden Regional Park. With over 10 miles of hiking trails, the preserve contains a blend of native and introduced plant communities, including oak/bay woodlands, grasslands, eucalyptus forests, and streams. Hikes range from the leisurely, self-guided Jewel Lake Nature Trail to a vigorous climb up Wildcat Peak (elevation 1,211 ft.) for panoramic, San Francisco Bay views. A 750-foot boardwalk through the woods leads to Jewel Lake, a historic reservoir and waterworks, and a peaceful place to watch wildlife. At Tilden Nature Area one can also find the renowned Environmental Education Center (EEC), headquarters for the area's interpretive programs, and the historic Little Farm.",
+                  acreage: 2079,
+                  contact: '510-544-2233',
+                  park_type: "State",
+                  lat: 37.8928, 
+                  lon: 122.2424) 
 
 Trail.destroy_all
+#______________________________________________________________________________________________
 
 # reyes
 t1 = Trail.create!(name: "Alamere Falls via Olema Valley, Bolema, Lake Ranch, Coast Trail", 
@@ -53,6 +74,7 @@ t1 = Trail.create!(name: "Alamere Falls via Olema Valley, Bolema, Lake Ranch, Co
 
 t1_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/alamere_falls.png")
 t1.coverPhoto.attach(io: t1_trailpic, filename: "alamere_falls.png")
+#______________________________________________________________________________________________
 
 t2 = Trail.create!(name: "Tomales Point Trail", 
                     description: "Tomales Point Trail is a 9.4 mile heavily trafficked out and back trail located near Marshall, California that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking, walking, running, and horses and is accessible year-round. Horses are also able to use this trail.",
@@ -67,6 +89,7 @@ t2 = Trail.create!(name: "Tomales Point Trail",
 t2_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/tomales_point.png")
 t2.coverPhoto.attach(io: t2_trailpic, filename: "tomales_point.png")
 
+#______________________________________________________________________________________________
 
 t3 = Trail.create!(name: "Coast Trail to Bass Lake", 
                     description: "Coast Trail to Bass Lake is a 6 mile heavily trafficked out and back trail located near Bolinas, California that offers the chance to see wildlife and is rated as moderate. The trail is primarily used for hiking, walking, nature trips, and bird watching and is accessible year-round.",
@@ -80,6 +103,7 @@ t3 = Trail.create!(name: "Coast Trail to Bass Lake",
 
 t3_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/bass_lake.png")
 t3.coverPhoto.attach(io: t3_trailpic, filename: "bass_lake.png")
+#______________________________________________________________________________________________
 
 
 t4 = Trail.create!(name: "Limantour Beach Trail", 
@@ -94,6 +118,7 @@ t4 = Trail.create!(name: "Limantour Beach Trail",
 
 t4_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/04_limantour_beach.png")
 t4.coverPhoto.attach(io: t4_trailpic, filename: "04_limantour_beach.png")
+#______________________________________________________________________________________________
 
 t5 = Trail.create!(name: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail", 
                     description: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail is a 12.4 mile heavily trafficked loop trail located near Point Reyes Station, California that features beautiful wild flowers and is rated as moderate. The trail offers a number of activity options and is accessible year-round.",
@@ -109,6 +134,7 @@ t5_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/mud
 t5.coverPhoto.attach(io: t5_trailpic, filename: "muddy_hollow.png")
 
 
+#______________________________________________________________________________________________
 
 #sequoia
 t6 = Trail.create!(name: "Mount Whitney Trail", 
@@ -123,6 +149,7 @@ t6 = Trail.create!(name: "Mount Whitney Trail",
 
 t6_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/mt_whitney.png")
 t6.coverPhoto.attach(io: t6_trailpic, filename: "mt_whitney.png")
+#______________________________________________________________________________________________
 
 t7 = Trail.create!(name: "General Sherman Tree Trail", 
                     description: 'General Sherman Tree Trail is a 1.2 mile heavily trafficked loop trail located near Three Rivers, California that features beautiful wild flowers and is good for all skill levels. The trail is primarily used for hiking, walking, and nature trips and is accessible year-round.',
@@ -136,6 +163,7 @@ t7 = Trail.create!(name: "General Sherman Tree Trail",
 
 t7_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/general_sherman.png")
 t7.coverPhoto.attach(io: t7_trailpic, filename: "general_sherman.png")
+#______________________________________________________________________________________________
 
 t8 = Trail.create!(name: "Heather Lake, Emerald Lake, and Pear Lake", 
                     description: 'Heather Lake, Emerald Lake, and Pear Lake is a 12.3 mile heavily trafficked out and back trail located near Three Rivers, California that features a waterfall and is rated as difficult. The trail is primarily used for hiking, camping, and backpacking and is best used from June until October.',
@@ -149,6 +177,7 @@ t8 = Trail.create!(name: "Heather Lake, Emerald Lake, and Pear Lake",
 
 t8_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/heather_lake.png")
 t8.coverPhoto.attach(io: t8_trailpic, filename: "heather_lake.png")
+#______________________________________________________________________________________________
 
 t9 = Trail.create!(name: "Giant Forest Loop Trail", 
                     description: 'Giant Forest Loop Trail is a 7 mile moderately trafficked loop trail located near Sequoia National Park, California that features beautiful wild flowers and is good for all skill levels. The trail is primarily used for hiking, running, nature trips, and bird watching and is best used from May until October.',
@@ -162,6 +191,7 @@ t9 = Trail.create!(name: "Giant Forest Loop Trail",
 
 t9_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/giant_forest_loop.png")
 t9.coverPhoto.attach(io: t9_trailpic, filename: "giant_forest_loop.png")
+#______________________________________________________________________________________________
 
 t10 = Trail.create!(name: "Johnsondale Bridge River Trail", 
                     description: 'Johnsondale Bridge River Trail is a 5.2 mile moderately trafficked out and back trail located near Kernville, California that features a waterfall and is rated as moderate. The trail offers a number of activity options and is accessible year-round. Dogs are also able to use this trail but must be kept on leash.',
@@ -175,6 +205,197 @@ t10 = Trail.create!(name: "Johnsondale Bridge River Trail",
 
 t10_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/johnsondale.png")
 t10.coverPhoto.attach(io: t10_trailpic, filename: "johnsondale.png")
+
+#______________________________________________________________________________________________
+
+t11 = Trail.create!(name: "Eagle Peak Loop", 
+                    description: 'Everybody loves to visit the summit of Mount Diablo, but many seasoned San Francisco Bay Area hikers prefer this hike to Eagle Peak via Mitchell Canyon, which takes in all the features that make Mount Diablo State Park unique. Mitchell Canyon is shady with abundant wildflowers in the spring; Eagle Peak culminates a rugged hike to jaw-dropping vistas of the East Bay and surrounding terrain. On a clear winter day you might be able to spot the snow-capped peaks of the Sierra Nevada.Eagle Peak Loop is a 7.6 mile heavily trafficked loop trail located near Clayton, California that features beautiful wild flowers and is rated as difficult. The trail is primarily used for hiking, running, nature trips, and bird watching and is accessible year-round.',
+                    difficulty: "hard", 
+                    distance: 7.6, 
+                    route_type: "Loop",
+                    lat: 37.92096,
+                    lon: -121.94127,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t11_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/eagle_peak_loop.png")
+t11.coverPhoto.attach(io: t11_trailpic, filename: "eagle_peak_loop.png")
+#______________________________________________________________________________________________
+
+
+t12 = Trail.create!(name: "Rock City, Wind Caves, and Sentinel Rock", 
+                    description: 'Rock City, Wind Caves, and Sentinel Rock is a 1.2 mile heavily trafficked loop trail located near Diablo, California that features beautiful wild flowers and is good for all skill levels. The trail is primarily used for walking and nature trips and is accessible year-round.',
+                    difficulty: "easy", 
+                    distance: 1.2, 
+                    route_type: "Loop",
+                    lat: 37.85008,
+                    lon: -121.93384,
+                    elevation_gain: 213,
+                    park_id: p3.id)
+
+t12_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t12.coverPhoto.attach(io: t12_trailpic, filename: ".png")
+
+#______________________________________________________________________________________________
+
+t13 = Trail.create!(name: "", 
+                    description: '',
+                    difficulty: "", 
+                    distance: , 
+                    route_type: "",
+                    lat: ,
+                    lon: ,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t13_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t13.coverPhoto.attach(io: t13_trailpic, filename: ".png")
+#______________________________________________________________________________________________
+
+
+t14 = Trail.create!(name: "", 
+                    description: '',
+                    difficulty: "", 
+                    distance: , 
+                    route_type: "",
+                    lat: ,
+                    lon: ,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t14_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t14.coverPhoto.attach(io: t14_trailpic, filename: ".png")
+
+#______________________________________________________________________________________________
+
+t15 = Trail.create!(name: "", 
+                    description: '',
+                    difficulty: "", 
+                    distance: , 
+                    route_type: "",
+                    lat: ,
+                    lon: ,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t15_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t15.coverPhoto.attach(io: t15_trailpic, filename: ".png")
+#______________________________________________________________________________________________
+
+
+t16 = Trail.create!(name: "", 
+                    description: '',
+                    difficulty: "", 
+                    distance: , 
+                    route_type: "",
+                    lat: ,
+                    lon: ,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t16_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t16.coverPhoto.attach(io: t16_trailpic, filename: ".png")
+
+#______________________________________________________________________________________________
+
+t17 = Trail.create!(name: "", 
+                    description: '',
+                    difficulty: "", 
+                    distance: , 
+                    route_type: "",
+                    lat: ,
+                    lon: ,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t17_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t17.coverPhoto.attach(io: t17_trailpic, filename: ".png")
+
+#______________________________________________________________________________________________
+
+t18 = Trail.create!(name: "", 
+                    description: '',
+                    difficulty: "", 
+                    distance: , 
+                    route_type: "",
+                    lat: ,
+                    lon: ,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t18_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t18.coverPhoto.attach(io: t18_trailpic, filename: ".png")
+
+#______________________________________________________________________________________________
+
+t19 = Trail.create!(name: "", 
+                    description: '',
+                    difficulty: "", 
+                    distance: , 
+                    route_type: "",
+                    lat: ,
+                    lon: ,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t19_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t19.coverPhoto.attach(io: t19_trailpic, filename: ".png")
+
+#______________________________________________________________________________________________
+t20 = Trail.create!(name: "", 
+                    description: '',
+                    difficulty: "", 
+                    distance: , 
+                    route_type: "",
+                    lat: ,
+                    lon: ,
+                    elevation_gain: ,
+                    park_id: p3.id)
+
+t20_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.png")
+t20.coverPhoto.attach(io: t20_trailpic, filename: ".png")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Review.destroy_all
 

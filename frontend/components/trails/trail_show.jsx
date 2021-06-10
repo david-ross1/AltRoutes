@@ -116,17 +116,7 @@ class TrailShow extends React.Component {
             </div>
           </div>
         </div>
-        <div className="hike-right">
-          <div className="hike-map">
-            {/* <ParkMap parent="hike" location={thisHike} /> */}
-          </div>
-          <div className="trail-sidebar">
-            <div className="nearby-trails-container">
-              <h3 className="">Nearby Trails</h3>
-              {/* <NearbyHikeIndex hikes={nearbyHikes} park={thisHike.parkName} /> */}
-            </div>
-          </div>
-        </div>
+      
       </div>
     );
   }

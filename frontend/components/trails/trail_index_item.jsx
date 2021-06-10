@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, matchPath } from "react-router-dom";
 // const TrailIndexItem = ({ trail }) => {
 //   debugger
 //   return (
@@ -26,20 +25,21 @@ class TrailIndexItem extends React.Component {
   }
 
   truncateName(name) {
-    if (name.length > 29) {
-      return name.slice(0, 29) + "...";
-    } else {
-      return name;
+    return name.length > 29 ? name.slice(0, 29) + "..." : name;
     }
-  }
+  
 
-  componentDidMount() {}
+  // componentDidMount() {
+  //   this.props.fetchParks()
+  // }
 
   render() {
     const { trail, park } = this.props;
+    // const { match: { url }} = this.props
     debugger;
+  
 
-    return (
+    const mainPageIndex = (
       <Link to={`/trails/${trail.id}`} className="trail-card">
         <div className="">
           <div className="test">
@@ -65,6 +65,71 @@ class TrailIndexItem extends React.Component {
           </div>
         </div>
       </Link>
+      );
+
+        const showPageIndex = (
+          <Link to={`/trails/${trail.id}`} className="main-trail-card">
+            <div className="">
+              <div className="main-test">
+                <img className="main-index-trail-pic" src={trail.coverPhotoURL} />
+
+                <div className="main-truncated-name">
+                  {this.truncateName(trail.name)}
+
+                  <div className="main-item-locale">{trail.locale}</div>
+
+                  <div className="main-item-difficulty-rating">
+                    <span
+                      className={`trail-item-difficulty ${trail.difficulty}`}
+                    >
+                      {trail.difficulty}
+                    </span>
+                    <div className="main-item-distance-div">
+                      <p className="main-item-distance">
+                        Length: {trail.distance} mi &nbsp; &nbsp; • &nbsp;
+                        &nbsp;
+                        {trail.time}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
+        );
+  
+
+
+    return (
+      <div>
+         { this.props.ownProps.match.url === '/trails/' ? showPageIndex : mainPageIndex }
+      </div>
+      // <Link to={`/trails/${trail.id}`} className="trail-card">
+      //   <div className="">
+      //     <div className="test">
+      //       <img className="index-trail-pic" src={trail.coverPhotoURL} />
+
+      //       <div className="truncated-name">
+      //         {this.truncateName(trail.name)}
+
+      //         <div className="item-locale">{trail.locale}</div>
+
+      //         <div className="item-difficulty-rating">
+      //           <span className={`trail-item-difficulty ${trail.difficulty}`}>
+      //             {trail.difficulty}
+      //           </span>
+      //           <div className="item-distance-div">
+      //             <p className="item-distance">
+      //               Length: {trail.distance} mi &nbsp; &nbsp; • &nbsp; &nbsp;
+      //               {trail.time}
+      //             </p>
+      //           </div>
+      //         </div>
+      //     </div>
+      //       </div>
+      //   </div>
+      // </Link>
+
     );
   }
 }

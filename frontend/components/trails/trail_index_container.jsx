@@ -2,10 +2,12 @@ import { connect } from "react-redux";
 import TrailIndex from "./trail_index";
 import { fetchTrails } from "../../actions/trail_actions";
 import { fetchParks } from "../../actions/park_actions"
+import { withRouter } from 'react-router-dom'
 
-const mapStateToProps = (state) => ({
+const mapStateToProps = (state, ownProps) => ({
   trails: state.entities.trails.trail_list,
-  parks: state.entities.parks.park_list,
+  parks: Object.values(state.entities.parks),
+  ownProps: ownProps,
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -13,4 +15,4 @@ const mapDispatchToProps = (dispatch) => ({
   fetchParks: () => dispatch(fetchParks()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(TrailIndex);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TrailIndex));

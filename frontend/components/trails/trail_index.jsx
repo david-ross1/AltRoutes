@@ -25,7 +25,7 @@ class TrailIndex extends React.Component {
     if (parks === undefined) return null; 
 
 
-    
+    debugger
 
 
     return (
@@ -36,9 +36,13 @@ class TrailIndex extends React.Component {
               {trails.map((trail) => (
                 <TrailIndexItem
                   key={trail.id}
-                  pic={trail.coverPhotoUrl}
+                  pic={trail.coverPhotoURL}
                   trail={trail}
-                  park={this.props.parks[trail.id]}
+                  park={this.props.parks.filter(
+                    (park) => park.id === trail.park_id
+                  )}
+                  // park={this.props.parks[trail.parkId]}
+                  ownProps={this.props.ownProps}
                 />
               ))}
             </div>
@@ -51,14 +55,23 @@ class TrailIndex extends React.Component {
               {trails.reverse().map((trail) => (
                 <TrailIndexItem
                   key={trail.id}
-                  pic={trail.coverPhotoUrl}
+                  pic={trail.coverPhotoURL}
                   trail={trail}
-                  park={this.props.parks[trail.id]}
+                  // park={this.props.parks[trail.id]}
+                  // park={this.props.parks[trail.park_id]}
+                  park={this.props.parks.filter(
+                    (park) => park.id === trail.park_id
+                  )}
+                   ownProps={this.props.ownProps}
+   
                 />
               ))}
             </div>
           </div>
         </div>
+        {/* <div>
+           { this.props.match.params.url.startWith('/trails/') ? showPageIndex : mainPageIndex }
+         </div> */}
       </div>
     );
   }

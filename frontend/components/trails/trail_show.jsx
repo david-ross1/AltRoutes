@@ -5,9 +5,10 @@ import {
   faCar,
   faArrowsAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import TrailIndexItemContainer from './trail_index_container'
 
 import React from "react";
-import NearbyTrailsContainer from '../trails/nearby_trails_container'
+
 
 
 
@@ -117,6 +118,7 @@ class TrailShow extends React.Component {
             </div>
           </div>
         </div>
+        <TrailIndexItemContainer />
       </div>
     );
   }

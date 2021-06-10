@@ -7,8 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import React from "react";
-import { NavLink } from "react-router-dom";
-
 class TrailShow extends React.Component {
   constructor(props) {
     super(props);
@@ -30,6 +28,7 @@ class TrailShow extends React.Component {
     if (trail === undefined) {
       return null;
     }
+
 
     // this.setState({ num: num + 1})
 

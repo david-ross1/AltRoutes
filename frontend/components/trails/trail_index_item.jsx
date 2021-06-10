@@ -27,8 +27,8 @@ class TrailIndexItem extends React.Component {
 
   
   truncateName(name) {
-    if (name.length > 30) {
-      return name.slice(0, 30) + '...' 
+    if (name.length > 29) {
+      return name.slice(0, 29) + '...' 
     } else {
       return name;
     }
@@ -39,14 +39,19 @@ class TrailIndexItem extends React.Component {
     return (
       <Link to={`/trails/${trail.id}`} className="trail-card">
         <div className="">
-          <div className='test'>
+          <div className="test">
             <img className="index-trail-pic" src={trail.coverPhotoURL} />
 
             <div className="truncated-name">
               {this.truncateName(trail.name)}
-            </div>
-            <div className="trail-info">
-              <div>{trail.length}</div>
+              <div className="item-difficulty-rating">
+                <span className={`trail-item-difficulty ${trail.difficulty}`}>
+                  {trail.difficulty}
+                </span>
+                <div className="item-distance-div">
+                  <p className="item-distance">Length: {trail.distance} mi</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -56,3 +61,6 @@ class TrailIndexItem extends React.Component {
 }
 
 export default TrailIndexItem; 
+
+
+

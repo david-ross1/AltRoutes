@@ -8,6 +8,8 @@ const mapStateToProps = (state, ownProps) => ({
   trails: state.entities.trails.trail_list,
   parks: Object.values(state.entities.parks),
   ownProps: ownProps,
+
+  trail: state.entities.trails[ownProps.match.params.trailId]
 });
 
 const mapDispatchToProps = (dispatch) => ({

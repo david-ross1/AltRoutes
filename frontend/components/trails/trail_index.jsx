@@ -24,6 +24,9 @@ class TrailIndex extends React.Component {
     if (trails === undefined) return null;
     if (parks === undefined) return null; 
 
+    
+    debugger
+
 
     // debugger
       const mainIndex = (

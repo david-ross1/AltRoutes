@@ -1,4 +1,626 @@
 
+// .index-trail-pic {
+//   transition: transform 0.3s ease; 
+// }
+
+// .index-trail-pic:hover {
+//   transform: scale(1.04); 
+// }
+
+// .index-trail-pic {
+//   border-top-right-radius: 10px;
+//   border-top-left-radius: 10px;
+//   width: 300px;
+//   height: 130px; 
+//   margin: 10px; 
+
+// }
+
+// // .outer-trailtainer {
+// //   margin-left: 10px;
+// // }
+
+// .index-trailtainer {
+//   margin-left: 20px; 
+//   display: flex; 
+//   overflow-x: auto;
+//   max-height: 400px; 
+//   min-height: 0;
+// }
+// .index-trailtainer::-webkit-scrollbar {    display: none;}
+
+// .trail-icc {
+//   display: flex; 
+// }
+
+// .item-locale {
+//   margin-top: 8px;
+//   font-size: 14px; 
+//   font-weight: 300;
+// }
+
+// // .trail-info {
+// //   position: absolute;
+// //   color: white; 
+// //   top: 150px; 
+// //   left: 24px; 
+// //   margin: auto; 
+// // }
+
+
+
+
+// // .trail-pic-container:hover {
+// //     position:relative;
+// //     top:-25px;
+// //     left:-35px;
+// //     width:500px;
+// //     height:auto;
+// //     display:block;
+// //     z-index:999;
+// // }
+
+
+// .truncated-name {
+//   padding-left: 20px; 
+//   font-weight: bold; 
+//   font-family: "Montserrat";
+//   color: rgb(92, 89, 89);
+//   padding-bottom: 20px;
+// }
+
+// .trail-item-difficulty {
+//     margin-top: 14px; 
+//     padding: 2px 12px;
+//     color: white;
+//     border-radius: 6px;
+//     font-family: "Montserrat";
+//     font-size: 11px;
+//     font-weight: 300;
+// }
+
+// .moderate {
+//     background-color: #5bbcec;
+// }
+
+// .hard {
+//     background-color: gray;
+// }
+
+// .easy {
+//     background-color: green;
+// }
+
+
+// .item-distance-div {
+//   margin-top: 10px; 
+// }
+
+// .item-difficulty-rating {
+//   margin-top: 8px; 
+// }
+
+// .item-distance {
+//   font-size: 14px; 
+//   font-weight: 300;
+// }
+
+// // .trail-pic-container {
+// //   // overflow: hidden; 
+// //   height: 163px; 
+// // }
+
+// .test {
+//   width: 320px; 
+//   margin-top: 25px;
+//   margin-bottom: 25px;
+// }
+
+
+
+
+// .title-box {
+//     position: relative;
+//     width: 1024px;
+//     margin: auto;
+
+//     .trail-title-content {
+//         position: absolute;
+//         color: white;
+//         top: 200px;
+//         left: 24px;
+//         margin: auto;
+
+
+//         .trail-difficulty {
+//             margin-top: 10px; 
+//             padding: 4px 14px;
+//             color: white;
+//             border-radius: 4px;
+//             font-family: "Montserrat";
+//             font-size: 11px;
+//         }
+
+//         .moderate {
+//             background-color: $button;
+//         }
+
+//         .hard {
+//             background-color: gray;
+//         }
+
+//         .easy {
+//             background-color: green;
+//         }
+
+//         h1 {
+//             color: white;
+//             font-size: 30px; 
+//             font-family: "Montserrat";
+//             font-weight: 600; 
+    
+//         }
+
+//         p {
+//             font-family: "Montserrat";
+//             font-weight: 300;
+//             font-size: 14px;
+//             padding: 8px 0;
+//             margin-top: 4px;
+//         }
+
+//         .difficulty-rating{
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: flex-start;
+//             align-items: center;
+
+//             p {
+//                 padding-left: 7px;
+//                 font-size: 12px;
+//                 line-height: .75;
+//             }
+//         }
+
+//         .react-stars > * {
+//             margin-left: 7px;
+
+//         }
+//     }
+
+    
+// }
+
+
+// .title-photo-box {
+//     width: 1024px;
+//     height: 312px;
+//     overflow: hidden;
+//     display: flex; 
+//     align-items: center;
+//     justify-content: center;
+//     margin: auto;
+
+//     img {
+//         width: 1024px;
+
+//     }
+// }
+
+// .trail-page-background {
+//     background-color: #F2F2F2;
+//     height: 100%;
+//     width: 100%;
+//     z-index: -1000;
+// }
+
+// .trail-actions-wrap{
+//     background: #428a13;
+//     height: 55px;
+//     width: 1024px;
+//     margin: auto;
+//     margin-bottom: 0;
+//     border-top: none;
+//     display: flex;
+//     justify-content: space-around;
+
+//     .trail-action {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         color: green;
+
+//         p {
+//             color: white;
+//             margin-top: 8px;
+//             font-family: "Montserrat";
+//         }
+
+//         a {
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             justify-content: space-between;
+//             cursor: pointer;
+//             background: inherit;
+//             border: none;
+//             outline: none;
+//             margin-top: -22px;
+//         }
+
+//         svg {
+//             font-size: 16px;
+//             padding: 15px;
+//             border-radius: 50%;
+//             box-shadow: 0 2px 4px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
+//             background-color: white;
+//         }
+//     }   
+
+
+// }
+
+// .trail-info{
+//     position: relative;
+//     width: 1024px;
+//     border: 1px solid #d6d6d6;
+//     background-color: white;
+//     margin: auto;
+//     display: grid;
+//     grid-template-columns: 66.6666667% 33.33333334%;
+// }
+
+// .trail-right {
+//     background-color:white;
+//     display: grid;
+//     grid-template-rows: 25%;
+//     width: 100%;
+//     margin: auto;
+//     margin-top: 5px;
+//     padding: 3px 0;
+
+//     .trail-map{
+//         width: inherit;
+//          padding-left: 5px;
+
+//         .trail-map-container {
+//             width: 330px;
+//             height: 280px;
+//             border-radius: 8px;
+//             padding: 4px;
+//             display: flex;
+//             cursor: pointer;
+//         }
+
+//     }
+// }
+
+// .trail-left {
+//     background-color: white;
+//     border-right: $contentBorder;
+
+// }
+
+// .trail-left-1 {
+//     background-color: white;
+//     font-family: "Montserrat";
+//     font-size: 18px;
+//     line-height: 1.44;
+//     color: $mediumGrey;
+//     font-weight: 375;
+//     padding: 20px 0;
+//     border-bottom: $contentBorder;
+//     margin: 0 24px;
+
+// }
+
+// .trail-left-2 {
+//     background-color: white;
+//     margin: 0 24px;
+//     padding-top: 24px;
+//     display: flex;
+//     flex-direction: row;
+//     text-align: left;
+//     justify-content: space-around;
+//     padding-bottom: 10px;
+
+//     .trail-stat {
+//         padding-bottom: 6px;
+//         flex: 1;
+
+//         p {
+//             font-family: "Montserrat";
+//             line-height: 1.44;
+//             color: $mediumGrey;
+//             font-weight: 375;
+//             font-size: 12px;
+//         }
+
+//         span {
+//             font-family: "Montserrat";
+//             color: $darkGrey;
+//             font-weight: 600;
+//             font-size: 15px;
+//             line-height: 1.38;
+//         }
+        
+//     }
+// }
+
+// .trail-left-3 {
+//     background-color: white;
+//     // height: 15%;
+//     font-family: "Montserrat";
+//     font-size: 18px;
+//     line-height: 1.44;
+//     color: $mediumGrey;
+//     font-weight: 375;
+//     padding: 20px 0;
+//     margin: 0 24px;
+    
+
+
+//     p {
+//         font-size: 16px;
+//     }
+// }
+
+// .trail-tab {
+//         font-family: "Montserrat";
+//         color: $darkGrey;
+//         font-weight: 600;
+//         font-size: 15px;
+//         line-height: 1.38;
+//         padding: 20px;
+//         background-color: #F2F2F2;
+// }
+
+
+// .nearby-trails-wrapper {
+//     width: 100%;
+//     grid-row: 2;
+//     margin-top: 20px;
+
+//     .nearby-trails{
+//         margin-left: 25px;
+//         margin-bottom: 25px;
+//         font-family: "Montserrat";
+//         color: $darkGrey;
+//         font-weight: 600;
+//         font-size: 18px;
+//         line-height: 1.38;
+//     }
+
+//     .nearby-trail-index {
+//         margin: auto; 
+//         margin-left: 25px;
+
+//         .nearby-trail-item {
+//             display: flex;
+//             flex-direction: column;
+//             width: 291px;
+//             height: 236px;
+//             border-radius: 8px;
+//             box-shadow: 0 2px 4px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
+//             background-color: #fff;
+//             overflow: hidden;
+//             cursor: pointer;
+//             position: relative;
+//             margin-bottom: 24px;
+
+//             img {
+//                 margin-top: -60px;
+//                 // height: 128px;
+//                 width: 291px;
+//                 border-radius: 0;
+//             }
+//         }
+
+//         .nearby-trail-index {
+//             padding-top: 20px;
+//             padding-bottom: 20px;
+
+   
+//         }
+//     }
+
+
+// }
+
+// .nearby-trail-item-content {
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     padding: 0 16px;
+//     padding-top: 4px;
+
+    
+//     h3 {
+//         white-space: nowrap;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//     }
+
+//      p {
+//         font-family: "Montserrat";
+//         line-height: 1;
+//         color: $mediumGrey;
+//         font-weight: 375;
+//         font-size: 14px;
+//         margin-bottom: 5px;
+//         margin-top: 5px;
+//      }
+
+//      .trail-description {
+//          margin-top: 24px;
+//          font-size: 16px;
+//      }
+
+//      .trail-difficulty {
+//         padding: 4px 12px;
+//         margin-right: 5px;
+//         color: white;
+//         border-radius: 8px;
+//         font-family: inherit;
+//         font-size: 11px;
+//         margin-bottom: 10px;
+//     }
+
+//     // .num-reviews {
+//     //     margin-left: 5px;
+//     // }
+
+//     .moderate {
+//         background-color: $button;
+//     }
+
+//     .hard {
+//         background-color: gray;
+//     }
+
+//     .easy {
+//         background-color: green;
+//     }
+
+//     .difficulty-rating {
+//         display: flex;
+//         flex-direction: row;
+//         align-items: center;
+
+//         span {
+//             margin-right: 5px;
+//         }
+        
+//     }
+// }
+
+
+// .review-text {
+//     padding-top: 10px;
+// }
+// .review-header {
+//     display: flex;
+//     flex-direction: column;
+//     flex: 1;
+//     margin-left: 10px;
+
+//     span {
+//         margin-right: 5px;
+//     }
+// }
+
+
+// .star-date {
+//     margin-top: 3px;
+//     display: flex;
+//     flex-direction: row;
+//     font-size: 14px;
+//     align-items: center;
+    
+//     p{ 
+//         margin-left: 5px;   
+//     }
+// }
+
+// .review-item {
+//     border-bottom: $contentBorder;
+//     padding: 20px 0;
+//     margin: 0 24px;
+//     font-family: "Montserrat";
+//     font-size: 16px;
+//     line-height: 1.44;
+//     color: $mediumGrey;
+//     font-weight: 375;
+
+//     p {
+//         font-family: "Montserrat";
+//     }
+// }
+
+// .review-pic-name {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .write-review-button {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 14px;
+//     font-weight: 600;
+//     padding: 10px 15px;
+//     width: 188px;
+//     height: 40px;
+//     border-radius: 8px;
+//     margin: 35px auto;
+//     background-color: green;
+//     border: 2px solid green;
+//     color: white;
+//     font-family: "Montserrat";
+// }
+
+// .write-review-button:hover{
+//     background-color: $buttonHoverGreen;
+//     border: 2px solid $buttonHoverGreen;
+//     cursor: pointer;
+// }
+
+// .trail-left-4{
+//     overflow-y: auto;
+//     height: 800px;
+// }
+.nearby-hikes-wrapper {
+    width: 100%;
+    grid-row: 2;
+    margin-top: 20px;
+
+    .nearby-trails{
+        margin-left: 25px;
+        margin-bottom: 25px;
+        font-family: "Montserrat";
+        color: gray;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.38;
+    }
+
+    .nearby-hike-index {
+        margin: auto; 
+        margin-left: 25px;
+
+        .nearby-hike-item {
+            display: flex;
+            flex-direction: column;
+            width: 291px;
+            height: 236px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
+            background-color: #fff;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            margin-bottom: 24px;
+
+            img {
+                margin-top: -60px;
+                // height: 128px;
+                width: 291px;
+                border-radius: 0;
+            }
+        }
+
+        .nearby-hike-index {
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+   
+        }
+    }
+
+
+}
+
+
+
 .index-trail-pic {
   transition: transform 0.3s ease; 
 }
@@ -117,266 +739,19 @@
 }
 
 
-
-
-.title-box {
-    position: relative;
-    width: 1024px;
-    margin: auto;
-
-    .trail-title-content {
-        position: absolute;
-        color: white;
-        top: 200px;
-        left: 24px;
-        margin: auto;
-
-
-        .trail-difficulty {
-            margin-top: 10px; 
-            padding: 4px 14px;
-            color: white;
-            border-radius: 4px;
-            font-family: "Montserrat";
-            font-size: 11px;
-        }
-
-        .moderate {
-            background-color: $button;
-        }
-
-        .hard {
-            background-color: gray;
-        }
-
-        .easy {
-            background-color: green;
-        }
-
-        h1 {
-            color: white;
-            font-size: 30px; 
-            font-family: "Montserrat";
-            font-weight: 600; 
-    
-        }
-
-        p {
-            font-family: "Montserrat";
-            font-weight: 300;
-            font-size: 14px;
-            padding: 8px 0;
-            margin-top: 4px;
-        }
-
-        .difficulty-rating{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-
-            p {
-                padding-left: 7px;
-                font-size: 12px;
-                line-height: .75;
-            }
-        }
-
-        .react-stars > * {
-            margin-left: 7px;
-
-        }
-    }
-
-    
-}
-
-
-.title-photo-box {
-    width: 1024px;
-    height: 312px;
-    overflow: hidden;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-
-    img {
-        width: 1024px;
-
-    }
-}
-
-.trail-page-background {
-    background-color: #F2F2F2;
-    height: 100%;
-    width: 100%;
-    z-index: -1000;
-}
-
-.trail-actions-wrap{
-    background: #428a13;
-    height: 55px;
-    width: 1024px;
-    margin: auto;
-    margin-bottom: 0;
-    border-top: none;
-    display: flex;
-    justify-content: space-around;
-
-    .trail-action {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: green;
-
-        p {
-            color: white;
-            margin-top: 8px;
-            font-family: "Montserrat";
-        }
-
-        a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            cursor: pointer;
-            background: inherit;
-            border: none;
-            outline: none;
-            margin-top: -22px;
-        }
-
-        svg {
-            font-size: 16px;
-            padding: 15px;
-            border-radius: 50%;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
-            background-color: white;
-        }
-    }   
-
+.show-outer-trailtainer {
+  display: flex; 
+  flex-direction: column; 
+  width: 350px; 
 
 }
 
-.trail-info{
-    position: relative;
-    width: 1024px;
-    border: 1px solid #d6d6d6;
-    background-color: white;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 66.6666667% 33.33333334%;
+.align-right-trailtainer {
+  float: right;
+  display: float; 
 }
 
-.trail-right {
-    background-color:white;
-    display: grid;
-    grid-template-rows: 25%;
-    width: 100%;
-    margin: auto;
-    margin-top: 5px;
-    padding: 3px 0;
-
-    .trail-map{
-        width: inherit;
-         padding-left: 5px;
-
-        .trail-map-container {
-            width: 330px;
-            height: 280px;
-            border-radius: 8px;
-            padding: 4px;
-            display: flex;
-            cursor: pointer;
-        }
-
-    }
-}
-
-.trail-left {
-    background-color: white;
-    border-right: $contentBorder;
-
-}
-
-.trail-left-1 {
-    background-color: white;
-    font-family: "Montserrat";
-    font-size: 18px;
-    line-height: 1.44;
-    color: $mediumGrey;
-    font-weight: 375;
-    padding: 20px 0;
-    border-bottom: $contentBorder;
-    margin: 0 24px;
-
-}
-
-.trail-left-2 {
-    background-color: white;
-    margin: 0 24px;
-    padding-top: 24px;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-around;
-    padding-bottom: 10px;
-
-    .trail-stat {
-        padding-bottom: 6px;
-        flex: 1;
-
-        p {
-            font-family: "Montserrat";
-            line-height: 1.44;
-            color: $mediumGrey;
-            font-weight: 375;
-            font-size: 12px;
-        }
-
-        span {
-            font-family: "Montserrat";
-            color: $darkGrey;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 1.38;
-        }
-        
-    }
-}
-
-.trail-left-3 {
-    background-color: white;
-    // height: 15%;
-    font-family: "Montserrat";
-    font-size: 18px;
-    line-height: 1.44;
-    color: $mediumGrey;
-    font-weight: 375;
-    padding: 20px 0;
-    margin: 0 24px;
-    
-
-
-    p {
-        font-size: 16px;
-    }
-}
-
-.trail-tab {
-        font-family: "Montserrat";
-        color: $darkGrey;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 1.38;
-        padding: 20px;
-        background-color: #F2F2F2;
-}
-
-
-.nearby-trails-wrapper {
+.nearby-hikes-wrapper {
     width: 100%;
     grid-row: 2;
     margin-top: 20px;
@@ -391,11 +766,11 @@
         line-height: 1.38;
     }
 
-    .nearby-trail-index {
+    .nearby-hike-index {
         margin: auto; 
         margin-left: 25px;
 
-        .nearby-trail-item {
+        .nearby-hike-item {
             display: flex;
             flex-direction: column;
             width: 291px;
@@ -416,7 +791,7 @@
             }
         }
 
-        .nearby-trail-index {
+        .nearby-hike-index {
             padding-top: 20px;
             padding-bottom: 20px;
 
@@ -427,144 +802,42 @@
 
 }
 
-.nearby-trail-item-content {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 0 16px;
-    padding-top: 4px;
-
-    
-    h3 {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-     p {
-        font-family: "Montserrat";
-        line-height: 1;
-        color: $mediumGrey;
-        font-weight: 375;
-        font-size: 14px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-     }
-
-     .trail-description {
-         margin-top: 24px;
-         font-size: 16px;
-     }
-
-     .trail-difficulty {
-        padding: 4px 12px;
-        margin-right: 5px;
-        color: white;
-        border-radius: 8px;
-        font-family: inherit;
-        font-size: 11px;
-        margin-bottom: 10px;
-    }
-
-    // .num-reviews {
-    //     margin-left: 5px;
-    // }
-
-    .moderate {
-        background-color: $button;
-    }
-
-    .hard {
-        background-color: gray;
-    }
-
-    .easy {
-        background-color: green;
-    }
-
-    .difficulty-rating {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        span {
-            margin-right: 5px;
-        }
-        
-    }
-}
 
 
-.review-text {
-    padding-top: 10px;
-}
-.review-header {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-left: 10px;
-
-    span {
-        margin-right: 5px;
-    }
-}
 
 
-.star-date {
-    margin-top: 3px;
-    display: flex;
-    flex-direction: row;
-    font-size: 14px;
-    align-items: center;
-    
-    p{ 
-        margin-left: 5px;   
-    }
-}
+// .trail-sidebar {
+//     width: 325px;
+//     border-left: $contentBorder;
+//     // display: none;
+// }
 
-.review-item {
-    border-bottom: $contentBorder;
-    padding: 20px 0;
-    margin: 0 24px;
-    font-family: "Montserrat";
-    font-size: 16px;
-    line-height: 1.44;
-    color: $mediumGrey;
-    font-weight: 375;
+// .nearby-trails-container {
+//     margin: 30px 10px 0 10px;
+//     font-family: "Montserrat";
+//     color: $grey;
+//     font-size: 0.9rem;
+//     line-height: 1.5rem;
 
-    p {
-        font-family: "Montserrat";
-    }
-}
+//     h2 {
+//         font-size: 1rem;
+//     }
+// }
 
-.review-pic-name {
-    display: flex;
-    flex-direction: row;
-}
+// .trail-sidebar {
+//   position: relative; 
+//   float: right;
+//   display: float;
+// }
 
-.write-review-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 15px;
-    width: 188px;
-    height: 40px;
-    border-radius: 8px;
-    margin: 35px auto;
-    background-color: green;
-    border: 2px solid green;
-    color: white;
-    font-family: "Montserrat";
-}
+// .nearby-trails-container {
+//   position: absolute;
+//   top: 544px;
+//   display: flex;
+//   flex: right; 
+// }
 
-.write-review-button:hover{
-    background-color: $buttonHoverGreen;
-    border: 2px solid $buttonHoverGreen;
-    cursor: pointer;
-}
-
-.trail-left-4{
-    overflow-y: auto;
-    height: 800px;
+.trail-sidebar {
+  width: 300px; 
+  height: 600px; 
 }

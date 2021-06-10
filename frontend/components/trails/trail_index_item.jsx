@@ -36,7 +36,8 @@ class TrailIndexItem extends React.Component {
   render() {
     const { trail, park } = this.props;
     // const { match: { url }} = this.props
-    debugger;
+    // debugger;
+
   
 
     const mainPageIndex = (
@@ -71,7 +72,7 @@ class TrailIndexItem extends React.Component {
           <Link to={`/trails/${trail.id}`} className="main-trail-card">
             <div className="">
               <div className="main-test">
-                <img className="main-index-trail-pic" src={trail.coverPhotoURL} />
+                <img className="index-trail-pic" src={trail.coverPhotoURL} />
 
                 <div className="main-truncated-name">
                   {this.truncateName(trail.name)}
@@ -102,7 +103,7 @@ class TrailIndexItem extends React.Component {
 
     return (
       <div>
-         { this.props.ownProps.match.url === '/trails/' ? showPageIndex : mainPageIndex }
+         { this.props.ownProps.match.url.startsWith('/trails/') ? showPageIndex : mainPageIndex }
       </div>
       // <Link to={`/trails/${trail.id}`} className="trail-card">
       //   <div className="">

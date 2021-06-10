@@ -25,53 +25,77 @@ class TrailIndex extends React.Component {
     if (parks === undefined) return null; 
 
 
-    debugger
+    // debugger
+      const mainIndex = (
+        <div>
+          <div className="outer-trailtainer">
+            <div className="index-trailtainer">
+              <div className="trail-icc">
+                {trails.map((trail) => (
+                  <TrailIndexItem
+                    key={trail.id}
+                    pic={trail.coverPhotoURL}
+                    trail={trail}
+                    park={this.props.parks.filter(
+                      (park) => park.id === trail.park_id
+                    )}
+                    // park={this.props.parks[trail.parkId]}
+                    ownProps={this.props.ownProps}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
 
+          <div className="outer-trailtainer">
+            <div className="index-trailtainer">
+              <div className="trail-icc">
+                {trails.reverse().map((trail) => (
+                  <TrailIndexItem
+                    key={trail.id}
+                    pic={trail.coverPhotoURL}
+                    trail={trail}
+                    // park={this.props.parks[trail.id]}
+                    // park={this.props.parks[trail.park_id]}
+                    park={this.props.parks.filter(
+                      (park) => park.id === trail.park_id
+                    )}
+                    ownProps={this.props.ownProps}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+
+      const showIndex = (
+        <div className='align-right-trailtainer'> 
+          <div className="show-outer-trailtainer">
+            <div className="show-index-trailtainer">
+              <div className="show-trail-icc">
+                {trails.map((trail) => (
+                  <TrailIndexItem
+                    key={trail.id}
+                    pic={trail.coverPhotoURL}
+                    trail={trail}
+                    // park={this.props.parks[trail.id]}
+                    // park={this.props.parks[trail.park_id]}
+                    park={this.props.parks.filter(
+                      (park) => park.id === trail.park_id
+                    )}
+                    ownProps={this.props.ownProps}
+                  />
+                ))}
+              </div>
+            </div>
+          </div> 
+        </div>
+      )
 
     return (
       <div>
-        <div className="outer-trailtainer">
-          <div className="index-trailtainer">
-            <div className="trail-icc">
-              {trails.map((trail) => (
-                <TrailIndexItem
-                  key={trail.id}
-                  pic={trail.coverPhotoURL}
-                  trail={trail}
-                  park={this.props.parks.filter(
-                    (park) => park.id === trail.park_id
-                  )}
-                  // park={this.props.parks[trail.parkId]}
-                  ownProps={this.props.ownProps}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="outer-trailtainer">
-          <div className="index-trailtainer">
-            <div className="trail-icc">
-              {trails.reverse().map((trail) => (
-                <TrailIndexItem
-                  key={trail.id}
-                  pic={trail.coverPhotoURL}
-                  trail={trail}
-                  // park={this.props.parks[trail.id]}
-                  // park={this.props.parks[trail.park_id]}
-                  park={this.props.parks.filter(
-                    (park) => park.id === trail.park_id
-                  )}
-                   ownProps={this.props.ownProps}
-   
-                />
-              ))}
-            </div>
-          </div>
-        </div>
-        {/* <div>
-           { this.props.match.params.url.startWith('/trails/') ? showPageIndex : mainPageIndex }
-         </div> */}
+        {this.props.match.url.startsWith('/trails/') ? showIndex : mainIndex }
       </div>
     );
   }

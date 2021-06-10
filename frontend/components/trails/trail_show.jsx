@@ -33,6 +33,9 @@ class TrailShow extends React.Component {
     if (trail === undefined) {
       return null;
     }
+   
+    const { trails } = this.props;
+    // const localTrails = trails.filter((trail) => trail.park_id === this.props.match.params)
 
 
     // this.setState({ num: num + 1})
@@ -68,10 +71,7 @@ class TrailShow extends React.Component {
               </a>
             </div>
             <div className="trail-action">
-              <a
-                target="_blank"
-                href="#"
-              >
+              <a target="_blank" href="#">
                 <FontAwesomeIcon icon={faShare} />
                 <p>Share</p>
               </a>
@@ -105,20 +105,28 @@ class TrailShow extends React.Component {
                 <p>{trail.description}</p>
               </div>
             </div>
-            <div className="trail-tab">
-            </div>
-            <div className="trail-left-4">
-            </div>
+            <div className="trail-tab"></div>
+            <div className="trail-left-4"></div>
           </div>
-          <div className="trail-right">
-            <div className="trail-map">
-            </div>
+          <div className="trail-right4">
+            {/* <div className="trail-map"></div> */}
             <div className="nearby-trails-wrapper">
               <h3 className="nearby-trails header-text3">Nearby Trails</h3>
+              <TrailIndexItemContainer />
             </div>
           </div>
         </div>
-        <TrailIndexItemContainer />
+        <div className="hike-right">
+          <div className="hike-map">
+            {/* <ParkMap parent="hike" location={thisHike} /> */}
+          </div>
+          <div className="trail-sidebar">
+            <div className="nearby-trails-container">
+              <h3 className="">Nearby Trails</h3>
+              {/* <NearbyHikeIndex hikes={nearbyHikes} park={thisHike.parkName} /> */}
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

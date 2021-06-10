@@ -17,7 +17,9 @@ class Park < ApplicationRecord
   validates :acreage, :contact, presence: true 
   validates :park_type, inclusion: { in: ['Local', 'Regional', 'State', 'National'] }
   
-  has_many :trails 
+  has_many :trails, 
+    foreign_key: :park_id, 
+    class_name: "Trail"
 
   has_many :userPhotos, 
     foreign_key: :trail_id, 

@@ -8,7 +8,8 @@ class TrailIndex extends React.Component {
   }
 
   componentDidMount() {
-    return this.props.fetchTrails();
+     this.props.fetchTrails();
+     this.props.fetchParks()
   }
 
   // componentDidUpdate(prevProps) {
@@ -18,11 +19,15 @@ class TrailIndex extends React.Component {
   // }
 
   render() {
-    let { trails } = this.props;
+    let { trails, parks } = this.props;
 
     if (trails === undefined) return null;
+    if (parks === undefined) return null; 
 
-    // debugger
+
+    
+
+
     return (
       <div>
         <div className="outer-trailtainer">
@@ -33,6 +38,7 @@ class TrailIndex extends React.Component {
                   key={trail.id}
                   pic={trail.coverPhotoUrl}
                   trail={trail}
+                  park={this.props.parks[trail.id]}
                 />
               ))}
             </div>
@@ -47,6 +53,7 @@ class TrailIndex extends React.Component {
                   key={trail.id}
                   pic={trail.coverPhotoUrl}
                   trail={trail}
+                  park={this.props.parks[trail.id]}
                 />
               ))}
             </div>

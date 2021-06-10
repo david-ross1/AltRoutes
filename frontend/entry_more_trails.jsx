@@ -5,6 +5,7 @@ import Root from "./components/root";
 
 
 import {fetchTrail, fetchTrails} from './actions/trail_actions'
+import { fetchParks } from './actions/park_actions'
 import { login } from "./util/session_api_util";
 
 
@@ -27,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   window.fetchTrail = fetchTrail
   window.fetchTrails = fetchTrails
+  window.fetchParks = fetchParks 
   window.dispatch = store.dispatch
   window.store = store 
   window.login = login 

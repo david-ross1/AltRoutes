@@ -1,4 +1,6 @@
-json.extract! @trail, :id, :name, :description, :distance, :elevation_gain, :difficulty, :park_id, :route_type, :lat, :lon
+json.extract! @trail, :id, :park_id, :name, :description, :distance, 
+                      :elevation_gain, :difficulty, :park_id, 
+                      :time, :route_type, :lat, :lon, :locale
 json.coverPhotoURL url_for(@trail.coverPhoto)
 json.parkName @trail.park.name 
 json.parkDescription @trail.park.description 

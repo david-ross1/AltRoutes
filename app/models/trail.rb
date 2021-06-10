@@ -8,9 +8,11 @@
 #  distance       :float            not null
 #  elevation_gain :integer          not null
 #  lat            :float            not null
+#  locale         :string
 #  lon            :float            not null
 #  name           :string           not null
 #  route_type     :string           not null
+#  time           :string           not null
 #  created_at     :datetime         not null
 #  updated_at     :datetime         not null
 #  park_id        :integer          not null

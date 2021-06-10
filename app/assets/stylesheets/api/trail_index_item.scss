@@ -4,7 +4,7 @@
 }
 
 .index-trail-pic:hover {
-  transform: scale(1.03); 
+  transform: scale(1.04); 
 }
 
 .index-trail-pic {
@@ -27,7 +27,12 @@
 
 .trail-icc {
   display: flex; 
+}
 
+.item-locale {
+  margin-top: 8px;
+  font-size: 12px; 
+  font-weight: 300;
 }
 
 // .trail-info {
@@ -84,11 +89,16 @@
 
 
 .item-distance-div {
-  margin-top: 5px; 
+  margin-top: 10px; 
 }
 
 .item-difficulty-rating {
-  margin-top: 10px; 
+  margin-top: 8px; 
+}
+
+.item-distance {
+  font-size: 12px; 
+  font-weight: 300;
 }
 
 // .trail-pic-container {

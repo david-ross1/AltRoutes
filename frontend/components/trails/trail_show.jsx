@@ -7,6 +7,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import React from "react";
+import NearbyTrailsContainer from '../trails/nearby_trails_container'
+
+
+
 class TrailShow extends React.Component {
   constructor(props) {
     super(props);

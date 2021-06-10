@@ -6,7 +6,6 @@ import { withRouter } from 'react-router-dom';
 const mapStateToProps = (state, ownProps) => ({
   trail: state.entities.trails[ownProps.match.params.trailId],
   currentUser: state.entities.users[state.session.id],
-  history: ownProps.history
 });
 
 

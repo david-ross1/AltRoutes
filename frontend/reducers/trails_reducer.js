@@ -9,7 +9,7 @@ const trailsReducer = (state = {}, action) => {
       return Object.assign({}, state, { [action.trail.id]: action.trail });
       case RECEIVE_TRAILS:
         // return { ...state, ...action.trails };
-        return Object.assign({}, state, {list: action.trails})
+        return Object.assign({}, state, {trail_list: action.trails})
     default:
       return state;
   }

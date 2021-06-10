@@ -16,6 +16,10 @@
 
 }
 
+// .outer-trailtainer {
+//   margin-left: 10px;
+// }
+
 .index-trailtainer {
   margin-left: 20px; 
   display: flex; 
@@ -31,7 +35,7 @@
 
 .item-locale {
   margin-top: 8px;
-  font-size: 12px; 
+  font-size: 14px; 
   font-weight: 300;
 }
 
@@ -97,7 +101,7 @@
 }
 
 .item-distance {
-  font-size: 12px; 
+  font-size: 14px; 
   font-weight: 300;
 }
 
@@ -108,4 +112,6 @@
 
 .test {
   width: 320px; 
+  margin-top: 25px;
+  margin-bottom: 25px;
 }

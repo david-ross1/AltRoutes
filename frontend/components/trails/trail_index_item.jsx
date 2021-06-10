@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 // const TrailIndexItem = ({ trail }) => {
 //   debugger
 //   return (
@@ -26,27 +25,19 @@ class TrailIndexItem extends React.Component {
     super(props);
   }
 
-  
   truncateName(name) {
     if (name.length > 29) {
-      return name.slice(0, 29) + '...' 
+      return name.slice(0, 29) + "...";
     } else {
       return name;
     }
   }
 
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
-
-
-    
-
-    const { trail, park } = this.props 
-debugger
-     
+    const { trail, park } = this.props;
+    debugger;
 
     return (
       <Link to={`/trails/${trail.id}`} className="trail-card">
@@ -57,17 +48,16 @@ debugger
             <div className="truncated-name">
               {this.truncateName(trail.name)}
 
+              <div className="item-locale">{trail.locale}</div>
 
-              <div className='item-locale'>{trail.locale}</div>
-              
               <div className="item-difficulty-rating">
                 <span className={`trail-item-difficulty ${trail.difficulty}`}>
                   {trail.difficulty}
                 </span>
                 <div className="item-distance-div">
                   <p className="item-distance">
-                    Length: {trail.distance} mi &nbsp; &nbsp; •
-                    &nbsp;{trail.time}
+                    Length: {trail.distance} mi &nbsp; &nbsp; • &nbsp; &nbsp;
+                    {trail.time}
                   </p>
                 </div>
               </div>
@@ -79,7 +69,4 @@ debugger
   }
 }
 
-export default TrailIndexItem; 
-
-
-
+export default TrailIndexItem;

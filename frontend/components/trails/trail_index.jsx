@@ -24,6 +24,14 @@ class TrailIndex extends React.Component {
     if (trails === undefined) return null;
     if (parks === undefined) return null; 
 
+    const showTrail = this.props.trail 
+    let localTrails; 
+    if (this.props.match.url.startsWith('/trails/')) {
+      localTrails = trails.filter((trail) => 
+       trail.parkId === showTrail.parkId
+    )}
+
+
     
     debugger
 
@@ -72,12 +80,13 @@ class TrailIndex extends React.Component {
         </div>
       );
 
-      const showIndex = (
+      
+      const showIndex = !localTrails ? null : (
         <div className='align-right-trailtainer'> 
           <div className="show-outer-trailtainer">
             <div className="show-index-trailtainer">
               <div className="show-trail-icc">
-                {trails.map((trail) => (
+                {localTrails.map((trail) => (
                   <TrailIndexItem
                     key={trail.id}
                     pic={trail.coverPhotoURL}

@@ -14,7 +14,4 @@ MoreTrails provides users detailed park and trail information, along with the op
 * Ruby on Rails
 * Jbuilder
  
-![image info](app/assets/images/swipe1.gif)
-
- 
-![ Alt text](swipe1.gif) / ! [](swipe1.gif)
+![til](./app/assets/images/swipe1.png)

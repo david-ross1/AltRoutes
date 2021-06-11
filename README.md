@@ -1,4 +1,4 @@
-#  <p style="text-align: center;"> More Trails </​p>
+#  <div align="center"> More Trails 
 #### [Live Site](https://more-trails.herokuapp.com/#/login)
 # About 
 MoreTrails is an AllTrails.com clone where users can connect with nature and each other through their explorations of regional parks and trails.

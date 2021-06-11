@@ -3,7 +3,9 @@
 # About 
 MoreTrails is an AllTrails.com clone where users can connect with nature and each other through their explorations of regional parks and trails.
 MoreTrails provides users detailed park and trail information, along with the opportunity for users to contribute reviews and photographs from their experiences.
-![image info](app/assets/images/curated.png
+ 
+![image info](app/assets/images/curated.png)
+ 
 ## Technologies
 * AWS cloud storage 
 * React

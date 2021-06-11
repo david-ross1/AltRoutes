@@ -7,4 +7,5 @@ MoreTrails backend is Ruby on Rails and PostgreSQL, frontend is React and Redux 
 
 ## Highlights
 
-![image info](app/assets/images/curated.png)
+![image info](app/assets/images/curated.png
+ 

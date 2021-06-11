@@ -28,8 +28,10 @@ class TrailIndex extends React.Component {
     let localTrails; 
     if (this.props.match.url.startsWith('/trails/')) {
       localTrails = trails.filter((trail) => 
-       trail.parkId === showTrail.parkId
+       trail.parkId === showTrail.parkId && trail.id !== showTrail.id 
     )}
+
+  
 
 
     

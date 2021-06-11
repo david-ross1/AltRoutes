@@ -17,6 +17,12 @@ u3 = User.create!(first_name: "Khalil", last_name: "Bey", email: "bey@khalil.com
 u4 = User.create!(first_name: "Jimonte", last_name: "Valdez", email: "valdez@jimonte.com", password: "nicebreeze")
 u5 = User.create!(first_name: "Priyanka", last_name: "Singh", email: "singh@priyanka.com", password: "nicebreeze")
 
+u6 = User.create!(first_name: "Kearin", last_name: "Ashby", email: "ashby@kearin.com", password: "nicebreeze")
+u7 = User.create!(first_name: "Carine", last_name: "Camaray", email: "singh@priyanka.com", password: "nicebreeze")
+u8 = User.create!(first_name: "Nathan", last_name: "Tsang", email: "tsang@nathan.com", password: "nicebreeze")
+u9 = User.create!(first_name: "Demitrias", last_name: "Farley", email: "farley@demitrias.com", password: "nicebreeze")
+u10 = User.create!(first_name: "Sara", last_name: "Beltran", email: "beltran@ruben.com", password: "nicebreeze")
+
 
 
 Park.destroy_all
@@ -104,7 +110,7 @@ t3 = Trail.create!(name: "Coast Trail to Bass Lake",
                     lon: -122.74705,
                     elevation_gain: 784,
                     locale: "Point Reyes National Seashore",
-                    time: "Est 2 h 57 m",
+                    time: "Est. 2 h 57 m",
                     park_id: p1.id)
 
 t3_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/bass_lake.png")
@@ -121,7 +127,7 @@ t4 = Trail.create!(name: "Limantour Beach Trail",
                     lon: -122.88281,
                     elevation_gain: 72,
                     locale: "Point Reyes National Seashore",
-                    time: "Est 2 h 11 m",
+                    time: "Est. 2 h 11 m",
                     park_id: p1.id)
 
 t4_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/04_limantour_beach.png")
@@ -137,7 +143,7 @@ t5 = Trail.create!(name: "Muddy Hollow, Coast Trail, Sky Trail, Laguna Trail",
                     lon: -122.86925,
                     elevation_gain: 1548,
                     locale: "Point Reyes National Seashore",
-                    time: "Est 6 h 2 m",
+                    time: "Est. 6 h 2 m",
                     park_id: p1.id)
 
 t5_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/muddy_hollow.png")
@@ -155,7 +161,7 @@ t6 = Trail.create!(name: "Mount Whitney Trail",
                     lat: 36.58747,
                     lon: -118.23942,
                     elevation_gain: 6646,
-                    time: "Est Multi-day",
+                    time: "Est. 13 h 20 m",
                     locale: "John Muir Wilderness",
                     park_id: p2.id)
 
@@ -171,7 +177,7 @@ t7 = Trail.create!(name: "General Sherman Tree Trail",
                     lat: 36.58163,
                     lon: -118.75145,
                     elevation_gain: 196,
-                    time: "Est 29 m",
+                    time: "Est. 29 m",
                     locale: "Sequoia National Park",
                     park_id: p2.id)
 
@@ -187,7 +193,7 @@ t8 = Trail.create!(name: "Heather Lake, Emerald Lake, and Pear Lake",
                     lat: 36.59654,
                     lon: -118.73438,
                     elevation_gain: 2936,
-                    time: "Est 5 h 58 m",
+                    time: "Est. 5 h 58 m",
                     locale: "Sequoia National Park",
                     park_id: p2.id)
 
@@ -203,7 +209,7 @@ t9 = Trail.create!(name: "Giant Forest Loop Trail",
                     lat: 36.58487,
                     lon: -118.74967,
                     elevation_gain: 1272,
-                    time: "Est 2 h 50 m",
+                    time: "Est. 2 h 50 m",
                     locale: "Sequoia National Park",
                     park_id: p2.id)
 
@@ -219,7 +225,7 @@ t10 = Trail.create!(name: "Johnsondale Bridge River Trail",
                     lat: 35.96948,
                     lon: -118.48731,
                     elevation_gain: 561,
-                    time: "Est 2 h 32 m",
+                    time: "Est. 2 h 32 m",
                     locale: "Sequoia National Park",
                     park_id: p2.id)
 
@@ -236,7 +242,7 @@ t11 = Trail.create!(name: "Eagle Peak Loop",
                     lat: 37.92096,
                     lon: -121.94127,
                     elevation_gain: 2198,
-                    time: "Est 4 h 33 m",
+                    time: "Est. 4 h 33 m",
                     locale: "Mount Diablo State Park",
                     park_id: p3.id)
 
@@ -253,7 +259,7 @@ t12 = Trail.create!(name: "Rock City, Wind Caves, and Sentinel Rock",
                     lat: 37.85008,
                     lon: -121.93384,
                     elevation_gain: 213,
-                    time: "Est 35 m",
+                    time: "Est. 35 m",
                     locale: "Mount Diablo State Park",
                     park_id: p3.id)
 
@@ -270,7 +276,7 @@ t13 = Trail.create!(name: "Mitchell Creek to Diablo Summit",
                     lat: 37.91983,
                     lon: -121.94195,
                     elevation_gain: 3858,
-                    time: "Est 7 h 42 m",
+                    time: "Est. 7 h 42 m",
                     locale: "Mount Diablo State Park",
                     park_id: p3.id)
 
@@ -287,7 +293,7 @@ t14 = Trail.create!(name: "Riggs Canyon Loop",
                     lat: 37.8131,
                     lon: -121.85744,
                     elevation_gain: 1230,
-                    time: "Est 4 h 28 m",
+                    time: "Est. 4 h 28 m",
                     locale: "Mount Diablo State Park",
                     park_id: p3.id)
 
@@ -304,7 +310,7 @@ t15 = Trail.create!(name: "Mount Diablo Grand Loop Trail",
                     lat: 37.87679,
                     lon: -121.93099,
                     elevation_gain: 1797,
-                    time: "Est 3 h 30 m",
+                    time: "Est. 3 h 30 m",
                     locale: "Mount Diablo State Park",
                     park_id: p3.id)
 
@@ -321,8 +327,8 @@ t16 = Trail.create!(name: "Meadows Canyon, Wildcat Gorge and Curran Trail Loop "
                     lat: 37.90515,
                     lon: -122.2445,
                     elevation_gain: 518,
-                    time: "Est 2 h 05 m",
-                    locale: "Berkeley, California",
+                    time: "Est. 2 h 05 m",
+                    locale: "Tilden Regional Park, Berkeley, California",
                     park_id: p4.id)
 
 t16_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/meadows.png")
@@ -338,8 +344,8 @@ t17 = Trail.create!(name: "Grizzly Peak to Skyline",
                     lat: 37.88324,
                     lon: -122.24464,
                     elevation_gain: 2444,
-                    time: "Est 6 h 20 m",
-                    locale: "Berkeley, California",
+                    time: "Est. 6 h 30 m",
+                    locale: "Tilden Regional Park, Berkeley, California",
                     park_id: p4.id)
 
 t17_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/cycling.png")
@@ -355,8 +361,8 @@ t18 = Trail.create!(name: "Seaview, Meadows Canyon, Wildcat Gorge",
                     lat: 37.8816,
                     lon: -122.22231,
                     elevation_gain: 1797,
-                    time: "Est 5 h 40 m",
-                    locale: "Berkeley, California",
+                    time: "Est. 5 h 04 m",
+                    locale: "Tilden Regional Park, Berkeley, California",
                     park_id: p4.id)
 
 t18_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/seaview.png")
@@ -369,11 +375,11 @@ t19 = Trail.create!(name: "Lomas Cantadas to Skyline",
                     difficulty: "moderate", 
                     distance: 11.0, 
                     route_type: "Out & back",
-                    lat: 370.87979,
+                    lat: 37.87979,
                     lon: 122.22145,
                     elevation_gain: 2309,
-                    time: "Est 6 h 12 m",
-                    locale: "Berkeley, California",
+                    time: "Est. 6 h 12 m",
+                    locale: "Tilden Regional Park, Berkeley, California",
                     park_id: p4.id)
 
 t19_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/llomas.png")
@@ -388,12 +394,88 @@ t20 = Trail.create!(name: "Nimitz Way",
                     lat: 37.90546,
                     lon: -122.24435,
                     elevation_gain: 662,
-                    time: "Est 3 h 55 m",
-                    locale: "Berkeley, California",
+                    time: "Est. 4 h 22 m",
+                    locale: "Tilden Regional Park, Berkeley, California",
                     park_id: p4.id)
 
 t20_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/nimitz.png")
 t20.coverPhoto.attach(io: t20_trailpic, filename: "nimitz.png")
+
+
+#______________________________________________________________________________________________
+
+t21 = Trail.create!(name: "Point Reyes Extended Loop", 
+                    description: 'Point Reyes Extended Loop is a 28.5 mile lightly trafficked loop trail located near Point Reyes Station, California that features a lake and is rated as difficult. The trail offers a number of activity options and is accessible year-round',
+                    difficulty: "hard", 
+                    distance: 28.5, 
+                    route_type: "Loop",
+                    lat: 37.98943,
+                    lon: -122.78829,
+                    elevation_gain: 4747,
+                    time: "Est. Multi-day",
+                    locale: "Point Reyes National Seashore",
+                    park_id: p1.id)
+
+t21_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/extended_loop.png")
+t21.coverPhoto.attach(io: t21_trailpic, filename: "extended_loop.png")
+
+
+#______________________________________________________________________________________________
+
+t22 = Trail.create!(name: "Tokopah Falls via Tokopah Valley Trail", 
+                    description: 'Tokopah Falls via Tokopah Valley Trail is a 4 mile heavily trafficked out and back trail located near Sequoia National Park, California that features a waterfall and is rated as moderate. The trail offers a number of activity options and is best used from March until November.',
+                    difficulty: "moderate", 
+                    distance: 4.0, 
+                    route_type: "Out & back",
+                    lat: 36.60485,
+                    lon: -118.72401,
+                    elevation_gain: 639,
+                    time: "Est. 2 h 55 m",
+                    locale: "Sequoia National Park",
+                    park_id: p2.id)
+
+t22_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.tokopah.png")
+t22.coverPhoto.attach(io: t22_trailpic, filename: "tokopah.png")
+
+
+#______________________________________________________________________________________________
+
+t23 = Trail.create!(name: "Stage Road to Mount Diablo Summit", 
+                    description: 'Stage Road to Mount Diablo Summit is a 14.3 mile loop trail located near Alamo, California that features beautiful wild flowers and is rated as difficult. The trail is primarily used for hiking, running, and nature trips.',
+                    difficulty: "hard", 
+                    distance: 14.3, 
+                    route_type: "Loop",
+                    lat: 37.86259,
+                    lon: -121.97883,
+                    elevation_gain: 3966,
+                    time: "Est. 10 h 50 m",
+                    locale: "Mount Diablo State Park",
+                    park_id: p3.id)
+
+t23_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/stage_road.png")
+t23.coverPhoto.attach(io: t23_trailpic, filename: "stage_road.png")
+
+
+#______________________________________________________________________________________________
+
+t24 = Trail.create!(name: "Bay Area Ridge Trail", 
+                    description: 'This hike is on a very nice portion of the Bay Area Ridge Trail which starts at the Tilden Regional Park and goes to Redwood regional park.  The hike covers EBMUD lands, and goes through several East Bay regional parks, including Tilden, Sibley, Huckleberry, and Redwood Regional Parks.  The terrain and scenery actually varies quite a bit, from open, dry hillsides, to fern and moss covered grottos.  Some portions are completely in the open, offering great views, while others are under extremely dense tree cover.  You actually walk over the Caldecott tunnel on this hike. Portions of the trail are in such dense greenery, you literally walk in tunnels through the brush.',
+                    difficulty: "hard", 
+                    distance: 9.9, 
+                    route_type: "Point to point",
+                    lat: 37.90503,
+                    lon: -122.24439,
+                    elevation_gain: 2122,
+                    time: "Est. 6 h 20 m",
+                    locale: "Tilden Regional Park, Berkeley, California",
+                    park_id: p4.id)
+
+t24_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/bay_area.png")
+t24.coverPhoto.attach(io: t24_trailpic, filename: "bay_area.png")
+
+
+#______________________________________________________________________________________________
+
 
 
 
@@ -574,7 +656,7 @@ r16 = Review.create!(
                          rating: 5, 
                          user_id: u1.id, 
                          trail_id: t4.id,
-                         text: "Absolutely gorgeous beach walk/hike. Beach is secluded so not too many people. Dogs are welcome on leashes and despite what All Trails is showing all trails are now open in the Point Reyes area. We 100% will be back to hike around the area and beach. ", 
+                         text: "Absolutely gorgeous beach walk/hike. Beach is secluded so not too many people. Dogs are welcome on leashes and trails are now open in the Point Reyes area. We 100% will be back to hike around the area and beach.", 
                          date: "2021-05-02"
                         )
 
@@ -895,9 +977,561 @@ r50 = Review.create!(
 
 
 
+# eagle peak loop  _____________________________________________________________________________________________________________
 
 
 
+r51 = Review.create!(
+                         rating: 4, 
+                         user_id: u6.id, 
+                         trail_id: t11.id,
+                         text: "Just a heads up, if you follow the direction on the map you get nice wide trails most of the way up, but a terrible single path, technical footing, scree and dry loose dirt much of the down. Also, the Mitchell canyon parking area doesn't technically open until 8am. We got there just before 7 and took a back road around, but got yelled at and told we'd get ticketed (though then the guy went and just opened the gate anyway). Also, don't forget your 6 dollar fee and a pen to fill out the envelope!", 
+                         date: "2021-06-29"
+                        )
 
 
+
+r52 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t11.id,
+                         text: "The trail was awesome.  But beware of loose rocks coming down from the summit. I fell on my backside twice but no injuries. An amazing hike with beautiful views. It was my first time doing this hike and it tested me but it was awesome.", 
+                         date: "2021-03-03"
+                        )
+
+
+
+r53 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t11.id,
+                         text: "Gorgeous hike with all the wildflowers out, and not too busy on a weekday. I did it clockwise and I'm glad I did. not so much to preserve my knees but because a narrow steep trail is less intimidating going uphill then down, given my agoraphobia. so a hard climb but then a nice peaceful descent along a wide gradual rough road.", 
+                         date: "2021-04-01"
+                        )
+
+
+
+r54 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t11.id,
+                         text: "Beautiful hike. Went clockwise to avoid the steep downhill climb, and highly recommend this. Some pretty tough cardio in the first ~4 miles if you keep a quick pace, but once you hit Deer Flats, it's easy gradual descent the rest of the way, makes for a nice cool down. Not nearly as exhausting as I anticipated - still energy to spare the rest of the day! Took us 3.5 hours including a lunch break at Eagle Peak.", 
+                         date: "2021-06-12"
+                        )
+
+
+
+r55 = Review.create!(
+                         rating: 5, 
+                         user_id: u11.id, 
+                         trail_id: t.id,
+                         text: "Hiking the trail clockwise will be gentle on the knees on the downhill and ensure a good workout on the uphill! The stretch around Eagle peak has some screen and can be slippery, so prepare accordingly", 
+                         date: "2021-02-10"
+                        )
+
+# rock city wind caves and sentinel rock _____________________________________________________________________________________________________________
+
+r56 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t2.id,
+                         text: "Are you on a trail? Are you not on a trail? who knows?! But part of the fun of this area in particular is just exploring so download the map ahead of time but don't worry about sticking too close to it.", 
+                         date: "2021-07-02"
+                        )
+
+
+
+r57 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t12.id,
+                         text: "Interesting area - super dry right now. If you park at this trailhead, there are several other enjoyable trails (not appearing on AllTrails) that are right in this area that are not too challenging. Take a hat and sunscreen. ", 
+                         date: "2021-06-19"
+                        )
+
+
+
+r58 = Review.create!(
+                         rating: 3, 
+                         user_id: u8.id, 
+                         trail_id: t12.id,
+                         text: "We got so lost! Not easy to identify what is a trail and what isn't. It's a beautiful area though!", 
+                         date: "2021-05-03"
+                        )
+
+
+
+r59 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t12.id,
+                         text: "Great trail but I would have gotten lost without the GPS map because there are a lot of intersecting trails. Beautiful views from Sentinel Rock.", 
+                         date: "2021-05-20"
+                        )
+
+
+
+r60 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t12.id,
+                         text: "Our first time to hike with my family. Real good rock formations but has lots of graffiti. We got off track because there’s lots of trails even though we used the recording. My family enjoyed the hike immensely. Just watch out for poison oak. The road going up here is winding and not for the faint hearted if you’re scared of heights specially sharing it with bikers. ", 
+                         date: "2021-04-07"
+                        )
+
+
+# mitchell creek to diablo summit_____________________________________________________________________________________________________________
+
+
+r61 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t13.id,
+                         text: "I got nothing but respect for this trail, put me in the hospital for 5 days for hiking it all in one day (FYI ran out of water for the last 3 hours of the hike) the quick change in elevation with the heat  really makes you put some respect on some of these trails.  Still... 5 stars!", 
+                         date: "2021-03-17"
+                        )
+
+
+
+r62 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t13.id,
+                         text: "I’m so proud to have gone through this one successfully. We’ve been working up to this level for months. The summit was less interesting to me than the trail itself, which was chock full of wildlife and wild flora when we went. Got a late start 11:30 am and we’re out of our camelback and thermoses by the summit, so we used the water fountain by the visitor center to refill for the way down. The way up we took the reviewers advice who said to start by going left in order to enjoy the other peaks on the way up. Definitely the right choice - more challenging and rewarding going up and rewardingly simple to get down. This was an amazing day of hiking. Also this time the visitor center was open at the staging area and super friendly and helpful there. ", 
+                         date: "2021-06-27"
+                        )
+
+
+
+r63 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t13.id,
+                         text: " The hike up took roughly 5-6 hours with lots of breaks. The hike down the gravely fire road took about 3-4 hours with lots of breaks. Saw more people the second day which was sunnier, including a few mountain bikes. The whole trail was beautiful - climbing up into the thick grey clouds was magical and waking up to them dissipating into little fluffy clouds and seeing the sun was very special. There are so many different kinds of wildflowers that are in bloom that the whole trail smelled floral and sweet from start to finish. I saw a coyote on the trail, as well as some quail, lots of bees and ground squirrels. I think I did a little closer to 15.5 miles but my navigator kept turning off for some reason ¯\_(ツ)_/¯", 
+                         date: "2021-04-15"
+                        )
+
+
+
+r64 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t13.id,
+                         text: "Great views and lots of wildflowers in bloom. There’s lots of poison oak on the way up so watch out! ", 
+                         date: "2021-05-25"
+                        )
+
+
+
+r65 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t13.id,
+                         text: "The trail is hard but worth it. It took us 9 hours with a generous stop for lunch and another at the top. The top was magnificent, we could see from the Golden Gate to the Sierras. We started at 8:30 am from the parking lot, which was filling up fast.", 
+                         date: "2021-03-01"
+                        )
+
+#  riggs canyon loop _____________________________________________________________________________________________________________
+
+r66 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t14.id,
+                         text: "Very nice trial. Great views, with parts that are shaded and some that are out in the open. Beautiful all around.", 
+                         date: "2021-04-24"
+                        )
+
+
+
+r67 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t14.id,
+                         text: "This was a top notch hike trail with lots of shade and very few people. I don't think it makes much difference, but I noticed that going clockwise you'd get the one bit of sun-exposed grade going downhill. For a trail of this length, it doesn't get much easier apart from the Bay Shoreline & Slough trails.", 
+                         date: "2021-05-02"
+                        )
+
+
+
+r68 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t14.id,
+                         text: "Nice trail. Very few people. Probably saw 10 folks in a 8 mile loop. Good to experience the nature!", 
+                         date: "2021-03-15"
+                        )
+
+
+
+r69 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t14.id,
+                         text: "it was beautiful, peaceful, and calm. Well shaded and not too hard.", 
+                         date: "2021-03-23"
+                        )
+
+
+
+r70 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t14.id,
+                         text: "Really great trail with lots of landscape variety and some nice ups and downs. Great lunch spot looking out towards Mt Diablo", 
+                         date: "2021-03-28"
+                        )
+
+# Mt diablo grand loop trail_____________________________________________________________________________________________________________
+
+
+r71 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t15.id,
+                         text: "On a Wednesday afternoon, we didn’t see a single person on the whole trail. There is near constant views and a lot of wildlife to observe. We saw several lizards (including a horned lizard that looked like a tiny dinosaur!), deer, and a huge bee hive. We went up to the summit instead of going around it like this trail listing suggests. So the hike ended up being about 7.3 miles and 2100 ft of elevation gain. Some parts are very steep. Be prepared with food, sunscreen and a lot of water!", 
+                         date: "2021-06-23"
+                        )
+
+
+
+r72 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t15.id,
+                         text: "Beautiful hike. Has some shade. Beautiful scenery. Took a very steep slippery detour. Totally worth it at the top.", 
+                         date: "2021-02-23"
+                        )
+
+
+
+r73 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t15.id,
+                         text: "Good variety of up and downs. Poles are definitely recommended! The hard rating is accurate.", 
+                         date: "2021-06-29"
+                        )
+
+
+
+r74 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t15.id,
+                         text: "Beautiful views the whole way. Still decent wildflowers in the end of May. We also saw a big snake right on the trail. Bring lots of water, very exposed and sunny. Lots of poison oak in places. Keep an eye on your map and the trail sign posts, as there are a couple turns that are easy to miss if you’re not paying attention. 30 minute drive from park gate to trailhead; have to go slow for bicycles.", 
+                         date: "2021-03-20"
+                        )
+
+
+
+r75 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t15.id,
+                         text: "It was really difficult but the views are incredible!", 
+                         date: "2021-04-10"
+                        )
+
+#_meadows canyon, wildcat gorge____________________________________________________________________________________________________________
+
+
+r76 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t16.id,
+                         text: "Getting onto the path by the creek is hard - very steep descent with ruts, kind of hard to find the right trail. But after that, lovely. Walked in late April, and there was still some running water in the creek. Mix of shade and sun, more easy than moderate.", 
+                         date: "2021-04-11"
+                        )
+
+
+
+r77 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t16.id,
+                         text: "Nice, mostly shaded hike. The air smelled lovely of eucalyptus in the groves and incredibly fresh among the redwoods. This was a pretty heavily trafficked loop on a Saturday afternoon. The trail was super compacted, and extremely cracked from tree roots and minimal rainfall. Multiple groups of people were not wearing masks and walking 2 across, when some of the paths were not wide enough for safe social distancing. It was frustrating to constantly have to pull off to the side to make room for those people; and for that reason I give this route 4 stars. On a weekday in the middle of the day I’m sure this would be less of an issue. Be kind and wear a mask. ", 
+                         date: "2021-04-17"
+                        )
+
+
+
+r78 = Review.create!(
+                         rating: 4, 
+                         user_id: u8.id, 
+                         trail_id: t16.id,
+                         text: "Great trail and easy to access from Berkeley.  As of 12/28 the conditions are very muddy so plan accordingly with proper shoes and maybe a hiking pole.", 
+                         date: "2021-05-01"
+                        )
+
+
+
+r79 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t16.id,
+                         text: "Great hike with wide trails and expansive views. Great for bringing dogs. Nice climbs but nothing too steep.", 
+                         date: "2021-03-19"
+                        )
+
+
+
+r80 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t16.id,
+                         text: "Nice short loop in Tilden! Trails are nice and none of it is too steep.", 
+                         date: "2021-05-02"
+                        )
+
+#_grizzly peak to skyline____________________________________________________________________________________________________________
+
+r81 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t17.id,
+                         text: "A lovely out and back that mainly follows the Bay Area Ridge trail. Nice to cover some distance and make the connections between parks", 
+                         date: "2021-04-24"
+                        )
+
+
+
+r82 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t17.id,
+                         text: "Really nice change in elevation. Has a few steep uphills sprinkled throughout the hike but nothing absolutely terrible. I went off the main path on the Lupine trail on the way back to catch a view. Parts of the trail have a lot of vegetation over it but was always clear where the trail was.", 
+                         date: "2021-05-13"
+                        )
+
+
+
+r83 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t17.id,
+                         text: "Solid, pretty decent for trail running. The morning fog and mist is absolutely unbeatable and the views atop Vollmer Peak are worth all the effort ", 
+                         date: "2021-06-01"
+                        )
+
+
+
+r84 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t17.id,
+                         text: " Wildflowers are awesome right now- get out there if you can!! Tree work happening on Grizzly Peak trail, according to signage, but no activity when I hiked. I saw a coyote and lots of great birds. This trail passes through a few trailheads at which there are restrooms available.", 
+                         date: "2021-07-02"
+                        )
+
+
+
+r85 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t17.id,
+                         text: "It’s was shaded about 50% of the trail. Started at Grizzly Peak trailhead. On April first there was trail maintenance on Skyline that prevented me from completing the last mile before turning around.", 
+                         date: "2021-07-23"
+                        )
+
+
+#_seaview, meadows canyon, wildcat gorge____________________________________________________________________________________________________________
+
+r86 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t18.id,
+                         text: "Lovely loop that covers most of Tilden Park! One section past Lake Anza is steep, but the views are great. Trails in excellent shape. Beautiful flowers blooming in the Spring! ", 
+                         date: "2021-05-01"
+                        )
+
+
+
+r87 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t18.id,
+                         text: "This has to be one of the best hikes in the bay area I've ever done! Amazing views of entire north bay including San Francisco and golden gate bridge with lots of different terrain.", 
+                         date: "2021-07-11"
+                        )
+
+
+
+r88 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t18.id,
+                         text: "I’ve been here a few times and it’s a really nice hike. Can get pretty crowded, and there are lots of bikes and dogs. One thing I’d note, a ton of dogs off leash, and a lot of them kinda wander which can be a pain if you’re walking your dog on leash. I take my pup here and we tend to hike at a pretty brisk pace, so it can be a tad annoying to have to stop and say hi to every dog that approaches. Also, if you have a dog that’s a little leash reactive, it’s probably not a great trail for the aforementioned reason", 
+                         date: "2021-07-01"
+                        )
+
+
+
+r89 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t18.id,
+                         text: "Truly one of the best, most complete trails in Tilden with views of everything. You’ll love this one!", 
+                         date: "2021-07-04"
+                        )
+
+
+
+r90 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t18.id,
+                         text: "The hike started off very beautiful we parked by the train and took the Seaview trail. Lots of trees and shade starts up hill right away. When you get to the peak you can see San Francisco and San Pablo Reservoir so pretty. But there is multiple trails out there and the sign post do not lead you very well. We ended up on a cement road and walked back for several miles up hill and did not see one trail sign , thankfully there is service out there to use gps. Ended doing about 8 miles in 3 hours ", 
+                         date: "2021-03-04"
+                        )
+#_____________________________________________________________________________________________________________
+
+
+r91 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t19.id,
+                         text: "From Tilden to Sibley to Huckleberry, loop through Redwood and back. Amazing views and awesomely insane workout. Connecting all 4 parks, from Berkeley to Oakland and back. Cool to pass over the Caldecott tunnel! Lots of bunnies and birds throughout the trails. Highly recommended, but you can do smaller hikes throughout any of the regionals. We are blessed with some beautiful parks in the Bay Area. Enjoy getting into nature.", 
+                         date: "2021-03-05"
+                        )
+
+
+
+r92 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t19.id,
+                         text: "This is a nice hike, especially if you live in Oakland or Berkeley and just want to practice going a longish distance. I just didn't like hearing cars rush by on the highway for the first 3 miles. It was like a constant white noise sound in the air.  It eventually gets quieter. The chaparral is nice, and I saw a non-poisonous snake on trail! I liked that it passed through a couple parks. It was encouraging each time I crossed a border into a new park. And the bathroom at Sibley was really convenient.", 
+                         date: "2021-03-19"
+                        )
+
+
+
+r93 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t19.id,
+                         text: "This portion of Bay Area Ridge Trail takes you from Tilden to Redwood Regional and passes by Sibley and Huckleberry.  The foliage changes from dry at the start of the hike and becomes progressively more lush and wooded as you get closer to Huckleberry Nature area.  The hike isn't too difficult.  The only hard climb is when you are approaching Sibley and there are restrooms and water fountains at the staging area when you crest the hill.", 
+                         date: "2021-04-22"
+                        )
+
+
+
+r94 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t19.id,
+                         text: "Great hike that was done as an out and back that goes through several regional parks including Tilden, Sibley, Huckleberry and Redwood.  There are some nice hills and some great views.  It's very good to do on a nice, dry winter day or in the spring when everything is green.", 
+                         date: "2021-05-14"
+                        )
+
+
+
+r95 = Review.create!(
+                         rating: 4, 
+                         user_id: u10.id, 
+                         trail_id: t19.id,
+                         text: "If you don't have time (or want) to out & back best to shuttle with someone between the two trailheads because getting an Uber was impossible. ", 
+                         date: "2021-07-02"
+                        )
+
+#_____________________________________________________________________________________________________________
+
+r96 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t20.id,
+                         text: "Gorgeous views of the reservoirs, rolling hills and the bay. I did a 4 mile run out and back. Plenty of room for runners, bicyclists and pedestrians. At about 3.5 miles there is a steep incline but besides that it is all gradual inclines. Saw cows and quail that day. Parking gets full FAST! I arrived around 9am and had to park on the side, so get here early. Plus it started to heat up by 10:30am and there are parts of no shade. Loved it!", 
+                         date: "2021-04-23"
+                        )
+
+
+
+r97 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t20.id,
+                         text: "This is my favorite run in the Bay Area. This trail is worth it to walk, run, or bike, but I highly recommend leaving enough time to do the full 8 miles — the last 1.5 miles or so before the turnaround is the best part (although it's all great) and the old Nike missile site at the turnaround has spectacular views.", 
+                         date: "2021-05-07"
+                        )
+
+
+
+r98 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t20.id,
+                         text: "Only hiked to Wildcat Canyon and back but the views on the way were fantastic! Lovely hike during Winter since its not hot. Great tree area. The pavement is really nice so you and your dog don't get as dirty. Highly recommend. ", 
+                         date: "2021-03-08"
+                        )
+
+
+
+r99 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t20.id,
+                         text: "Amazing views throughout, and gets better past 3 miles. Perfect hike for an overcast day.", 
+                         date: "2021-06-17"
+                        )
+
+
+
+r100 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t20.id,
+                         text: "Love this trail. We have been twice - my husband runs and I walk, then we meet up. It’s a nice easy walk and run with minimal elevation changed and fully paved. The first time we went it was completely foggy and therefore not as impressive. But the second time, the views were great! Had no idea I could run into cow pastures on the same trail as a view of the Golden Gate Bridge.", 
+                         date: "2021-05-10"
+                        )
+#_____________________________________________________________________________________________________________
+
+
+r101 = Review.create!(
+                         rating: 5, 
+                         user_id: u6.id, 
+                         trail_id: t21.id,
+                         text: "", 
+                         date: "2021-03-20"
+                        )
+
+
+
+r102 = Review.create!(
+                         rating: 5, 
+                         user_id: u7.id, 
+                         trail_id: t21.id,
+                         text: "", 
+                         date: "2021-04-11"
+                        )
+
+
+
+r103 = Review.create!(
+                         rating: 5, 
+                         user_id: u8.id, 
+                         trail_id: t21.id,
+                         text: "", 
+                         date: "2021-04-10"
+                        )
+
+
+
+r104 = Review.create!(
+                         rating: 5, 
+                         user_id: u9.id, 
+                         trail_id: t21.id,
+                         text: "", 
+                         date: "2021-03-20"
+                        )
+
+
+
+r105 = Review.create!(
+                         rating: 5, 
+                         user_id: u10.id, 
+                         trail_id: t21.id,
+                         text: "", 
+                         date: "2021-03-23"
+                        )
+#_____________________________________________________________________________________________________________
 

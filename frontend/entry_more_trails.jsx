@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");
   ReactDOM.render(<Root store={store} />, root);
 
-  window.fetchTrail = fetchTrail
-  window.fetchTrails = fetchTrails
-  window.fetchParks = fetchParks 
-  window.dispatch = store.dispatch
-  window.store = store 
-  window.login = login 
+  // window.fetchTrail = fetchTrail
+  // window.fetchTrails = fetchTrails
+  // window.fetchParks = fetchParks 
+  // window.dispatch = store.dispatch
+  // window.store = store 
+  // window.login = login 
 });

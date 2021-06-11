@@ -17,11 +17,11 @@ u3 = User.create!(first_name: "Khalil", last_name: "Bey", email: "bey@khalil.com
 u4 = User.create!(first_name: "Jimonte", last_name: "Valdez", email: "valdez@jimonte.com", password: "nicebreeze")
 u5 = User.create!(first_name: "Priyanka", last_name: "Singh", email: "singh@priyanka.com", password: "nicebreeze")
 
-u6 = User.create!(first_name: "Kearin", last_name: "Ashby", email: "ashby@kearin.com", password: "nicebreeze")
-u7 = User.create!(first_name: "Carine", last_name: "Camaray", email: "singh@priyanka.com", password: "nicebreeze")
+u6 = User.create!(first_name: "Ashby", last_name: "Kearnin", email: "ashby@kearnin.com", password: "nicebreeze")
+u7 = User.create!(first_name: "Jaime", last_name: "Camaray", email: "camaray@jaime.com", password: "nicebreeze")
 u8 = User.create!(first_name: "Nathan", last_name: "Tsang", email: "tsang@nathan.com", password: "nicebreeze")
 u9 = User.create!(first_name: "Demitrias", last_name: "Farley", email: "farley@demitrias.com", password: "nicebreeze")
-u10 = User.create!(first_name: "Sara", last_name: "Beltran", email: "beltran@ruben.com", password: "nicebreeze")
+u10 = User.create!(first_name: "Jennifer", last_name: "Ong", email: "ong@jennifer.com", password: "nicebreeze")
 
 
 
@@ -434,7 +434,7 @@ t22 = Trail.create!(name: "Tokopah Falls via Tokopah Valley Trail",
                     locale: "Sequoia National Park",
                     park_id: p2.id)
 
-t22_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/.tokopah.png")
+t22_trailpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/tokopah.png")
 t22.coverPhoto.attach(io: t22_trailpic, filename: "tokopah.png")
 
 
@@ -1023,8 +1023,8 @@ r54 = Review.create!(
 
 r55 = Review.create!(
                          rating: 5, 
-                         user_id: u11.id, 
-                         trail_id: t.id,
+                         user_id: u10.id, 
+                         trail_id: t11.id,
                          text: "Hiking the trail clockwise will be gentle on the knees on the downhill and ensure a good workout on the uphill! The stretch around Eagle peak has some screen and can be slippery, so prepare accordingly", 
                          date: "2021-02-10"
                         )
@@ -1490,8 +1490,8 @@ r101 = Review.create!(
                          rating: 5, 
                          user_id: u6.id, 
                          trail_id: t21.id,
-                         text: "", 
-                         date: "2021-03-20"
+                         text: "Just completed this one with a couple friends 3-21 - 3-23. We had a lot of fun. We didn't do the exact trail on here but still ended up clocking about 28.5 miles over 3 days. Wildcat is an awesome campground. Stayed at site 5 and it was pretty solid. Everything promised! If I were to go again, I would bring more water resistant gear, not because of rain but because of high wet brush. Beautiful way to see the full coast line, hills, and lakes of the area. The terrain and scenery varies quite a bit, and so can the weather.  This is a long trail, bring layers!", 
+                         date: "2021-03-23"
                         )
 
 
@@ -1499,8 +1499,8 @@ r101 = Review.create!(
 r102 = Review.create!(
                          rating: 5, 
                          user_id: u7.id, 
-                         trail_id: t21.id,
-                         text: "", 
+                         trail_id: t22.id,
+                         text: "Elevation grade was very gradual, with a slightly more challenging final half mile. Well maintained trail, follwing near the river almost the entire time with plenty of spots to step aside and take a rest, if needed. I wouldn't call it easy, but definitely DOABLE, and a what a magnificent payoff of a view at the end. Glad we went all the way. Completely worth it!!! ", 
                          date: "2021-04-11"
                         )
 
@@ -1509,8 +1509,8 @@ r102 = Review.create!(
 r103 = Review.create!(
                          rating: 5, 
                          user_id: u8.id, 
-                         trail_id: t21.id,
-                         text: "", 
+                         trail_id: t23.id,
+                         text: "This is a fabulous hike. Definitely one of the more difficult hikes on Diablo. A clear winter day gave me great views. This is a great training hike; it’s got good gain, a variety of terrain and decent mileage. Stoked!", 
                          date: "2021-04-10"
                         )
 
@@ -1519,19 +1519,10 @@ r103 = Review.create!(
 r104 = Review.create!(
                          rating: 5, 
                          user_id: u9.id, 
-                         trail_id: t21.id,
-                         text: "", 
+                         trail_id: t24.id,
+                         text: "Gorgeous hike, mostly shaded throughout. Lots of dense, cool forest. Great views. The inclines can get pretty tough and there are a lot of them. Pretty challenging overall but very rewarding.", 
                          date: "2021-03-20"
                         )
 
-
-
-r105 = Review.create!(
-                         rating: 5, 
-                         user_id: u10.id, 
-                         trail_id: t21.id,
-                         text: "", 
-                         date: "2021-03-23"
-                        )
 #_____________________________________________________________________________________________________________
 

@@ -52,7 +52,6 @@ class TrailIndex extends React.Component {
                     park={this.props.parks.filter(
                       (park) => park.id === trail.park_id
                     )}
-                    // park={this.props.parks[trail.parkId]}
                     ownProps={this.props.ownProps}
                   />
                 ))}

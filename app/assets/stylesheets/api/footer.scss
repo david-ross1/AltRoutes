@@ -1,50 +1,42 @@
-
-
-.footer-content {
-    // background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding-bottom: 3vh;
-    width: 100vw;
-    // z-index: -99;
-}
-
 footer {
-    display: flex;
-    align-items: center;
-    // background-color: white;
-    height: 100px;
-}
-
-.footer-logo {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat';
-    color: gray;
-    font-size: 40px;
-    font-weight: 500;
-
-    a {
-        flex-direction: row;
-        display: flex;
-        align-items: baseline;
-    }
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
 }
 
 .links a {
-    padding: 15px;
-    padding-bottom: 0;
-    color: gray;
-    cursor: pointer
+  padding: 15px;
+  padding-bottom: 0;
+  color: gray;
+  cursor: pointer
 }
 
-
 .footer-mountain-logo {
-    color: green;
-    margin: 8px;
-    font-size: 32px;
+  color: green;
+  margin: 8px;
+  font-size: 32px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-logo {
+  align-items: center;
+  font-family: 'Montserrat';
+  color: gray;
+  font-size: 35px;
+  font-weight: 500;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  a {
+    flex-direction: row;
+    display: flex;
+    align-items: baseline;
+  }
 }

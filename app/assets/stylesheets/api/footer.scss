@@ -1,42 +1,43 @@
 footer {
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  display: flex;
+  height: 140px;
 }
 
 .links a {
+  color: gray;
+  cursor: pointer;
   padding: 15px;
   padding-bottom: 0;
-  color: gray;
-  cursor: pointer
 }
 
 .footer-mountain-logo {
-  color: green;
   margin: 8px;
+  color: green;
   font-size: 32px;
 }
 
 .footer-content {
-  display: flex;
   align-items: center;
-  width: 100%;
+  display: flex;
+  width: 100vw;
 }
 
 .footer-logo {
-  align-items: center;
-  font-family: 'Montserrat';
   color: gray;
-  font-size: 35px;
-  font-weight: 500;
+  justify-content: center;
   flex: 1;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  font-size: 40px;
 
   a {
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     align-items: baseline;
   }
 }
+

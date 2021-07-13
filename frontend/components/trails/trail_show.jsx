@@ -78,7 +78,7 @@ class TrailShow extends React.Component {
               </a>
             </div>
             <div className="trail-action">
-              <a target="_blank" href="#">
+              <a target="_blank" href="https://wwww.facebook.com/">
                 <FontAwesomeIcon icon={faShare} />
                 <p>Share</p>
               </a>

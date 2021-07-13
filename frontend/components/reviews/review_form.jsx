@@ -120,7 +120,7 @@ class ReviewForm extends React.Component {
                                     className="review-text-input"
                                     value={text}
                                     onChange={this.update("text")}
-                                    placeholder='write a comment...'
+                                    placeholder='write a review...'
                                 />
                             </div>
                         </div>

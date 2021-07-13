@@ -38,7 +38,7 @@ class ReviewIndex extends React.Component {
             
             <div>
                 {
-                    this.props.reviews.map(review => {
+                    this.props.reviews.reverse().map(review => {
                         // console.log("Yo From ReviewIndex Map", review)
                         return (
                             <ReviewItem

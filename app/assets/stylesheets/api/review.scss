@@ -132,14 +132,29 @@
 }
 .review-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
     margin-top: 10px;
+    padding-right: 30px; 
+    
+}
+
+
+.rev-button {
+  background: #428A13; 
+  width: 170px; 
+  height: 40px; 
+  border-radius: 5px; 
+  text-align: center;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 14px; 
 }
 
 .rev-button-1 {
-    height: 30px;
-    width: 114px;
+    height: 40px;
+    width: 170px;
     background-color: #428A13;
     border-radius: 5px;
     justify-content: center;
@@ -162,8 +177,8 @@
 }
 
 .rev-button-2 {
-    height: 30px;
-    width: 114px;
+    height: 40px;
+    width: 170px;
     background-color: #428A13;
     border-radius: 5px;
     justify-content: center;
@@ -244,7 +259,15 @@
     font-family: 'Montserrat';
     font-size: 14px; 
     color: rgb(86, 83, 83);
-    line-height:1.5em;
-
+    line-height:1.6em;
 }
 
+.reviews-header {
+  font-family: "Montserrat";
+  font-size: 15px;
+  width: 30px; 
+  font-weight: 600;
+  color:rgb(80, 79, 79);
+  margin-left: 20px; 
+
+}

@@ -35,7 +35,7 @@ class TrailIndex extends React.Component {
 
 
     
-    debugger
+ 
 
 
     // debugger

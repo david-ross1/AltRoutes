@@ -12,8 +12,8 @@ export const clearSearchResults = () => ({
   type: CLEAR_SEARCH_RESULTS,
 });
 
-export const fetchSearchResuts = (query) => (dispatch) =>
-  SearchApiUtil.fetchSearchResults(query).then((results) =>
+export const fetchSearchResults = query => dispatch => {
+  return SearchAPIUtil.fetchSearchResults(query).then(results =>
     dispatch(receiveSearchResults(results))
   );
- 
+};

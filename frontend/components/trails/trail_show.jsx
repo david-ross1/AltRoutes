@@ -113,17 +113,6 @@ class TrailShow extends React.Component {
               </div>
             </div>
             <div className="trail-tab"></div>
-            <div className="trail-left-4"></div>
-          </div>
-          <div className="trail-right4">
-            {/* <div className="trail-map"></div> */}
-            <div className="nearby-trails-wrapper">
-              <h3 className="nearby-trails header-text3">Nearby Trails</h3>
-              <TrailIndexItemContainer />
-            </div>
-          </div>
-        </div>
-
         <div className="something">
           <div className="reviews-container">
             <div className="reviews-content">
@@ -147,6 +136,17 @@ class TrailShow extends React.Component {
             </div>
           </div>
         </div>
+            <div className="trail-left-4"></div>
+          </div>
+          <div className="trail-right4">
+            {/* <div className="trail-map"></div> */}
+            <div className="nearby-trails-wrapper">
+              <h3 className="nearby-trails header-text3">Nearby Trails</h3>
+              <TrailIndexItemContainer />
+            </div>
+          </div>
+        </div>
+
       </div>
     );
   }

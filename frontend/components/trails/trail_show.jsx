@@ -72,13 +72,16 @@ class TrailShow extends React.Component {
               </a>
             </div>
             <div className="trail-action">
-              <a href="javascript:window.print();">
+              <a href="javascript:window.print()" target="_blank">
                 <FontAwesomeIcon icon={faPrint} />
                 <p>Print map</p>
               </a>
             </div>
             <div className="trail-action">
-              <a target="_blank" href="https://wwww.facebook.com/">
+              <a
+                target="_blank"
+                href="https://wwww.facebook.com/"
+              >
                 <FontAwesomeIcon icon={faShare} />
                 <p>Share</p>
               </a>
@@ -113,40 +116,39 @@ class TrailShow extends React.Component {
               </div>
             </div>
             <div className="trail-tab"></div>
-        <div className="something">
-          <div className="reviews-container">
-            <div className="reviews-content">
-              <div className="reviews-header">
-                <p>Reviews</p>
+            <div className="something">
+              <div className="reviews-container">
+                <div className="reviews-content">
+                  <div className="reviews-header">
+                    <p>Reviews</p>
+                  </div>
+                  <div className="add-review-container">
+                    {<ReviewFormContainer trail_id={this.props.trail.id} />}
+                  </div>
+                  <div className="all-reviews">{<ReviewIndexContainer />}</div>
+                </div>
               </div>
-              <div className="add-review-container">
-                {<ReviewFormContainer trail_id={this.props.trail.id} />}
+              <div className="nearby-trails-container">
+                <div className="nearby-trails-sub-container">
+                  <div className="nearby-trails-header">
+                    {/* <p>Nearby Trails</p> */}
+                  </div>
+                  <div className="nearby-trails-info">
+                    {/* <NearbyTrailsContainer trailId={this.props.trail.id} /> */}
+                  </div>
+                </div>
               </div>
-              <div className="all-reviews">{<ReviewIndexContainer />}</div>
             </div>
-          </div>
-          <div className="nearby-trails-container">
-            <div className="nearby-trails-sub-container">
-              <div className="nearby-trails-header">
-                <p>Nearby Trails</p>
-              </div>
-              <div className="nearby-trails-info">
-                {/* <NearbyTrailsContainer trailId={this.props.trail.id} /> */}
-              </div>
-            </div>
-          </div>
-        </div>
             <div className="trail-left-4"></div>
           </div>
           <div className="trail-right4">
             {/* <div className="trail-map"></div> */}
             <div className="nearby-trails-wrapper">
-              <h3 className="nearby-trails header-text3">Nearby Trails</h3>
+              <h3 className="nearby-trails header-text3"></h3>
               <TrailIndexItemContainer />
             </div>
           </div>
         </div>
-
       </div>
     );
   }

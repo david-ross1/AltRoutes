@@ -11,6 +11,8 @@ Rails.application.routes.draw do
     end
 
     resources :parks, only: [:show, :index]
+    get 'trails/nearby_trails/:id', to: 'trails#nearby_trails' 
+    get 'parks/trails_in_park/:id', to: 'parks#trails_in_park'
 
     resources :users, only: [:create, :index, :new]
   end

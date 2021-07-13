@@ -22,7 +22,7 @@ const Footer = () => {
             <h2>MoreTrails</h2>
           </Link>
         </div>
-        <div class="footer-logo links">
+        <div className="footer-logo links">
           <a href="https://www.linkedin.com/in/david-ross-988426216/"
             target="_blank">
             <FontAwesomeIcon icon={faLinkedin} />

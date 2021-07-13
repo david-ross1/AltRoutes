@@ -1,5 +1,6 @@
 
-json.extract! @park, :name, 
+json.extract! @park, :id, 
+                     :name, 
                      :description, 
                      :acreage, 
                      :contact, 

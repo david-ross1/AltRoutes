@@ -1,35 +1,50 @@
 class Api::ReviewsController < ApplicationController
-  def index 
-    @reviews = Review.all.includes(:reviewer)
-    render :index 
-  end
 
-  def create 
-    @review = Review.create(review_params) 
-    if @review.save 
-      render '/api/reviews/show' 
-    else 
-      render json: @review.errors.full_messages, status: 422
+    def new
+        @review = Review.new
+        render :new
     end
-  end
 
-  def update 
-    @review = Review.find_by(id: params[:id])
-    if @review.update(review_params) 
-      render '/api/reviews/show'
-    else
-      render json: @review.errors.full_messages, status: 422 
+    def create 
+        @review = Review.new(review_params)
+
+        if @review.save!
+            render :show
+        else
+            render json: @review.errors.full_messages, status: 422
+        end
     end
-  end
 
-  def destroy 
-    @review = Review.find_by(id: param[:id])
-    @review.destroy! 
-  end
+    def show 
+        @review = Review.find(params[:id])
+        render :show
+    end
 
-  private 
+    def index
+        @reviews = Review.where(trail_id: params[:trail_id])
+        render :index
+    end
 
-  def review_params 
-    params.require(:review).permit(:user_id, :trail_id, :rating, :text, :date)
-  end
+    def update
+        @review = Review.find(params[:id])
+        if @review.update
+            render :show
+        else
+            render json: @review.errors.full_messages, status: 422
+        end
+    end
+
+    def destroy
+        @review = Review.find(params[:id])
+
+        if @review.destroy
+            render :index
+        end
+    end
+
+    private
+
+    def review_params
+        params.require(:review).permit(:date, :rating, :text, :trail_id, :user_id)
+    end
 end

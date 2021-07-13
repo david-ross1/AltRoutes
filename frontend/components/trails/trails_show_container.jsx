@@ -4,6 +4,8 @@ import TrailShow from "./trail_show";
 import { withRouter } from "react-router-dom";
 import { fetchTrails } from "../../actions/trail_actions";
 
+import { fetchReviews } from '../../actions/review_actions'
+
 const mapStateToProps = (state, ownProps) => ({
   trail: state.entities.trails[ownProps.match.params.trailId],
   currentUser: state.entities.users[state.session.id],
@@ -12,6 +14,7 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = (dispatch) => ({
   fetchTrail: (trailId) => dispatch(fetchTrail(trailId)),
   fetchTrails: () => dispatch(fetchTrails()),
+  fetchReviews: trailId => dispatch(fetchReviews(trailId))
 });
 
 export default withRouter(

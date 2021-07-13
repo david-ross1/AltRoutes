@@ -1,3 +1,4 @@
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPrint,
@@ -7,7 +8,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import TrailIndexItemContainer from './trail_index_container'
 
-import React from "react";
+import ReviewIndexContainer from '../reviews/review_index_container';
+import ReviewFormContainer from '../reviews/review_form_container'
 
 
 
@@ -15,7 +17,10 @@ import React from "react";
 class TrailShow extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { num: 0 };
+    this.state = { 
+      num: 0,
+      trailId: this.props.match.params.trailId
+    };
   }
 
   componentDidMount() {
@@ -36,7 +41,9 @@ class TrailShow extends React.Component {
    
     const { trails } = this.props;
     // const localTrails = trails.filter((trail) => trail.park_id === this.props.match.params)
-
+    const renderReview = (this.props.currentUser ? (
+      <ReviewIndexContainer />
+    ) : '')
 
     // this.setState({ num: num + 1})
 
@@ -116,7 +123,30 @@ class TrailShow extends React.Component {
             </div>
           </div>
         </div>
-      
+
+        <div className="something">
+          <div className="reviews-container">
+            <div className="reviews-content">
+              <div className="reviews-header">
+                <p>Reviews</p>
+              </div>
+              <div className="add-review-container">
+                {<ReviewFormContainer trail_id={this.props.trail.id} />}
+              </div>
+              <div className="all-reviews">{<ReviewIndexContainer />}</div>
+            </div>
+          </div>
+          <div className="nearby-trails-container">
+            <div className="nearby-trails-sub-container">
+              <div className="nearby-trails-header">
+                <p>Nearby Trails</p>
+              </div>
+              <div className="nearby-trails-info">
+                {/* <NearbyTrailsContainer trailId={this.props.trail.id} /> */}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }

@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom';
 
 const ReviewItem = (props) => {
     // console.log("Yo from reviewItem", props);
-    const { post_date, rating } = props.review;
+    const { date, rating } = props.review;
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -56,16 +56,16 @@ const ReviewItem = (props) => {
                         </div>
                         <div className='review-card-user-name'>
                             <div className="review-first-name">
-                                {owner ? owner.fname : ""}
+                                {owner ? owner.firstName : ""}
                             </div>
                             <div className="review-last-name">
-                                {owner ? owner.lname : ""}
+                                {owner ? owner.lastName : ""}
                             </div>
                         </div>
                     </div>
                     <div className="review-card-post-rating-cont">
                         <div className="review-card-post-date">
-                            {post_date}
+                            {date}
                         </div>
                         <div className="review-card-rating-cont">
                             <div className="review-card-rating-title">
@@ -78,7 +78,7 @@ const ReviewItem = (props) => {
                     </div>
                 </div>
                 <div className='review-card-text-container'>
-                    {props.review.review}
+                    {props.review.text}
                 </div>
             </div>
             {renderDelete}

@@ -4,17 +4,17 @@ import ReviewIndex from './review_index';
 import { withRouter } from 'react-router-dom';
 import { deleteReview } from "../../util/reviews_api_util";
 
-const mSTP = (state, ownProps) => {
-    // console.log("Yo from ReviewIndexContainer", state);
+const mapStateToProps = (state, ownProps) => {
+
     return ({
         reviews: state.entities.reviews.reviews,
-        // currentUser: state.entities.users[state.session.id]
+
     })
 };
 
-const mDTP = dispatch => ({
+const mapDispatchToProps = dispatch => ({
     fetchReviews: (trail_id) => dispatch(fetchReviews(trail_id)),
     deleteReview: (review_id) => dispatch(deleteReview(review_id))
 });
 
-export default withRouter(connect(mSTP, mDTP)(ReviewIndex));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ReviewIndex));

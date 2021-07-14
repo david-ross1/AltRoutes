@@ -7,6 +7,8 @@ import { fetchUsers } from '../../actions/user_actions';
 import { deleteReview, fetchReviews} from '../../util/reviews_api_util';
 import { useParams } from 'react-router-dom';
 
+
+
 const ReviewItem = (props) => {
 // debugger
     // const { date, rating } = props.review;
@@ -53,6 +55,8 @@ const ReviewItem = (props) => {
        
         : "")
 
+        // debugger
+
     return (
       <>
         <div className="review-card-container">
@@ -66,7 +70,7 @@ const ReviewItem = (props) => {
                 <div className="review-first-name">
                   {/* {owner ? owner.firstName : ""} */}
                   {props.review.reviewer.first_name.length > 1
-                    ? `${props.review.reviewer.first_name}  ` 
+                    ? `${props.review.reviewer.first_name}  `
                     : ""}
                   {/* </div>
                 <div className="review-last-name"> */}

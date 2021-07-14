@@ -24,6 +24,7 @@ class TrailsInParkIndex extends React.Component {
                             key={trail.id}
                             trail={trail}
                             parkName={parkName}
+                            photo={trail.coverPhotoURL}
                         />
                     ))
                 }

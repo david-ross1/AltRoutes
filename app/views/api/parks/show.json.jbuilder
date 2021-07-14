@@ -7,3 +7,5 @@ json.extract! @park, :id,
                      :lat, 
                      :lon,
                      :park_type
+
+json.backgroundPhotoURL url_for(@park.backgroundPhoto)

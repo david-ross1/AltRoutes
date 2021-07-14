@@ -35,6 +35,11 @@ p1 = Park.create!(name: "Point Reyes National Seashore",
                   park_type: "National",
                   lat: 38.0512, 
                   lon: 122.8663) 
+
+p1_parkpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/point-reyes-bg.png")
+p1.backgroundPhoto.attach(io: p1_parkpic, filename: "point-reyes-bg.png")
+
+
 #______________________________________________________________________________________________
 
 
@@ -45,6 +50,12 @@ p2 = Park.create!(name: "Sequoia National Park",
                   park_type: "National",
                   lat: 36.4864, 
                   lon: 118.5658) 
+
+p2_parkpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/sequoia-bg.png")
+p2.backgroundPhoto.attach(io: p2_parkpic, filename: "sequoia-bg.png")
+
+
+
 #______________________________________________________________________________________________
 
 p3 = Park.create!(name: "Mt. Diablo State Park", 
@@ -54,6 +65,12 @@ p3 = Park.create!(name: "Mt. Diablo State Park",
                   park_type: "State",
                   lat: 37.8816, 
                   lon: 121.9142) 
+
+p3_parkpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/mt-diablo-bg.png")
+p3.backgroundPhoto.attach(io: p3_parkpic, filename: "mt-diablo-bg.png")
+
+                  
+
 #______________________________________________________________________________________________
 
 p4 = Park.create!(name: "Tilden Regional Park", 
@@ -63,6 +80,11 @@ p4 = Park.create!(name: "Tilden Regional Park",
                   park_type: "State",
                   lat: 37.8928, 
                   lon: 122.2424) 
+
+
+p4_parkpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/tilden-bg.png")
+p4.backgroundPhoto.attach(io: p4_parkpic, filename: "tilden-bg.png")
+
 
 Trail.destroy_all
 #______________________________________________________________________________________________

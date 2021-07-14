@@ -68,6 +68,9 @@ class ReviewForm extends React.Component {
                 </div>
             )
         }
+
+
+
         return (
             <div className="review-container">
                 <div className="review-form-container">
@@ -129,7 +132,6 @@ class ReviewForm extends React.Component {
                             <button className="rev-button-2" onClick={() => this.toggleReviewHandler()}>Cancel</button>
                         </div>
                     </form>
-
                 </div >
             </div>
         )

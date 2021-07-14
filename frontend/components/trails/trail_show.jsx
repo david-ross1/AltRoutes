@@ -10,7 +10,7 @@ import TrailIndexItemContainer from './trail_index_container'
 
 import ReviewIndexContainer from '../reviews/review_index_container';
 // import ReviewFormContainer from '../reviews/review_form_container';
-
+import subnav_container from "../nav/subnav_container";
 import ReviewFormContainer from '../reviews/review_form_container'
 
 

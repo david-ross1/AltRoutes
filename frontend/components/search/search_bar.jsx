@@ -1,8 +1,9 @@
 import React from 'react';
 // import { FontAwesomIcon } from '@fortawesome/react-fontawesome';
 // import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
-import { FaSearch } from 'react-icons/fa'
+import {  FaArrowAltCircleRight, FaSearch } from 'react-icons/fa'
 import SearchResults from './search_results'; 
+
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -49,14 +50,19 @@ class SearchBar extends React.Component {
           onBlur={this.handleBlur}
         >
           <form onSubmit={this.handleSubmit} className="search-input">
-            <FaSearch />
-
+            <div className="fa-search">
+              <FaSearch />
+            </div>
             <input
               type="text"
-              placeholder="Enter a trail or park name"
+              className="search-box-placeholder"
+              placeholder="Search by park or trail name"
               onChange={this.update()}
             />
-            <button>Search</button>
+            <button className='fa-circle-right'>
+              <FaArrowAltCircleRight />
+            </button>
+            
           </form>
         </div>
         {this.state.query !== "" ? (

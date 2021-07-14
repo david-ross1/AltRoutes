@@ -56,7 +56,7 @@ class ReviewForm extends React.Component {
         const { deleteReview, currentUserId } = this.props;
 
         if (!currentUserId) {
-            return <div className="login-to-comment">Login to review</div>;
+            return <div className="login-to-comment">Please log in to comment</div>;
         }
         if (!this.state.toggleReviewContainer) {
             return (

@@ -4,12 +4,14 @@ import SearchBarContainer from '../search/search_container'
 import TrailIndexContainer from '../../components/trails/trail_index_container'
 import Search from '../search/search'
 
+
+
 const MainPage = ({ currentUser }) => {
   return (
     <div>
       <div className="main-page">
         <div className="main-page-content">
-          <h1>Find your next trail</h1>
+          <h1 className='find-next-text'>Find your next trail</h1>
           {/* <Search />  */}
           <div className="searchtainer">
             {" "}

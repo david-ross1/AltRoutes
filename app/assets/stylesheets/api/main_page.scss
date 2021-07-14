@@ -27,11 +27,14 @@ div.phone  {
   border: 0;
 }
 
+.find-next-text {
+  font-size: 70px; 
+}
 
 .main-page {
     font-weight: 600; 
     font-family: "Montserrat";
-    font-size: 70px;
+    // font-size: 32px;
     background-image: image_url('point_reyes.jpeg');
     background-size: cover;
     position: relative;
@@ -143,3 +146,7 @@ div.phone  {
     background-color: $buttonHover;
     border: $buttonHover;
 }
+
+
+
+

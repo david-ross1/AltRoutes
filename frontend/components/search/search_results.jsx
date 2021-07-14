@@ -12,6 +12,7 @@ class SearchResults extends React.Component {
     );
 
     const yesResults = this.props.results.map((result, idx) => (
+      <div className='result-container'> 
       <li className={`${parent}search-result-item`} key={idx}>
         {result.category === "Trail" ? (
           <Link to={`/trails/${result.id}`}>
@@ -30,12 +31,15 @@ class SearchResults extends React.Component {
           </Link>
         )}
       </li>
+      </div>
     ));
 
     return (
-      <ul className={`${parent}search-results`}>
-        {this.props.results.length ? yesResults : noResults}
-      </ul>
+      <div className="search-res-container">
+        <ul className={`${parent}search-results`}>
+          {this.props.results.length ? yesResults : noResults}
+        </ul>
+      </div>
     );
   }
 }

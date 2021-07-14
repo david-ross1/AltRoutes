@@ -47,7 +47,7 @@ class TrailShow extends React.Component {
 
     // this.setState({ num: num + 1})
 
-    const addReview =  <ReviewFormContainer className='roma' trail_id={this.props.trail.id} />
+   
 
     return (
       <div className="trail-page-background">
@@ -122,8 +122,7 @@ class TrailShow extends React.Component {
                     <p>Reviews</p>
                   </div>
                   <div className="add-review-container">
-                    {<ReviewFormContainer trail_id={this.props.trail.id} />}
-                    fksdjfklsdflkjasdklfjksjdfsdlkf
+                    <ReviewFormContainer trail_id={this.props.trail.id} />
                   </div>
                   <div className="all-reviews">{<ReviewIndexContainer />}</div>
                 </div>
@@ -131,7 +130,7 @@ class TrailShow extends React.Component {
               <div className="nearby-trails-container">
                 <div className="nearby-trails-sub-container">
                   <div className="nearby-trails-header">
-                    <p>Nearby Trails</p>
+                    {/* <p>Nearby Trails</p> */}
                   </div>
                   <div className="nearby-trails-info">
                     {/* <NearbyTrailsContainer trailId={this.props.trail.id} /> */}
@@ -144,7 +143,7 @@ class TrailShow extends React.Component {
           <div className="trail-right4">
             {/* <div className="trail-map"></div> */}
             <div className="nearby-trails-wrapper">
-              <h3 className="nearby-trails header-text3">Nearby Trails</h3>
+              <h3 className="nearby-trails header-text3"></h3>
               <TrailIndexItemContainer />
             </div>
           </div>

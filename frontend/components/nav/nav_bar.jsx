@@ -8,7 +8,13 @@ const Nav = (props) => {
   const { currentUser, logout } = props 
   const navButtons = currentUser ? (
     <>
-      <button className='upgrade'>Upgrade to Pro</button>
+      <a
+        href="https://www.linkedin.com/in/david-ross-988426216/"
+        target="_blank"
+      >
+        
+      <button className="upgrade">Upgrade to Pro</button>
+      </a>
       <div className="dropdown-select">
         <div className="profile-pic"></div>
       </div>

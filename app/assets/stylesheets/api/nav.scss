@@ -89,7 +89,7 @@
 .pro-tag {
   width: 60px;
   height: 37px; 
-  background: image-url('ppro1.png');
+  background: image-url('ppro3.png');
   display: block; 
   margin-left: 5px;
 }
@@ -97,6 +97,7 @@
 
 .profile-pic {
   background: image-url("user_icon.png");
+  // background: transparent; 
   height: 42px;
   width: 42px;
   background-size: cover;

@@ -2,7 +2,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  height: 140px;
+  height: 60px;
 }
 
 .links a {
@@ -15,7 +15,8 @@ footer {
 .footer-mountain-logo {
   margin: 8px;
   color: green;
-  font-size: 32px;
+  font-size: 20px;
+
 }
 
 .footer-content {
@@ -32,12 +33,13 @@ footer {
   align-items: center;
   font-weight: 500;
   font-family: 'Montserrat';
-  font-size: 40px;
-
+  font-size: 20px;
+  margin-bottom: 20px; 
   a {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 5px; 
   }
 }
 

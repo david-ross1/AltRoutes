@@ -37,7 +37,7 @@ const ReviewItem = (props) => {
               </div>
             )
           : stars.push(
-              <div key={i} className="">
+              <div key={i} className="inactive-star">
                 ★
               </div>
             );

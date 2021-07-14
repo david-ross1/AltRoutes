@@ -26,10 +26,9 @@ const MainPage = ({ currentUser }) => {
           </p>
         </div>
       </div>
-      <TrailIndexContainer />
+      {/* <TrailIndexContainer /> */}
       <div className="main-page2">
         <div className="main-page-content2">
-          {/* <h1>more text and stuff</h1> */}
         </div>
       </div>
       {/* <div className="main-page-3">

@@ -91,7 +91,7 @@ const Search = () => {
         onMouseLeave={() => setDropDownHovered(false)}
         className="search-button"
       >
-        <img src="https://cdn.discordapp.com/attachments/768905648288956421/842228298889297950/3762887.png" />
+        {/* <img src="https://cdn.discordapp.com/attachments/768905648288956421/842228298889297950/3762887.png" /> */}
       </div>
       <div
         className="dropdown-container"

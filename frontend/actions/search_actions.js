@@ -13,7 +13,7 @@ export const clearSearchResults = () => ({
 });
 
 export const fetchSearchResults = query => dispatch => {
-  return SearchAPIUtil.fetchSearchResults(query).then(results =>
+  return SearchApiUtil.fetchSearchResults(query).then(results =>
     dispatch(receiveSearchResults(results))
   );
 };

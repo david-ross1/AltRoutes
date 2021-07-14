@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 class SearchResults extends React.Component {
   render() {
-    const parent = this.props.parent === "sub" ? "sub-" : "";
+    // const parent = this.props.parent === "sub" ? "sub-" : "";
 
     const noResults = (
       <li className={`${parent}search-result-item`}>No Results Found</li>
@@ -13,8 +13,8 @@ class SearchResults extends React.Component {
 
     const yesResults = this.props.results.map((result, idx) => (
       <li className={`${parent}search-result-item`} key={idx}>
-        {result.category === "Hike" ? (
-          <Link to={`/hikes/${result.id}`}>
+        {result.category === "Trail" ? (
+          <Link to={`/trails/${result.id}`}>
             <div className="result-hike-icon">
               <FontAwesomeIcon icon={faMapSigns} />
             </div>

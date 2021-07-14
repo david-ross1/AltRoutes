@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBarContainer from '../search/search_container'
 import TrailIndexContainer from '../../components/trails/trail_index_container'
+import Search from '../search/search'
 
 const MainPage = ({ currentUser }) => {
   return (
@@ -9,7 +10,11 @@ const MainPage = ({ currentUser }) => {
       <div className="main-page">
         <div className="main-page-content">
           <h1>Find your next trail</h1>
-          {/* <SearchBarContainer />  */}
+          {/* <Search />  */}
+          <div className="searchtainer">
+            {" "}
+            <SearchBarContainer />{" "}
+          </div>
         </div>
       </div>
       <TrailIndexContainer />
@@ -28,8 +33,7 @@ const MainPage = ({ currentUser }) => {
       </div>
       {/* <TrailIndexContainer /> */}
       <div className="main-page2">
-        <div className="main-page-content2">
-        </div>
+        <div className="main-page-content2"></div>
       </div>
       {/* <div className="main-page-3">
         <div className="main-page-content-3">

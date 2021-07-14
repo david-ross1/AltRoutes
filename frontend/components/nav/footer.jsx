@@ -18,21 +18,23 @@ const Footer = () => {
             <FontAwesomeIcon
               icon={faMountain}
               className="footer-mountain-logo"
-            />
-            <h2>MoreTrails</h2>
+              />
+            {/* <div className="footer-moretrails-text"> */}
+              <h2 className='footerh2'>MoreTrails</h2>
+            {/* </div> */}
           </Link>
         </div>
         <div className="footer-logo links">
-          <a href="https://www.linkedin.com/in/david-ross-988426216/"
-            target="_blank">
+          <a
+            href="https://www.linkedin.com/in/david-ross-988426216/"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-
 
           <a href="https://github.com/david-ross1" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-
 
           <a href="https://www.davidross1.com" target="_blank">
             <FontAwesomeIcon icon={faInfo} />

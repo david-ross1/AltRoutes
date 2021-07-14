@@ -1,6 +1,17 @@
+// .more-trails-text {
+//  padding-bottom: 20px;  
+// }
+
+.footerh2 {
+  margin-bottom: 15px; 
+}
+
+
 footer {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 6%;
   display: flex;
   height: 60px;
 }
@@ -16,7 +27,8 @@ footer {
   margin: 8px;
   color: green;
   font-size: 20px;
-
+  position: relative;
+  top: 16px; 
 }
 
 .footer-content {
@@ -34,7 +46,8 @@ footer {
   font-weight: 500;
   font-family: 'Montserrat';
   font-size: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 15px; 
+
   a {
     display: flex;
     flex-direction: row;

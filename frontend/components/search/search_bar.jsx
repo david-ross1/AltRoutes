@@ -60,9 +60,8 @@ class SearchBar extends React.Component {
               onChange={this.update()}
             />
             <button className='fa-circle-right'>
-              <FaArrowAltCircleRight />
+              {<FaArrowAltCircleRight />}
             </button>
-            
           </form>
         </div>
         {this.state.query !== "" ? (

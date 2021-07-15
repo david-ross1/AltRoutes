@@ -25,13 +25,22 @@
   max-height: 600px;
   overflow-y: scroll;
   background: black;
-  width: 70%;
-  margin: 40px auto;
-  margin-top: 0;
+  margin: 0px auto;
+  position: relative; 
+  top: 115px; 
+  left: 0; 
+  // min-width: 400px; 
+  width: 50%;
+
 }
 
 .search-bar {
-  width: 70%;
+
+  position: absolute; 
+  min-width: 400px; 
+  top: 100px;
+  left: 25%; 
+  width: 50%;
   margin: 40px auto;
   font-size: 22px;
   margin-bottom: 0;
@@ -40,10 +49,11 @@
 
 .fa-search {
   color: rgb(63, 63, 63); 
-  margin-left: 10px; 
-  margin-top: 20px ;
-  font-size: 11px; 
+  margin-left: 15px; 
+  margin-top: 30px ;
+  font-size: 14px; 
   padding-right: 10px; 
+  padding-left: 10px;
 
 }
 
@@ -52,13 +62,15 @@
   margin-top: 0px; 
   padding-top: 4px; 
   padding-right: 5px; 
+  color: green; 
 }
 
 .search-input {
+
   -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-  box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-
+  // box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+      box-shadow: 0px  5px 5px rgb(86, 85, 85);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
@@ -67,34 +79,43 @@
   background-color: white;
   // background-clip: padding-box;
   border-radius: 32px;
-  height: 50px; 
+  height: 75px; 
 
   input {
     width: 100%;
-    color: rgb(129, 126, 126);
+    color: rgb(106, 104, 104);
     text-align: left;
+    padding-left: 10px; 
+      // -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  // -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  // box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+
+  // filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  // -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  // zoom: 1;
     // height: 30px; 
   }
 
   input::placeholder {
-    color: rgb(48, 47, 47);
-    font-size: 14px; 
+    color: rgb(77, 75, 75);
+    font-size: 16px; 
+    font-weight: 300; 
   }
 
   button {
-    background-color: green;
-    // padding: 10px 20px;
-    padding-left: 6px; 
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    cursor: pointer;
-    border-radius: 30px; 
+    background-color: transparent;
+    // // padding: 10px 20px;
+    // padding-left: 6px; 
+    // border-top-right-radius: 6px;
+    // border-bottom-right-radius: 6px;
+    // cursor: pointer;
+    // border-radius: 30px; 
     // border-top-right-radius: 30px; 
     // border-bottom-right-radius: 30px;
   }
 
   button:hover {
-    background-color: $buttonHoverGreen;
+    // background-color: $buttonHoverGreen;
   }
 
   // svg {

@@ -1,5 +1,5 @@
 trails = json.array! @trails do |trail| 
-    json.extract! trail, :id, :name
+    json.extract! trail, :id, :name, :locale
     json.category trail.class.name
 end
 

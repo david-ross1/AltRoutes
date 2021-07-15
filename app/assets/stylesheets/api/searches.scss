@@ -8,6 +8,27 @@
 //   height: 40px 
 // }
 
+.results-container {
+  text-align: left; 
+
+}
+
+.result-name {
+  font-size: 16px; 
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.res-name {
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; 
+}
+
+.locale {
+  font-size: 10px 
+}
+
 .result-container {
   background: white;
   color: rgb(75, 74, 74);
@@ -22,6 +43,7 @@
 }
 
 .search-res-container {
+  // padding-top: 40px; 
   max-height: 600px;
   overflow-y: scroll;
   background: black;
@@ -31,7 +53,48 @@
   left: 0; 
   // min-width: 400px; 
   width: 50%;
+  // margin-top: 400px; 
+  padding-top: 40px; 
+  background: white; 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 15px; 
 
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: $darkGrey;
+    align-items: center;
+    padding: 3.5px 7px 3.5px 7px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 25px; 
+    text-align: center; 
+  }
+
+}
+
+ 
+
+
+
+.res-icon {
+  font-size: 20px;
+  // padding-bottom: 10px;  
+}
+
+.result-hike-icon, 
+.result-park-icon {
+  color: green;
+  display: flex; 
+}
+
+.res-name {
+  margin-left: 30px;
+  color: rgb(75, 75, 75);
+  margin-top: 20px;
 }
 
 .search-bar {
@@ -61,7 +124,7 @@
   font-size: 40px; 
   margin-top: 0px; 
   padding-top: 4px; 
-  padding-right: 5px; 
+  padding-right: 15px; 
   color: green; 
 }
 
@@ -70,7 +133,7 @@
   -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   // box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-      box-shadow: 0px  5px 5px rgb(86, 85, 85);
+      box-shadow: 0px  1px 10px rgb(84, 83, 83);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
@@ -320,8 +383,9 @@
     color: white;
 
     .result-hike-icon {
-      background-color: white;
+      // background-color: white;
       color: green;
+
     }
 
     .result-park-icon {
@@ -332,11 +396,11 @@
 
   .result-park-icon {
     background-color: $orange;
-    color: white;
+    color: green;
   }
 
   .result-hike-icon {
-    background-color: green;
-    color: white;
+
+    color: green;
   }
 }

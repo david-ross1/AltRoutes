@@ -12,25 +12,31 @@ class SearchResults extends React.Component {
     );
 
     const yesResults = this.props.results.map((result, idx) => (
-      <div className='result-container'> 
-      <li className={`${parent}search-result-item`} key={idx}>
-        {result.category === "Trail" ? (
-          <Link to={`/trails/${result.id}`}>
-            <div className="result-hike-icon">
-              <FontAwesomeIcon icon={faMapSigns} />
-            </div>
-            {result.name}
-          </Link>
-        ) : (
-          <Link to={`/parks/${result.id}`}>
-            <div className="result-park-icon">
-              {" "}
-              <FontAwesomeIcon icon={faTree} />
-            </div>
-            {result.name}
-          </Link>
-        )}
-      </li>
+      <div className="result-container">
+        <li className={`${parent}search-result-item`} key={idx}>
+          {result.category === "Trail" ? (
+            <Link to={`/trails/${result.id}`}>
+              <div className="result-hike-icon">
+                <div className="res-icon">
+                  <FontAwesomeIcon icon={faMapSigns} />
+                </div>
+                <div className="res-name">
+                  <div className="result-name">{result.name}</div>
+                <div className="locale">{result.locale}</div>
+              </div>
+              </div>
+            </Link>
+          ) : (
+            <Link to={`/parks/${result.id}`}>
+              <div className="result-park-icon">
+                <div className="res-icon">
+                  <FontAwesomeIcon icon={faTree} />
+                </div>
+                <div className="res-name">{result.name}</div>
+              </div>
+            </Link>
+          )}
+        </li>
       </div>
     ));
 

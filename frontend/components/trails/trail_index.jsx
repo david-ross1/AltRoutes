@@ -57,7 +57,7 @@ class TrailIndex extends React.Component {
                 ))}
               </div>
             </div>
-          </div>
+          </div> 
 
           <div className="outer-trailtainer">
             <div className="index-trailtainer">

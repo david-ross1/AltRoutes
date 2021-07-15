@@ -44,7 +44,7 @@ class TrailIndex extends React.Component {
           <div className="outer-trailtainer">
             <div className="index-trailtainer">
               <div className="trail-icc">
-                {trails.map((trail) => (
+                {trails.slice(0, 12).map((trail) => (
                   <TrailIndexItem
                     key={trail.id}
                     pic={trail.coverPhotoURL}
@@ -63,7 +63,7 @@ class TrailIndex extends React.Component {
             <div className="index-trailtainer">
               <div className="trail-icc">
                 {/* {trails.reverse().map((trail) => ( */}
-                {trails.map((trail) => (
+                {trails.slice(13).map((trail) => (
                   <TrailIndexItem
                     key={trail.id}
                     pic={trail.coverPhotoURL}

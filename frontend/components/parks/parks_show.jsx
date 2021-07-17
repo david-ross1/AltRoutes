@@ -111,7 +111,10 @@ class ParkShow extends React.Component {
               <div className="reviews-container">
                 <div className="reviews-content">
                   <div className="reviews-header">
-                    <p>Reviews</p>
+                    {/* <p>Reviews</p> */}
+                    {this.props.match.url.startsWith("/trails/")
+                      ? <p>Reviews</p>
+                      : '' }
                   </div>
                   <div className="add-review-container">
                     {/* {<ReviewFormContainer trail_id={this.props.trail.id} />} */}

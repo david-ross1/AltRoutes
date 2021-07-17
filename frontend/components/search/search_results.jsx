@@ -17,7 +17,7 @@ class SearchResults extends React.Component {
         <li className={`${parent}search-result-item`} key={idx}>
           {result.category === "Trail" ? (
             <Link to={`/trails/${result.id}`}>
-              <div className="result-hike-icon">
+              <div className="result-trail-icon">
                 <div className="res-icon-trail">
                   {/* <FontAwesomeIcon icon={faMapSigns} /> */}
                   <FaMapMarkerAlt /> 

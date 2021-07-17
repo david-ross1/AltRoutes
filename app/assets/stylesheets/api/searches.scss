@@ -80,8 +80,16 @@
 
 
 
-.res-icon {
+.res-icon-park {
   font-size: 20px;
+  margin-left: 3px; 
+  // padding-bottom: 10px;  
+}
+
+
+.res-icon-trail {
+  font-size: 20px;
+  padding-top: 18px 
   // padding-bottom: 10px;  
 }
 
@@ -95,6 +103,14 @@
   margin-left: 30px;
   color: rgb(75, 75, 75);
   margin-top: 20px;
+}
+
+.res-name-park {
+  margin-left: 30px;
+  color: rgb(75, 75, 75);
+  margin-top: 20px;
+  font-size: 16px; 
+  font-family: "Montserrat"; 
 }
 
 .search-bar {

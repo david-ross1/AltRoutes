@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTree, faMapSigns } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { FaMapMarkerAlt, FaTree } from 'react-icons/fa'; 
 
 class SearchResults extends React.Component {
   render() {
@@ -17,8 +18,9 @@ class SearchResults extends React.Component {
           {result.category === "Trail" ? (
             <Link to={`/trails/${result.id}`}>
               <div className="result-hike-icon">
-                <div className="res-icon">
-                  <FontAwesomeIcon icon={faMapSigns} />
+                <div className="res-icon-trail">
+                  {/* <FontAwesomeIcon icon={faMapSigns} /> */}
+                  <FaMapMarkerAlt /> 
                 </div>
                 <div className="res-name">
                   <div className="result-name">{result.name}</div>
@@ -29,10 +31,10 @@ class SearchResults extends React.Component {
           ) : (
             <Link to={`/parks/${result.id}`}>
               <div className="result-park-icon">
-                <div className="res-icon">
+                <div className="res-icon-park">
                   <FontAwesomeIcon icon={faTree} />
                 </div>
-                <div className="res-name">{result.name}</div>
+                <div className="res-name-park">{result.name}</div>
               </div>
             </Link>
           )}

@@ -6,7 +6,8 @@ import {
   faCar,
   faArrowsAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import TrailIndexItemContainer from './trail_index_container'
+import TrailIndexItemContainer from './trail_index_container';
+import TrailMap from '../map/trail_map'; 
 
 import ReviewIndexContainer from '../reviews/review_index_container';
 // import ReviewFormContainer from '../reviews/review_form_container';
@@ -47,7 +48,7 @@ class TrailShow extends React.Component {
 
     // this.setState({ num: num + 1})
 
-   
+  //  debugger
 
     return (
       <div className="trail-page-background">
@@ -141,6 +142,9 @@ class TrailShow extends React.Component {
             <div className="trail-left-4"></div>
           </div>
           <div className="trail-right4">
+            <div className='map-box'>
+              <TrailMap lon={trail.lon} lat={trail.lat} /> 
+            </div>
             {/* <div className="trail-map"></div> */}
             <div className="nearby-trails-wrapper">
               <h3 className="nearby-trails header-text3"></h3>

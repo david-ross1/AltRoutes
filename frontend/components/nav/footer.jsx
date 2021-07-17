@@ -25,22 +25,22 @@ const Footer = () => {
           </Link>
         </div>
         <div className="footer-logo links">
+
+          <a href="https://github.com/david-ross1" target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
           <a
             href="https://www.linkedin.com/in/david-ross-988426216/"
             target="_blank"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-
-          <a href="https://github.com/david-ross1" target="_blank">
-            <FontAwesomeIcon icon={faGithub} />
+          <a href="https://angel.co/u/david-ross-72" target="_blank">
+            <FontAwesomeIcon icon={faAngellist} />
           </a>
 
           <a href="https://www.davidross1.com" target="_blank">
             <FontAwesomeIcon icon={faInfo} />
-          </a>
-          <a href="https://angel.co/u/david-ross-72" target="_blank">
-            <FontAwesomeIcon icon={faAngellist} />
           </a>
         </div>
       </div>

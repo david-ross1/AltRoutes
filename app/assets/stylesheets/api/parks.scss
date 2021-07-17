@@ -1,3 +1,30 @@
+@import "./vars";
+
+.best-trails-in-park { 
+  font-family: 'Montserrat';
+  font-size: 20px; 
+  color: gray; 
+  margin-left: 20px; 
+  margin-bottom: 20px; 
+}
+
+.parkstar {
+  font-size: 16px;
+  margin-left: 10px;
+  padding-top: 10px;  
+}
+
+.park-des {
+  margin-bottom: 40px; 
+  font-family: 'Montserrat';
+  line-height: 1.5em; 
+  margin-left: 20px; 
+  font-size: 18px; 
+  color: rgb(90, 88, 88);
+}
+
+
+
 .park-show-container {
     display: flex;
     width: 100%;
@@ -37,7 +64,7 @@
 .park-title-container {
     width: 100%;
     height: 60px;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     display: flex;
     align-items: center;
     font-size: 50px;
@@ -48,7 +75,7 @@
 .rating-container {
     width: 100%;
     height: 40px;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     font-size: 30px;
     display: flex;
     flex-direction: row;
@@ -61,7 +88,7 @@
     width: 100%;
     height: 120px;
     // background-color: lime;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     font-size: 20px;
 }
 
@@ -71,20 +98,20 @@
     width: 100%;
     height: 60px;
     // background-color: magenta;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     display: flex;
     align-items: center;
     font-size: 30px;
     font-weight: 25px;
-    border-top: solid gray 2px;
-    border-bottom: solid gray 2px;
+    // border-top: solid gray 2px;
+    // border-bottom: solid gray 2px;
 }
 
 .park-description-body {
     font-size: 20px;
-    padding-top: 10px;
-    font-family: 'Saira Condensed', sans-serif;
-    padding-bottom: 10px;
+    // padding-top: 2px;
+    font-family: 'Montserrat'; 
+    // padding-bottom: 10px;
 
 }
 
@@ -96,7 +123,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     font-size: 50px;
     margin-bottom: 5px;
 }
@@ -105,7 +132,7 @@
     display: flex;
     flex-direction: row;
     // justify-content: flex-start;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     font-size: 45px;
     color: #E6692A;
     width: 69%;
@@ -118,15 +145,15 @@
     height: 125px;
     // background-color: greenyellow;
     // display: flex;
-    border-top: solid gray 2px;
-    border-bottom: solid gray 2px;
+    // border-top: solid gray 2px;
+    // border-bottom: solid gray 2px;
 }
 
 .park-information-header {
     // background-color: honeydew;
     width: 100%;
     height: 60px;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     font-size: 30px;
     font-weight: 25px;
     display: flex;
@@ -140,7 +167,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 47%;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     font-size: 20px;
 }
 .park-information-details > p {
@@ -177,30 +204,36 @@
 
 .trail-in-park-img-container {
     // border: solid red 2px;
-    height: 244px;
-    width: 299px;
-    font-family: 'Saira Condensed', sans-serif;
+    margin-left: 20px; 
+    height: 260px;
+    width: 300px;
+    font-family: 'Montserrat'; 
     display: flex;
     justify-content: center;
+    padding-top: 0px; 
+    padding-bottom: 20px; 
     // align-items: center;
     
 }
 
 .trail-in-park-rating {
     display: flex;
+    font-size: 12px; 
+    color: gray; 
     flex-direction: row;
 }
 
 .trail-in-park-img {
     // border: solid blue 2px;
-    width: 250px;
-    height: 209px;
+    width: 290px;
+    height: 190px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background-size: cover;
-    border-radius: 8px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
 }
 
 .trail-in-park-img > img {
@@ -214,30 +247,38 @@
 }
 
 .trail-in-park-card-container {
-    width: 70%;
+    // width: 70%;
+    width: 100%;
+    // margin-top: px; 
+    margin-left: 25px; 
 }
+
+
 
 .trail-in-trailName-parkName {
     // display: flex;
     // justify-content: flex-end;
     // flex-direction: column;
-    border-bottom: solid gray 2px;
+    // border-bottom: solid gray 2px;
     margin-bottom: 6px;
 }
 .trail-in-park-name {
-    font-family: 'Saira Condensed', sans-serif;
-    font-size: 35px;
+    font-family: 'Montserrat';
+    font-size: 16px;
  
 }
 
 .trail-in-park-park-name {
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     padding-top: 2px;
     padding-left: 0px;
+    font-size: 12px; 
+    color: gray; 
+    
 }
 
 .trail-in-park-indepth-details-cont {
-    border-bottom: solid gray 2px;
+    // border-bottom: solid gray 2px;
     padding-bottom: 6px;
     // font-size: 17px;
     margin-bottom: 20px;
@@ -246,34 +287,74 @@
 .trail-in-park-diff-rating-cont{
     display: flex;
     flex-direction: row;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
     // justify-content: space-between;
     // width: 100%;
 }
-.trail-in-park-difficulty{
-    padding-right: 25px;
-    // padding-left: 13px;
-}
+// .trail-in-park-difficulty{
+//     padding-right: 25px;
+//     color: gray; 
+//     font-size: 12px; 
+//     // padding-left: 13px;
+// }
 
-.trail-in-park-legnth-container {
+        .trail-difficulty {
+            margin-top: 10px; 
+            padding: 4px 14px;
+            color: white;
+            border-radius: 4px;
+            font-family: "Montserrat";
+            font-size: 11px;
+            background: green; 
+        }
+
+
+        .moderate {
+            background-color: $button;
+        }
+
+        .hard {
+            background-color: gray;
+        }
+
+        .easy {
+            background-color: green;
+        }
+
+.trail-in-park-length-container {
     display: flex;
     flex-direction: row;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: 'Montserrat'; 
+    font-size: 12px; 
+    color: gray; 
 
 }
-.trail-in-park-legnth-container > p{
+.trail-in-park-length-container > p{
     padding-right: 7px;
+    padding-top: 10px 
 }
-.trail-in-park-summary-container {
-    font-family: 'Saira Condensed', sans-serif;
+.trail-in-park-desc-container {
+    font-family: 'Montserrat';
+    font-size: 16px; 
+    color: gray; 
+    line-height: 1.5em; 
     // font-size: 20px;
 }
 
 
 .trail-left99 {
-  // width: 800px;
+  width: 950px;
+  // padding-right: 25px;
 }
 
 .trail-right43 {
-  // width: 0;
+  width: 0;
+}
+
+.trail-left43 {
+  width: 700px; 
+}
+
+.trail-left-3 {
+  // width: 100%
 }

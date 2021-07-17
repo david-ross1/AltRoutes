@@ -14,6 +14,9 @@ const TrailsInParkItem = (props) => {
     }
     // console.log("yo from trailsItem", props);
 
+    const difficultyClass = trail.difficulty === 'hard' ? 'hard' : trail.difficulty === 'moderate' ? 'moderate' : 'easy'
+
+
 
     // debugger; 
     return (
@@ -36,20 +39,24 @@ const TrailsInParkItem = (props) => {
           </div>
           <div className="trail-in-park-indepth-details-cont">
             <div className="trail-in-park-diff-rating-cont">
-              <div className="trail-in-park-difficulty">{trail.difficulty}</div>
+              <div className={"trail-difficulty" + " " + difficultyClass}>
+                {trail.difficulty}
+              </div>
               <div className="trail-in-park-rating">
-                <p>rating: </p>
-                <div className="active-star">★★★★★</div>
+                <div className="active-star parkstar">★ ★ ★ ★ ★</div>
               </div>
             </div>
-            <div className="trail-in-park-legnth-container">
+            <div className="trail-in-park-length-container">
               <p>Length: </p>
-              <p>{trail.distance} mi.</p>
+              <p>{trail.distance} mi</p>
+              <p>{` • ${trail.time}`}</p>
             </div>
           </div>
-          <div className="trail-in-park-summary-container">
-                    {trail.description.length > 400 ? trail.description.slice(0, 400) + '...' : trail.description}
-                </div>
+          <div className="trail-in-park-desc-container">
+            {trail.description.length > 220
+              ? trail.description.slice(0, 220) + "..."
+              : trail.description}
+          </div>
         </div>
       </div>
     );

@@ -95,9 +95,12 @@ class ParkShow extends React.Component {
             <div className="trail-tab">
               <p>Description</p>
             </div>
-            <div className="trail-left-3">
-              <div>
+            <div className="trail-left-30">
+              <div className='park-des'>
                 <p>{park.description}</p>
+              </div>
+              <div className='best-trails-in-park'>
+                <p>Best trails in {park.name}</p>
               </div>
               {
                 <TrailsInParkContainer

@@ -1,7 +1,7 @@
 import React from "react";
-import TrailsInParkItem from "./park_trails_item";
+import ParkTrailItem from "./park_item";
 
-class TrailsInParkIndex extends React.Component {
+class ParkTrailsIndex extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -18,7 +18,7 @@ class TrailsInParkIndex extends React.Component {
     return (
       <div>
         {parkTrails.map(trail => (
-          <TrailsInParkItem
+          <ParkTrailItem
             key={trail.id}
             trail={trail}
             parkName={parkName}
@@ -30,4 +30,4 @@ class TrailsInParkIndex extends React.Component {
   }
 }
 
-export default TrailsInParkIndex;
+export default ParkTrailsIndex;

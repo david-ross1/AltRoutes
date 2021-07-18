@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import { fetchParkTrails } from "../../actions/park_actions";
 import { fetchTrail, fetchTrails } from "../../actions/trail_actions";
-import TrailsInParkIndex from "./park_trails_index";
+import ParkTrailsIndex from "./park_index";
 
 const mSTP = (state, ownProps) => ({
   parkName: ownProps.parkName,
@@ -16,4 +16,4 @@ const mDTP = dispatch => ({
   fetchTrails: () => dispatch(fetchTrails()),
 });
 
-export default connect(mSTP, mDTP)(TrailsInParkIndex);
+export default connect(mSTP, mDTP)(ParkTrailsIndex);

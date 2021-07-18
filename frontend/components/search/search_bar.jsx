@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowAltCircleRight, FaSearch } from "react-icons/fa";
-import SearchResults from "./search_results";
+import SearchResults from "./search_data";
 
 class SearchBar extends React.Component {
   constructor(props) {

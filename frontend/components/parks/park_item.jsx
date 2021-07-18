@@ -1,11 +1,11 @@
 import React from "react";
 import { useHistory } from "react-router";
 
-const TrailsInParkItem = props => {
+const ParkTrailItem = props => {
   const { trail } = props;
   const history = useHistory();
 
-  const cardClickHandle = e => {
+  const handlePark = e => {
     e.preventDefault();
 
     history.push(`/trails/${trail.id}`);
@@ -19,37 +19,37 @@ const TrailsInParkItem = props => {
       : "easy";
 
   return (
-    <div onClick={cardClickHandle} className="trails-in-park-sub-container">
-      <div className="trail-in-park-img-container">
-        <div className="trail-in-park-img">
+    <div onClick={handlePark} className="pk-trails-cont">
+      <div className="pk-img-cont">
+        <div className="pk-img">
           <img src={props.trail.coverPhotoURL} />
         </div>
       </div>
-      <div className="trail-in-park-card-container">
-        <div className="trail-in-trailName-parkName">
-          <div className="trail-in-park-name">
+      <div className="pk-trail-cont">
+        <div className="pk-trail-name-cont">
+          <div className="pk-trail-name">
             <p>{trail.name}</p>
           </div>
-          <div className="trail-in-park-park-name">
+          <div className="trail-pk-name">
             <p>{props.parkName}</p>
           </div>
         </div>
-        <div className="trail-in-park-indepth-details-cont">
-          <div className="trail-in-park-diff-rating-cont">
+        <div className="pk-trail-infotainer">
+          <div className="pk-trail-difficulty-container">
             <div className={"trail-difficulty" + " " + difficultyClass}>
               {trail.difficulty}
             </div>
-            <div className="trail-in-park-rating">
+            <div className="pk-trail-rating">
               <div className="selected-star parkstar">★ ★ ★ ★ ★</div>
             </div>
           </div>
-          <div className="trail-in-park-length-container">
+          <div className="pk-trail-length">
             <p>Length: </p>
             <p>{trail.distance} mi</p>
             <p>{` • ${trail.time}`}</p>
           </div>
         </div>
-        <div className="trail-in-park-desc-container">
+        <div className="pk-trail-description">
           {trail.description.length > 220
             ? trail.description.slice(0, 220) + "..."
             : trail.description}
@@ -59,4 +59,4 @@ const TrailsInParkItem = props => {
   );
 };
 
-export default TrailsInParkItem;
+export default ParkTrailItem;

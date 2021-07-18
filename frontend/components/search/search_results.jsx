@@ -1,13 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTree, faMapSigns } from "@fortawesome/free-solid-svg-icons";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { faTree } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import { FaMapMarkerAlt, FaTree } from 'react-icons/fa'; 
 
 class SearchResults extends React.Component {
   render() {
-    // const parent = this.props.parent === "sub" ? "sub-" : "";
-
     const noResults = (
       <li className={`${parent}search-result-item`}>No Results Found</li>
     );
@@ -19,13 +17,12 @@ class SearchResults extends React.Component {
             <Link to={`/trails/${result.id}`}>
               <div className="result-trail-icon">
                 <div className="res-icon-trail">
-                  {/* <FontAwesomeIcon icon={faMapSigns} /> */}
-                  <FaMapMarkerAlt /> 
+                  <FaMapMarkerAlt />
                 </div>
                 <div className="res-name">
                   <div className="result-name">{result.name}</div>
-                <div className="locale">{result.locale}</div>
-              </div>
+                  <div className="locale">{result.locale}</div>
+                </div>
               </div>
             </Link>
           ) : (

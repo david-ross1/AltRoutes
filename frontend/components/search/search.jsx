@@ -12,8 +12,6 @@ const Search = () => {
   const parks = useSelector(state => state.entities.parks.parks);
   const trails = useSelector(state => state.entities.trails.trails);
 
-  // console.log("parks", parks);
-  // console.log("trails", trails);
   const [filterParks, setFilterParks] = useState([]);
   const [filterTrails, setFilterTrails] = useState([]);
 
@@ -91,7 +89,6 @@ const Search = () => {
         onMouseLeave={() => setDropDownHovered(false)}
         className="search-button"
       >
-        {/* <img src="https://cdn.discordapp.com/attachments/768905648288956421/842228298889297950/3762887.png" /> */}
       </div>
       <div
         className="dropdown-container"

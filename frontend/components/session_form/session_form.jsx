@@ -16,7 +16,7 @@ class SessionForm extends React.Component {
   }
 
   update(field) {
-    return (e) => this.setState({ [field]: e.currentTarget.value });
+    return e => this.setState({ [field]: e.currentTarget.value });
   }
 
   clearState() {
@@ -30,12 +30,9 @@ class SessionForm extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    
-    
-      this.props.processForm(this.state);
-      // this.clearState();
-  }
 
+    this.props.processForm(this.state);
+  }
 
   demo(e) {
     e.preventDefault();
@@ -61,7 +58,7 @@ class SessionForm extends React.Component {
               className={this.setErrorClass("First")}
             />
 
-            {this.props.errors.map((error) => {
+            {this.props.errors.map(error => {
               return error.includes("First") ? (
                 <div className="error-text">Enter your first name.</div>
               ) : (
@@ -78,7 +75,7 @@ class SessionForm extends React.Component {
               className={this.setErrorClass("Last")}
               placeholder="Last name"
             />
-            {this.props.errors.map((error) => {
+            {this.props.errors.map(error => {
               return error.includes("Last") ? (
                 <div className="error-text">Enter your last name.</div>
               ) : (
@@ -109,7 +106,7 @@ class SessionForm extends React.Component {
                   onChange={this.update("email")}
                   className={this.setErrorClass("Email")}
                 />
-                {this.props.errors.map((error) => {
+                {this.props.errors.map(error => {
                   return error.includes("Email") ? (
                     <div className="error-text">Email is not valid.</div>
                   ) : (
@@ -127,7 +124,7 @@ class SessionForm extends React.Component {
                   placeholder="Password"
                   className={this.setErrorClass("Password")}
                 />
-                {this.props.errors.map((error) => {
+                {this.props.errors.map(error => {
                   return error.includes("Email") ? (
                     <div className="error-text">
                       Password must be 6 characters long.
@@ -163,8 +160,6 @@ class SessionForm extends React.Component {
                   find your next adventure.
                 </h1>
               </div>
-              {/* <h1>Find your next trail</h1> */}
-              {/* <SearchBarContainer />  */}
             </div>
           </div>
 
@@ -172,9 +167,7 @@ class SessionForm extends React.Component {
             <div className="create-share"></div>
           </div>
           <div className="main-page22">
-            <div className="main-page-content22">
-              {/* <h1>more text and stuff</h1> */}
-            </div>
+            <div className="main-page-content22"></div>
           </div>
 
           <div className="main-page-sub">
@@ -184,8 +177,6 @@ class SessionForm extends React.Component {
               <p className="phone-text">
                 All our trails are verified by experts and reviewed by our
                 global community of adventurers like you. <br /> <br />
-                {/* Whether you’re a hiker, biker or
-            trail runner, we’ll help you find your next adventure. */}
               </p>
             </div>
           </div>

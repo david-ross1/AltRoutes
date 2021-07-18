@@ -1,9 +1,6 @@
-import React from 'react';
-// import { FontAwesomIcon } from '@fortawesome/react-fontawesome';
-// import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
-import {  FaArrowAltCircleRight, FaSearch } from 'react-icons/fa'
-import SearchResults from './search_results'; 
-
+import React from "react";
+import { FaArrowAltCircleRight, FaSearch } from "react-icons/fa";
+import SearchResults from "./search_results";
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -59,7 +56,7 @@ class SearchBar extends React.Component {
               placeholder="Search by park or trail name"
               onChange={this.update()}
             />
-            <button className='fa-circle-right'>
+            <button className="fa-circle-right">
               {<FaArrowAltCircleRight />}
             </button>
           </form>
@@ -76,4 +73,4 @@ class SearchBar extends React.Component {
   }
 }
 
-export default SearchBar; 
+export default SearchBar;

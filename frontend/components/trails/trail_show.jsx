@@ -3,15 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPrint,
   faShare,
-  faCar,
   faArrowsAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import TrailIndexItemContainer from "./trail_index_container";
 import TrailMap from "../map/trail_map";
 
 import ReviewIndexContainer from "../reviews/review_index_container";
-// import ReviewFormContainer from '../reviews/review_form_container';
-import subnav_container from "../nav/subnav_container";
 import ReviewFormContainer from "../reviews/review_form_container";
 
 class TrailShow extends React.Component {
@@ -38,14 +35,6 @@ class TrailShow extends React.Component {
     if (trail === undefined) {
       return null;
     }
-
-    const { trails } = this.props;
-    // const localTrails = trails.filter((trail) => trail.park_id === this.props.match.params)
-    const renderReview = this.props.currentUser ? <ReviewIndexContainer /> : "";
-
-    // this.setState({ num: num + 1})
-
-    //  debugger
 
     return (
       <div className="trail-bg">
@@ -113,17 +102,17 @@ class TrailShow extends React.Component {
               </div>
             </div>
             <div className="trail-statistic-sub"></div>
-  
-              <div>
-                <div className="header-review">
-                  <p>Reviews</p>
-                </div>
-                <div>
-                  <ReviewFormContainer trail_id={this.props.trail.id} />
-                </div>
-                <div className="reviews-main">{<ReviewIndexContainer />}</div>
+
+            <div>
+              <div className="header-review">
+                <p>Reviews</p>
               </div>
- 
+              <div>
+                <ReviewFormContainer trail_id={this.props.trail.id} />
+              </div>
+              <div className="reviews-main">{<ReviewIndexContainer />}</div>
+            </div>
+
             <div className="trail-side-4"></div>
           </div>
           <div className="trail-right4">
@@ -142,39 +131,3 @@ class TrailShow extends React.Component {
 }
 
 export default TrailShow;
-
-// <div>
-//   <p>Description:-------------------{trail.description}</p>
-//   <p>distance:--------------------- {trail.distance}</p>
-//   <p>elevation_gain:--------------- {trail.elevationGain}</p>
-//   <p>difficulty:------------------- {trail.difficulty}</p>
-//   <p>park_id: ----------------------{trail.parkId}</p>
-//   <p>route_type:------------------- {trail.routeType}</p>
-//   <p>lat:-------------------------- {trail.lat}</p>
-//   <p>lon:-------------------------- {trail.lon}</p>
-
-//   <div className="trail-photo"   />
-//   <img src={trail.coverPhotoURL} />
-
-//   <div className="background">
-//     <div className="trail-name">
-//       <div className="trail-pictainer">
-//         <img className="trail-pic"></img>
-//       </div>
-
-//       <div className="trail-title-info">
-//         <h1>{trail.name}</h1>
-//         <div className="difficulty">
-//           <span>{trail.difficulty}</span>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-//   <NavLink to="/trails/9" exact>
-//     Trail 9
-//   </NavLink>
-
-//   <button onClick={() => this.props.history.push("/trails/4")}>
-//     test link
-//   </button>
-// </div>

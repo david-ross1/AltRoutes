@@ -1,9 +1,6 @@
 import { connect } from "react-redux";
 import SubNav from "./subnav";
-import {
-  fetchSearchResults,
-  clearSearchResults,
-} from "../../actions/search_actions";
+import { fetchSearchData, clearSearchData } from "../../actions/search_actions";
 
 const mapStateToProps = state => {
   return {
@@ -13,8 +10,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    clearSearchResults: () => dispatch(clearSearchResults()),
-    fetchSearchResults: query => dispatch(fetchSearchResults(query)),
+    clearSearchData: () => dispatch(clearSearchData()),
+    fetchSearchData: query => dispatch(fetchSearchData(query)),
   };
 };
 

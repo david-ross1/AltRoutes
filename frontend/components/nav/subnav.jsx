@@ -33,7 +33,7 @@ class SubNav extends React.Component {
   }
 
   handleSubmit(e) {
-    this.props.fetchSearchResults(this.state.query);
+    this.props.fetchSearchData(this.state.query);
   }
 
   render() {
@@ -69,7 +69,7 @@ class SubNav extends React.Component {
                 parent="sub"
                 results={results}
                 query={this.state.query}
-                fetchSearchResults={this.props.fetchSearchResults}
+                fetchSearchData={this.props.fetchSearchData}
               />
             ) : null}
           </div>

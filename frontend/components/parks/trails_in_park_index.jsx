@@ -11,15 +11,15 @@ class TrailsInParkIndex extends React.Component {
     }
 
     render() {
-        const { trailsInPark, parkName } = this.props;
-        if (!trailsInPark) {
+        const { parkTrails, parkName } = this.props;
+        if (!parkTrails) {
             return null;
         }
 
         return (
             <div>
                 {
-                    trailsInPark.map(trail => (
+                    parkTrails.map(trail => (
                         <TrailsInParkItem
                             key={trail.id}
                             trail={trail}

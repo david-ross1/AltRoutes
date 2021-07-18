@@ -5,7 +5,7 @@ export const fetchPark = parkId =>
 
 export const fetchTrailsInPark = parkId =>
   $.ajax({
-    url: `/api/parks/trails_in_park/${parkId}`,
+    url: `/api/parks/park_trails/${parkId}`,
   });
 
 export const fetchParks = () =>

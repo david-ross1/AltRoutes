@@ -1,11 +1,11 @@
-import { connect } from 'react-redux';
-import { fetchTrailsInPark } from '../../actions/park_actions';
-import { fetchTrail, fetchTrails } from '../../actions/trail_actions';
-import TrailsInParkIndex from './trails_in_park_index';
+import { connect } from "react-redux";
+import { fetchTrailsInPark } from "../../actions/park_actions";
+import { fetchTrail, fetchTrails } from "../../actions/trail_actions";
+import TrailsInParkIndex from "./trails_in_park_index";
 
 const mSTP = (state, ownProps) => ({
   // console.log("OWNPROPS", ownProps);
-  trailsInPark: state.entities.parks.trailsInPark,
+  parkTrails: state.entities.parks.parkTrails,
   parkName: ownProps.parkName,
   trails: state.entities.trails.trail_list,
   ownProps: ownProps,

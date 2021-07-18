@@ -10,8 +10,8 @@ class Api::ParksController < ApplicationController
     render :show 
   end
 
- def trails_in_park
+ def park_trails
     temp_park = Park.find(params[:id])
-    @trails_in_park = Trail.select('*').where('park_id = ?', temp_park.id)
+    @park_trails = Trail.select('*').where('park_id = ?', temp_park.id)
   end
 end

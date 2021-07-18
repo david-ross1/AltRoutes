@@ -6,11 +6,9 @@ const mapStateToProps = state => ({
   data: state.search,
 });
 
-const mapDispatchToProps = dispatch => {
-  return {
-    clearSearchData: () => dispatch(clearSearchData()),
-    fetchSearchData: query => dispatch(fetchSearchData(query)),
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  clearSearchData: () => dispatch(clearSearchData()),
+  fetchSearchData: query => dispatch(fetchSearchData(query)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

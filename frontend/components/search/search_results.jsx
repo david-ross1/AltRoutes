@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 
 class SearchResults extends React.Component {
   render() {
-    const noResults = (
+    const noData = (
       <li className={`${parent}search-result-item`}>No Results Found</li>
     );
 
-    const yesResults = this.props.data.map((result, idx) => (
+    const searchData = this.props.data.map((result, idx) => (
       <div className="result-container">
         <li className={`${parent}search-result-item`} key={idx}>
           {result.category === "Trail" ? (
@@ -42,7 +42,7 @@ class SearchResults extends React.Component {
     return (
       <div className="search-res-container">
         <ul className={`${parent}search-data`}>
-          {this.props.data.length ? yesResults : noResults}
+          {this.props.data.length ? searchData : noData}
         </ul>
       </div>
     );

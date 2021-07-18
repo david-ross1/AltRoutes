@@ -4,6 +4,21 @@
   padding: 0 16px;
   padding-top: 4px;
 
+  .trail-description {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  .trail-difficulty {
+    padding: 4px 12px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
   h3 {
     white-space: nowrap;
     overflow: hidden;
@@ -18,21 +33,6 @@
     font-size: 14px;
     margin-bottom: 5px;
     margin-top: 5px;
-  }
-
-  .trail-description {
-    margin-top: 24px;
-    font-size: 16px;
-  }
-
-  .trail-difficulty {
-    padding: 4px 12px;
-    margin-right: 5px;
-    color: white;
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 11px;
-    margin-bottom: 10px;
   }
 
   .moderate {
@@ -212,13 +212,6 @@
   }
 }
 
-.trail-bg {
-  background-color: #f2f2f2;
-  height: 100%;
-  width: 100%;
-  z-index: -1000;
-}
-
 .cover-photo-buttons-container {
   background: #428a13;
   height: 55px;
@@ -228,71 +221,62 @@
   border-top: none;
   display: flex;
   justify-content: space-around;
-
+  
   .trail-button {
     display: flex;
-    flex-direction: column;
     align-items: center;
     color: green;
-
+    flex-direction: column;
+    
     p {
-      color: white;
       margin-top: 8px;
       font-family: $tFont;
+      color: white;
     }
-
+    
     a {
+      border: none;
+      outline: none;
+      margin-top: -22px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
       background: inherit;
-      border: none;
-      outline: none;
-      margin-top: -22px;
       height: 50px;
     }
-
+    
     svg {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
+      background-color: white;
       font-size: 18px;
       padding: 15px;
       border-radius: 50%;
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
-      background-color: white;
     }
   }
 }
 
-.trail-info {
-  position: relative;
-  width: 1024px;
-  border: 1px solid #d6d6d6;
-  background-color: white;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 66.6666667% 33.33333334%;
-}
 
 .trail-right {
   background-color: white;
+  margin: auto;
+  padding: 3px 0;
   display: grid;
   grid-template-rows: 25%;
   width: 100%;
-  margin: auto;
   margin-top: 5px;
-  padding: 3px 0;
-
+  
   .trail-map {
-    width: inherit;
     padding-left: 5px;
-
+    width: inherit;
+    
     .trail-map-container {
+      display: flex;
       width: 330px;
       height: 280px;
-      border-radius: 8px;
       padding: 4px;
-      display: flex;
+      border-radius: 8px;
       cursor: pointer;
     }
   }
@@ -304,59 +288,59 @@
 }
 
 .trail-side-1 {
+  font-weight: 375;
+  padding: 20px 0;
+  border-bottom: $contentBorder;
+  margin: 0 24px;
   background-color: white;
   font-family: $tFont;
   font-size: 18px;
   line-height: 1.44;
   color: $mg;
-  font-weight: 375;
-  padding: 20px 0;
-  border-bottom: $contentBorder;
-  margin: 0 24px;
 }
 
 .trail-side-2 {
-  background-color: white;
   margin: 0 24px;
   padding-top: 24px;
   display: flex;
+  justify-content: space-around;
   flex-direction: row;
   text-align: left;
-  justify-content: space-around;
+  background-color: white;
   padding-bottom: 10px;
-
+  
   .trail-statistics {
-    padding-bottom: 6px;
     flex: 1;
-
+    padding-bottom: 6px;
+    
     p {
       font-family: $tFont;
-      line-height: 1.44;
       color: $mg;
-      font-weight: 375;
+      font-weight: 400;
+      line-height: 1.5;
       font-size: 12px;
     }
-
+    
     span {
       font-family: $tFont;
       color: $dg;
+      line-height: 1.5;
       font-weight: 600;
       font-size: 15px;
-      line-height: 1.38;
     }
   }
 }
 
 .trail-side-3 {
-  background-color: white;
   font-family: $tFont;
   font-size: 18px;
-  line-height: 1.44;
-  color: $mg;
-  font-weight: 375;
-  padding: 20px 0;
+  font-weight: 400;
+  background-color: white;
+  line-height: 1.5;
   margin: 0 24px;
-
+  padding: 20px 0;
+  color: $mg;
+  
   p {
     font-size: 16px;
   }
@@ -365,55 +349,70 @@
 .trail-statistic-sub {
   font-family: $tFont;
   color: $dg;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 1.38;
   padding: 20px;
+  font-weight: 600;
   background-color: #f2f2f2;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
 .local-trails-container {
   width: 100%;
   grid-row: 2;
   margin-top: 35px;
-
+  
   .local-trails {
-    margin-left: 25px;
-    margin-bottom: 0px;
     font-family: $tFont;
     color: $dg;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    line-height: 1.5;
     font-weight: 600;
     font-size: 18px;
-    line-height: 1.38;
   }
-
+  
   .nearby-trail-index {
     margin: auto;
     margin-left: 25px;
-
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
     .nearby-trail-item {
       display: flex;
       flex-direction: column;
       width: 291px;
       height: 236px;
+      margin-bottom: 24px;
       border-radius: 8px;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
       background-color: #fff;
       overflow: hidden;
       cursor: pointer;
       position: relative;
-      margin-bottom: 24px;
-
+      
       img {
         margin-top: -60px;
-        width: 291px;
         border-radius: 0;
+        width: 290px;
       }
     }
-
-    .nearby-trail-index {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
   }
+}
+
+.trail-info {
+  position: relative;
+  margin: auto;
+  width: 1024px;
+  border: 1px solid #d6d6d6;
+  grid-template-columns: 66.6666667% 33.33333334%;
+  background-color: white;
+  display: grid;
+  
+}
+
+.trail-bg {
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
 }

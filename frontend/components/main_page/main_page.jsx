@@ -2,7 +2,7 @@ import React from "react";
 import SearchBarContainer from "../search/search_container";
 import TrailIndexContainer from "../../components/trails/trail_index_container";
 
-const MainPage = ({ currentUser }) => {
+const MainPage = () => {
   return (
     <div>
       <div className="main-page">
@@ -25,9 +25,8 @@ const MainPage = ({ currentUser }) => {
           </p>
         </div>
       </div>
-      <div className='main-page-2-img-container'>
-      <div className="main-page2">
-         </div>
+      <div className="main-page-2-img-container">
+        <div className="main-page2"></div>
         <div className="main-page-content2"></div>
       </div>
     </div>

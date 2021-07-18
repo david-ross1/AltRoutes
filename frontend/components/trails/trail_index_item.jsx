@@ -29,7 +29,7 @@ class TrailIndexItem extends React.Component {
                   >
                     {trail.difficulty}
                   </span>
-                  <div className="active-star trail-show main-pg">
+                  <div className="selected-star trail-show main-pg">
                     ★ ★ ★ ★ ★
                   </div>
                 </div>
@@ -62,7 +62,7 @@ class TrailIndexItem extends React.Component {
                   <span className={`trail-item-difficulty ${trail.difficulty}`}>
                     {trail.difficulty}
                   </span>
-                  <div className="active-star trail-show">★ ★ ★ ★ ★</div>
+                  <div className="selected-star trail-show">★ ★ ★ ★ ★</div>
                 </div>
                 <div className="main-item-distance-div">
                   <p className="main-item-distance">

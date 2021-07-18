@@ -12,8 +12,7 @@ export const clearSearchData = () => ({
   type: CLEAR_SEARCH_DATA,
 });
 
-export const fetchSearchData = query => dispatch => {
-  return SearchApiUtil.fetchSearchData(query).then(data =>
+export const fetchSearchData = query => dispatch =>
+  SearchApiUtil.fetchSearchData(query).then(data =>
     dispatch(receiveSearchData(data))
   );
-};

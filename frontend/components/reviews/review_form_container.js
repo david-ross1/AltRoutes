@@ -1,14 +1,10 @@
 import { connect } from "react-redux";
-import ReviewForm from "./review_form";
+import { createReview } from "../../actions/review_actions";
 import { login } from "../../actions/session_actions";
-import {
-  createReview,
-  // deleteReview,
-} from "../../actions/review_actions";
 import { fetchReviews } from "../../util/reviews_api_util";
+import ReviewForm from "./review_form";
 
 const mapStateToProps = (state, ownProps) => {
-
   return {
     review: {
       date: "",
@@ -22,7 +18,6 @@ const mapStateToProps = (state, ownProps) => {
 };
 const mapDispatchToProps = dispatch => ({
   action: review => dispatch(createReview(review)),
-  // deleteReview: reviewId => dispatch(deleteReview(reviewId)),
   fetchReviews: trail_id => dispatch(fetchReviews(trail_id)),
   login: user => dispatch(login(user)),
 });

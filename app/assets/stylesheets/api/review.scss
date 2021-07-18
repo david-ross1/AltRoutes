@@ -4,7 +4,7 @@
   display: flex;
 }
 
-.review-card-user-name {
+.reviewer-name {
   font-family: $tFont;
   font-size: 14px;
   font-weight: bold;
@@ -12,15 +12,15 @@
   line-height: 1.5em;
 }
 
-.review-user-info-cont {
+.rev-user-container {
   display: flex;
 }
 
-.star-date-container {
+.startainer {
   display: flex;
 }
 
-.review-card-date {
+.review-date {
   margin-left: 10px;
   font-family: $tFont;
   font-size: 12px;
@@ -90,7 +90,7 @@
   cursor: pointer;
 }
 
-.active-star {
+.selected-star {
   color: gold;
 }
 
@@ -106,7 +106,7 @@
   padding-top: 10px;
 }
 
-.inactive-star {
+.not-selected-star {
   color: rgb(204, 200, 200);
 }
 
@@ -191,26 +191,13 @@
   justify-content: space-around;
 }
 
-.review-card-rating-cont {
-  display: flex;
-  flex-direction: row;
-  padding-right: 4px;
-  padding-bottom: 4px;
-}
-.review-card-rating-stars {
+.rev-star-rating {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.review-card-post-rating-cont {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-}
-
-.review-card-user-img {
+.review-image {
   height: 50px;
   width: 50px;
   font-size: 40px;
@@ -236,7 +223,7 @@
 .svg-inline--fa {
   height: 50px;
 }
-.review-card-sub-container {
+.reviewtainer {
   display: flex;
   flex-direction: row;
   width: 100%;

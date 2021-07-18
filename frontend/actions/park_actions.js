@@ -14,7 +14,7 @@ const receiveParks = parks => ({
   parks,
 });
 
-const receiveTrailsInPark = parkTrails => ({
+const receiveParkTrails = parkTrails => ({
   type: RECEIVE_PARK_TRAILS,
   parkTrails,
 });
@@ -25,8 +25,7 @@ export const fetchPark = parkId => dispatch =>
 export const fetchParks = () => dispatch =>
   ParkApiUtil.fetchParks().then(parks => dispatch(receiveParks(parks)));
 
-export const fetchParkTrails = parkId => dispatch => {
-  return ParkApiUtil.fetchParkTrails(parkId).then(parkTrails =>
-    dispatch(receiveTrailsInPark(parkTrails))
+export const fetchParkTrails = parkId => dispatch =>
+  ParkApiUtil.fetchParkTrails(parkId).then(parkTrails =>
+    dispatch(receiveParkTrails(parkTrails))
   );
-};

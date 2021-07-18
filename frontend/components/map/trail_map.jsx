@@ -10,7 +10,7 @@ class TrailMap extends React.Component {
     this.state = {
       lat: this.props.lat,
       lon: this.props.lon,
-      zoom: 15,
+      zoom: 14,
     };
     this.mapContainer = React.createRef();
   }

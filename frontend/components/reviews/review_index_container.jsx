@@ -1,8 +1,7 @@
 import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
 import { fetchReviews } from "../../actions/review_actions";
 import ReviewIndex from "./review_index";
-import { withRouter } from "react-router-dom";
-// import { deleteReview } from "../../util/reviews_api_util";
 
 const mapStateToProps = state => ({
   reviews: state.entities.reviews.reviews,
@@ -10,7 +9,6 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchReviews: trail_id => dispatch(fetchReviews(trail_id)),
-  // deleteReview: (review_id) => dispatch(deleteReview(review_id))
 });
 
 export default withRouter(

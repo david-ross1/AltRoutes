@@ -1,10 +1,5 @@
 import React from "react";
 import ParkTrails from "./park_trails";
-// import ParkMap from '../maps/park_map';
-// import SubSearch from '../search/sub_search';
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faDirections } from "@fortawesome/free-solid-svg-icons";
-// import TrailIndexItemContainer from "../trails/trail_index_container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPrint,

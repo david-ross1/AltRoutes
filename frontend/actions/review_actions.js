@@ -1,11 +1,11 @@
 import * as ReviewApiUti from "../util/reviews_api_util";
 
-export const RECEIVE_ALL_REVIEWS = "RECEIVE_ALL_REVIEWS";
+export const RECEIVE_REVIEWS = "RECEIVE_REVIEWS";
 export const RECEIVE_REVIEW = "RECEIVE_REVIEW";
 export const REMOVE_REVIEW = "REMOVE_REVIEW";
 
-const receiveAllReviews = reviews => ({
-  type: RECEIVE_ALL_REVIEWS,
+const receiveReviews = reviews => ({
+  type: RECEIVE_REVIEWS,
   reviews,
 });
 
@@ -21,7 +21,7 @@ const removeReview = reviewId => ({
 
 export const fetchReviews = trail_id => dispatch => {
   return ReviewApiUti.fetchReviews(trail_id).then(reviews =>
-    dispatch(receiveAllReviews(reviews))
+    dispatch(receiveReviews(reviews))
   );
 };
 

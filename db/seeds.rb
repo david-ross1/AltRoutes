@@ -11,17 +11,17 @@ require "open-uri"
 User.destroy_all
 
 demo = User.create!(first_name: "demo user", last_name: "!", email: "demo11", password: "passwordz")
-u1 = User.create!(first_name: "Rodney", last_name: "Ichien", email: "sakaguchi@rodney.com", password: "nicebreeze")
+u1 = User.create!(first_name: "Pete", last_name: "Ichien", email: "sakaguchi@rodney.com", password: "nicebreeze")
 u2 = User.create!(first_name: "Julia", last_name: "Follestad", email: "follestad@julia.com", password: "nicebreeze")
-u3 = User.create!(first_name: "Amanda", last_name: "Meyers", email: "bey@khalil.com", password: "nicebreeze")
+u3 = User.create!(first_name: "Kate", last_name: "Meyers", email: "bey@khalil.com", password: "nicebreeze")
 u4 = User.create!(first_name: "Jameson", last_name: "Moore", email: "valdez@jimonte.com", password: "nicebreeze")
-u5 = User.create!(first_name: "Priyanka", last_name: "Emerson", email: "singh@priyanka.com", password: "nicebreeze")
+u5 = User.create!(first_name: "Amy", last_name: "Emerson", email: "singh@priyanka.com", password: "nicebreeze")
 
 u6 = User.create!(first_name: "Ashby", last_name: "Kearnin", email: "ashby@kearnin.com", password: "nicebreeze")
 u7 = User.create!(first_name: "Michelle", last_name: "Camaray", email: "camaray@jaime.com", password: "nicebreeze")
 u8 = User.create!(first_name: "Nathan", last_name: "Lan", email: "tsang@nathan.com", password: "nicebreeze")
-u9 = User.create!(first_name: "Dennis", last_name: "Farley", email: "farley@demitrias.com", password: "nicebreeze")
-u10 = User.create!(first_name: "Jennifer", last_name: "Wells", email: "ong@jennifer.com", password: "nicebreeze")
+u9 = User.create!(first_name: "Alyson", last_name: "Price", email: "farley@demitrias.com", password: "nicebreeze")
+u10 = User.create!(first_name: "Jen", last_name: "Wells", email: "ong@jennifer.com", password: "nicebreeze")
 
 
 

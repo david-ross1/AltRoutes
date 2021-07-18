@@ -1,5 +1,5 @@
 import {
-  RECEIVE_ALL_REVIEWS,
+  RECEIVE_REVIEWS,
   RECEIVE_REVIEW,
   REMOVE_REVIEW,
 } from "../actions/review_actions";
@@ -8,7 +8,7 @@ const ReviewsReducer = (state = {}, action) => {
   Object.freeze(state);
 
   switch (action.type) {
-    case RECEIVE_ALL_REVIEWS:
+    case RECEIVE_REVIEWS:
       return { ...state, reviews: action.reviews };
     case RECEIVE_REVIEW:
       return { ...state, reviews: [...state.reviews, action.review] };

@@ -2,7 +2,7 @@ import * as ParkApiUtil from "../util/park_api_util";
 
 export const RECEIVE_PARK = "RECEIVE_PARK";
 export const RECEIVE_PARKS = "RECEIVE_PARKS";
-export const RECEIVE_TRAILS_IN_PARK = "RECEIVE_TRAILS_IN_PARK";
+export const RECEIVE_PARK_TRAILS = "RECEIVE_PARK_TRAILS";
 
 const receivePark = park => ({
   type: RECEIVE_PARK,
@@ -15,7 +15,7 @@ const receiveParks = parks => ({
 });
 
 const receiveTrailsInPark = parkTrails => ({
-  type: RECEIVE_TRAILS_IN_PARK,
+  type: RECEIVE_PARK_TRAILS,
   parkTrails,
 });
 

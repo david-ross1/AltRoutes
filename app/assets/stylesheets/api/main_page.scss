@@ -57,12 +57,18 @@ div.phone {
   margin-bottom: 20px;
 }
 
-.main-page2 {
-  background-image: image-url("ss_share.png");
-  background-size: cover;
-  position: relative;
+.main-page-2-img-container {
   width: 100%;
-  height: 550px;
+  height: 650px; 
+}
+
+.main-page2 {
+  // background-image: image-url("ss_share.png");
+  background-image: image-url("mt-bike.png");
+  background-size: cover;
+  width: auto; 
+  height: 100%;
+  position: relative;
   color: white;
   text-align: center;
   font-family: $tFont;

@@ -25,7 +25,9 @@ const MainPage = ({ currentUser }) => {
           </p>
         </div>
       </div>
+      <div className='main-page-2-img-container'>
       <div className="main-page2">
+         </div>
         <div className="main-page-content2"></div>
       </div>
     </div>

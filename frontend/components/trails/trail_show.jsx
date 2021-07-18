@@ -6,21 +6,20 @@ import {
   faCar,
   faArrowsAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import TrailIndexItemContainer from './trail_index_container';
-import TrailMap from '../map/trail_map'; 
+import TrailIndexItemContainer from "./trail_index_container";
+import TrailMap from "../map/trail_map";
 
-import ReviewIndexContainer from '../reviews/review_index_container';
+import ReviewIndexContainer from "../reviews/review_index_container";
 // import ReviewFormContainer from '../reviews/review_form_container';
 import subnav_container from "../nav/subnav_container";
-import ReviewFormContainer from '../reviews/review_form_container'
-
+import ReviewFormContainer from "../reviews/review_form_container";
 
 class TrailShow extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { 
+    this.state = {
       num: 0,
-      trailId: this.props.match.params.trailId
+      trailId: this.props.match.params.trailId,
     };
   }
 
@@ -39,33 +38,31 @@ class TrailShow extends React.Component {
     if (trail === undefined) {
       return null;
     }
-   
+
     const { trails } = this.props;
     // const localTrails = trails.filter((trail) => trail.park_id === this.props.match.params)
-    const renderReview = (this.props.currentUser ? (
-      <ReviewIndexContainer />
-    ) : '')
+    const renderReview = this.props.currentUser ? <ReviewIndexContainer /> : "";
 
     // this.setState({ num: num + 1})
 
-  //  debugger
+    //  debugger
 
     return (
-      <div className="trail-page-background">
-        <div className="title-box">
-          <div className="title-photo-box">
+      <div className="trail-bg">
+        <div className="trail-bg-container">
+          <div className="trail-title-pic-container">
             <img src={trail.coverPhotoURL} alt="trail" />
           </div>
-          <div className="trail-title-content">
-            <h1 className="header-text1">{trail.name}</h1>
-            <div className="difficulty-rating">
+          <div className="trail-title-info">
+            <h1>{trail.name}</h1>
+            <div className="trail-diff-rating">
               <span className={`trail-difficulty ${trail.difficulty}`}>
                 {trail.difficulty}
               </span>
             </div>
           </div>
-          <div className="trail-actions-wrap">
-            <div className="trail-action">
+          <div className="cover-photo-buttons-container">
+            <div className="trail-button">
               <a
                 target="_blank"
                 href={`https://www.google.com/maps/dir/Current+Location/${trail.lat},${trail.lon}`}
@@ -74,13 +71,13 @@ class TrailShow extends React.Component {
                 <p>Directions</p>
               </a>
             </div>
-            <div className="trail-action">
+            <div className="trail-button">
               <a href="javascript:window.print();">
                 <FontAwesomeIcon icon={faPrint} />
                 <p>Print map</p>
               </a>
             </div>
-            <div className="trail-action">
+            <div className="trail-button">
               <a target="_blank" href="https://www.facebook.com/">
                 <FontAwesomeIcon icon={faShare} />
                 <p>Share</p>
@@ -89,63 +86,50 @@ class TrailShow extends React.Component {
           </div>
         </div>
         <div className="trail-info">
-          <div className="trail-left">
-            <div className="trail-left-1">
+          <div className="trail-side">
+            <div className="trail-side-1">
               <p>{trail.parkDescription}</p>
             </div>
-            <div className="trail-left-2">
-              <div className="trail-stat">
+            <div className="trail-side-2">
+              <div className="trail-statistics">
                 <p>Length</p>
-                <span className="header-text-3">{trail.distance} mi</span>
+                <span>{trail.distance} mi</span>
               </div>
-              <div className="trail-stat">
+              <div className="trail-statistics">
                 <p>Elevation gain</p>
-                <span className="header-text-3">{trail.elevationGain} ft</span>
+                <span>{trail.elevationGain} ft</span>
               </div>
-              <div className="trail-stat">
+              <div className="trail-statistics">
                 <p>Route type</p>
-                <span className="header-text-3">{trail.routeType}</span>
+                <span>{trail.routeType}</span>
               </div>
             </div>
-            <div className="trail-tab">
+            <div className="trail-statistic-sub">
               <p>Description</p>
             </div>
-            <div className="trail-left-3">
+            <div className="trail-side-3">
               <div>
                 <p>{trail.description}</p>
               </div>
             </div>
-            <div className="trail-tab"></div>
-            <div className="something">
-              <div className="reviews-container">
-                <div className="reviews-content">
-                  <div className="reviews-header">
-                    <p>Reviews</p>
-                  </div>
-                  <div className="add-review-container">
-                    <ReviewFormContainer trail_id={this.props.trail.id} />
-                  </div>
-                  <div className="all-reviews">{<ReviewIndexContainer />}</div>
+            <div className="trail-statistic-sub"></div>
+  
+              <div>
+                <div className="header-review">
+                  <p>Reviews</p>
                 </div>
-              </div>
-              <div className="nearby-trails-container">
-                <div className="nearby-trails-sub-container">
-                  <div className="nearby-trails-header">
-                    {/* <p>Nearby Trails</p> */}
-                  </div>
-                  <div className="nearby-trails-info">
-                    {/* <NearbyTrailsContainer trailId={this.props.trail.id} /> */}
-                  </div>
+                <div>
+                  <ReviewFormContainer trail_id={this.props.trail.id} />
                 </div>
+                <div className="reviews-main">{<ReviewIndexContainer />}</div>
               </div>
-            </div>
-            <div className="trail-left-4"></div>
+ 
+            <div className="trail-side-4"></div>
           </div>
           <div className="trail-right4">
-            <div className='map-box'>
-              <TrailMap lon={trail.lon} lat={trail.lat} /> 
+            <div className="map-box">
+              <TrailMap lon={trail.lon} lat={trail.lat} />
             </div>
-            {/* <div className="trail-map"></div> */}
             <div className="nearby-trails-wrapper">
               <h3 className="nearby-trails header-text3"></h3>
               <TrailIndexItemContainer />
@@ -158,38 +142,6 @@ class TrailShow extends React.Component {
 }
 
 export default TrailShow;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // <div>
 //   <p>Description:-------------------{trail.description}</p>
@@ -210,7 +162,7 @@ export default TrailShow;
 //         <img className="trail-pic"></img>
 //       </div>
 
-//       <div className="trail-title-content">
+//       <div className="trail-title-info">
 //         <h1>{trail.name}</h1>
 //         <div className="difficulty">
 //           <span>{trail.difficulty}</span>

@@ -37,7 +37,7 @@ class SubNav extends React.Component {
   }
 
   render() {
-    const { results, parkName, parkId } = this.props;
+    const { data, parkName, parkId } = this.props;
 
     return (
       <>
@@ -67,7 +67,7 @@ class SubNav extends React.Component {
             {this.state.query !== "" ? (
               <SearchResults
                 parent="sub"
-                results={results}
+                data={data}
                 query={this.state.query}
                 fetchSearchData={this.props.fetchSearchData}
               />

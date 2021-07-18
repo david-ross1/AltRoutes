@@ -18,14 +18,11 @@ const Footer = () => {
             <FontAwesomeIcon
               icon={faMountain}
               className="footer-mountain-logo"
-              />
-            {/* <div className="footer-moretrails-text"> */}
-              <h2 className='footerh2'>MoreTrails</h2>
-            {/* </div> */}
+            />
+            <h2 className="footerh2">MoreTrails</h2>
           </Link>
         </div>
         <div className="footer-logo links">
-
           <a href="https://github.com/david-ross1" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>

@@ -12,7 +12,7 @@ class SearchResults extends React.Component {
       <li className={`${parent}search-result-item`}>No Results Found</li>
     );
 
-    const yesResults = this.props.results.map((result, idx) => (
+    const yesResults = this.props.data.map((result, idx) => (
       <div className="result-container">
         <li className={`${parent}search-result-item`} key={idx}>
           {result.category === "Trail" ? (
@@ -44,8 +44,8 @@ class SearchResults extends React.Component {
 
     return (
       <div className="search-res-container">
-        <ul className={`${parent}search-results`}>
-          {this.props.results.length ? yesResults : noResults}
+        <ul className={`${parent}search-data`}>
+          {this.props.data.length ? yesResults : noResults}
         </ul>
       </div>
     );

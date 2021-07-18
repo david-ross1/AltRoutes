@@ -8,7 +8,7 @@ const searchReducer = (state = [], action) => {
 
   switch (action.type) {
     case RECEIVE_SEARCH_DATA:
-      return action.results;
+      return action.data;
     case CLEAR_SEARCH_DATA:
       return [];
     default:

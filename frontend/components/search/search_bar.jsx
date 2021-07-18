@@ -40,7 +40,7 @@ class SearchBar extends React.Component {
   }
 
   render() {
-    const { results } = this.props;
+    const { data } = this.props;
 
     return (
       <>
@@ -66,7 +66,7 @@ class SearchBar extends React.Component {
         </div>
         {this.state.query !== "" ? (
           <SearchResults
-            results={results}
+            data={data}
             query={this.state.query}
             fetchSearchData={this.props.fetchSearchData}
           />

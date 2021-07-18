@@ -3,7 +3,7 @@ import SearchBar from "./search_bar";
 import { fetchSearchData, clearSearchData } from "../../actions/search_actions";
 
 const mapStateToProps = state => ({
-  results: state.search,
+  data: state.search,
 });
 
 const mapDispatchToProps = dispatch => {

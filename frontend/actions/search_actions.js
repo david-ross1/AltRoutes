@@ -3,9 +3,9 @@ import * as SearchApiUtil from "../util/search_api_util";
 export const RECEIVE_SEARCH_DATA = "RECEIVE_SEARCH_DATA";
 export const CLEAR_SEARCH_DATA = "CLEAR_SEARCH_DATA";
 
-const receiveSearchData = results => ({
+const receiveSearchData = data => ({
   type: RECEIVE_SEARCH_DATA,
-  results,
+  data,
 });
 
 export const clearSearchData = () => ({
@@ -13,7 +13,7 @@ export const clearSearchData = () => ({
 });
 
 export const fetchSearchData = query => dispatch => {
-  return SearchApiUtil.fetchSearchData(query).then(results =>
-    dispatch(receiveSearchData(results))
+  return SearchApiUtil.fetchSearchData(query).then(data =>
+    dispatch(receiveSearchData(data))
   );
 };

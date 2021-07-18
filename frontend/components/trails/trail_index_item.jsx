@@ -52,9 +52,12 @@ class TrailIndexItem extends React.Component {
               <div className="item-locale">{trail.locale}</div>
 
               <div className="item-difficulty-rating">
-                <span className={`trail-item-difficulty ${trail.difficulty}`}>
-                  {trail.difficulty}
-                </span>
+                <div className="diff-contain">
+                  <span className={`trail-item-difficulty main-pg ${trail.difficulty}`}>
+                    {trail.difficulty}
+                  </span>
+                  <div className="active-star trail-show main-pg">★ ★ ★ ★ ★</div>
+                </div>
                 <div className="item-distance-div">
                   <p className="item-distance">
                     Length: {trail.distance} mi &nbsp; &nbsp; • &nbsp; &nbsp;
@@ -66,7 +69,7 @@ class TrailIndexItem extends React.Component {
           </div>
         </div>
       </Link>
-      );
+    );
 
         const showPageIndex = (
           <Link to={`/trails/${trail.id}`} className="main-trail-card">
@@ -80,11 +83,14 @@ class TrailIndexItem extends React.Component {
                   <div className="main-item-locale">{trail.locale}</div>
 
                   <div className="main-item-difficulty-rating">
-                    <span
-                      className={`trail-item-difficulty ${trail.difficulty}`}
-                    >
-                      {trail.difficulty}
-                    </span>
+                    <div className="diff-contain">
+                      <span
+                        className={`trail-item-difficulty ${trail.difficulty}`}
+                      >
+                        {trail.difficulty}
+                      </span>
+                      <div className="active-star trail-show">★ ★ ★ ★ ★</div>
+                    </div>
                     <div className="main-item-distance-div">
                       <p className="main-item-distance">
                         Length: {trail.distance} mi &nbsp; &nbsp; • &nbsp;

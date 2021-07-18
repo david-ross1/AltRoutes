@@ -1,19 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMountain, faHiking } from "@fortawesome/free-solid-svg-icons";
+import { faMountain } from "@fortawesome/free-solid-svg-icons";
 
-
-const Nav = (props) => {
-  const { currentUser, logout } = props 
+const Nav = props => {
+  const { currentUser, logout } = props;
   const navButtons = currentUser ? (
     <>
       <a
         href="https://www.linkedin.com/in/david-ross-988426216/"
         target="_blank"
       >
-        
-      <button className="upgrade">Upgrade to Pro</button>
+        <button className="upgrade">Upgrade to Pro</button>
       </a>
       <div className="dropdown-select">
         <div className="profile-pic"></div>
@@ -46,7 +44,7 @@ const Nav = (props) => {
         <Link to="/" className="logo-title">
           <FontAwesomeIcon icon={faMountain} className="mountain-logo" />
           <h2>MoreTrails</h2>
-          <div className='pro-tag'></div>
+          <div className="pro-tag"></div>
         </Link>
       </div>
       <div className="nav-buttons">{navButtons}</div>

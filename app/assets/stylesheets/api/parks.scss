@@ -1,350 +1,285 @@
 @import "./vars";
 
-.best-trails-in-park { 
-  font-family: 'Montserrat';
-  font-size: 20px; 
-  color: gray; 
-  margin-left: 20px; 
-  margin-bottom: 20px; 
+.best-trails-in-park {
+  font-family: "Montserrat";
+  font-size: 20px;
+  color: gray;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .parkstar {
   font-size: 16px;
   margin-left: 10px;
-  padding-top: 10px;  
+  padding-top: 10px;
 }
 
 .park-des {
-  margin-bottom: 40px; 
-  font-family: 'Montserrat';
-  line-height: 1.5em; 
-  margin-left: 20px; 
-  font-size: 18px; 
+  margin-bottom: 40px;
+  font-family: "Montserrat";
+  line-height: 1.5em;
+  margin-left: 20px;
+  font-size: 18px;
   color: rgb(90, 88, 88);
 }
 
-
-
 .park-show-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // overflow: scroll;
-
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media only screen and (max-width: 1000px){
-    .park-show-container {
-        align-items: flex-start;
-    }
+@media only screen and (max-width: 1000px) {
+  .park-show-container {
+    align-items: flex-start;
+  }
 }
 .park-pic-container {
-    width: 100%;
-    height: 331px;
-    overflow: hidden;
-    background-size: cover;
-    border-radius: 8px;
-    // background-color: blue;
+  width: 100%;
+  height: 331px;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 8px;
 }
 
 .park-pic-container > img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .park-content {
-    width: 100%;
-    // height: 850px;
-    // background-color: darkgoldenrod;
-    // position: absolute;
+  width: 100%;
 }
 
 .park-title-container {
-    width: 100%;
-    height: 60px;
-    font-family: 'Montserrat'; 
-    display: flex;
-    align-items: center;
-    font-size: 50px;
-    // padding-top: 10px;
-    // padding-left: 5px;
+  width: 100%;
+  height: 60px;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  font-size: 50px;
 }
 
 .rating-container {
-    width: 100%;
-    height: 40px;
-    font-family: 'Montserrat'; 
-    font-size: 30px;
-    display: flex;
-    flex-direction: row;
+  width: 100%;
+  height: 40px;
+  font-family: "Montserrat";
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
 }
 .rating-container > p {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .park-summary {
-    width: 100%;
-    height: 120px;
-    // background-color: lime;
-    font-family: 'Montserrat'; 
-    font-size: 20px;
+  width: 100%;
+  height: 120px;
+  font-family: "Montserrat";
+  font-size: 20px;
 }
 
-
-
 .park-description-header {
-    width: 100%;
-    height: 60px;
-    // background-color: magenta;
-    font-family: 'Montserrat'; 
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: 25px;
-    // border-top: solid gray 2px;
-    // border-bottom: solid gray 2px;
+  width: 100%;
+  height: 60px;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 25px;
 }
 
 .park-description-body {
-    font-size: 20px;
-    // padding-top: 2px;
-    font-family: 'Montserrat'; 
-    // padding-bottom: 10px;
-
+  font-size: 20px;
+  font-family: "Montserrat";
 }
 
 .park-map-container {
-    height: 295px;
-    width: 800px;
-    // border: solid red 2px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat'; 
-    font-size: 50px;
-    margin-bottom: 5px;
+  height: 295px;
+  width: 800px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 50px;
+  margin-bottom: 5px;
 }
 
 .other-park-actions {
-    display: flex;
-    flex-direction: row;
-    // justify-content: flex-start;
-    font-family: 'Montserrat'; 
-    font-size: 45px;
-    color: #E6692A;
-    width: 69%;
-    // background-color: green;
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat";
+  font-size: 45px;
+  color: #e6692a;
+  width: 69%;
 }
 
-
 .park-information-container {
-    width: 100%;
-    height: 125px;
-    // background-color: greenyellow;
-    // display: flex;
-    // border-top: solid gray 2px;
-    // border-bottom: solid gray 2px;
+  width: 100%;
+  height: 125px;
 }
 
 .park-information-header {
-    // background-color: honeydew;
-    width: 100%;
-    height: 60px;
-    font-family: 'Montserrat'; 
-    font-size: 30px;
-    font-weight: 25px;
-    display: flex;
-    align-items: center;
-  
+  width: 100%;
+  height: 60px;
+  font-family: "Montserrat";
+  font-size: 30px;
+  font-weight: 25px;
+  display: flex;
+  align-items: center;
 }
-
 
 .park-information-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 47%;
-    font-family: 'Montserrat'; 
-    font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 47%;
+  font-family: "Montserrat";
+  font-size: 20px;
 }
 .park-information-details > p {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 .park-directions-container {
-    padding-left: 40px;
-    color: #E6692A;
-   
+  padding-left: 40px;
+  color: #e6692a;
 }
 .park-directions-container > a {
-    color: #E6692A;
+  color: #e6692a;
 }
 
 .trails-in-park-container {
-    width: 100%;
-   
-    // background-color: brown;
-//     position: relative;
-//     top: 0px;
+  width: 100%;
 }
 
-.trails-in-park-sub-container{
-    // height: 200px;
-    // width: 100%;
-    // background-color: blue;
-    display: flex;
-    flex-direction: row;
+.trails-in-park-sub-container {
+  display: flex;
+  flex-direction: row;
 }
 .trails-in-park-sub-container:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .trail-in-park-img-container {
-    // border: solid red 2px;
-    margin-left: 20px; 
-    height: 260px;
-    width: 300px;
-    font-family: 'Montserrat'; 
-    display: flex;
-    justify-content: center;
-    padding-top: 0px; 
-    padding-bottom: 20px; 
-    // align-items: center;
-    
+  margin-left: 20px;
+  height: 260px;
+  width: 300px;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
 }
 
 .trail-in-park-rating {
-    display: flex;
-    font-size: 12px; 
-    color: gray; 
-    flex-direction: row;
+  display: flex;
+  font-size: 12px;
+  color: gray;
+  flex-direction: row;
 }
 
 .trail-in-park-img {
-    // border: solid blue 2px;
-    width: 290px;
-    height: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-size: cover;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
+  width: 290px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
 }
 
 .trail-in-park-img > img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .trail-in-park-details-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .trail-in-park-card-container {
-    // width: 70%;
-    width: 100%;
-    // margin-top: px; 
-    margin-left: 25px; 
+  width: 100%;
+  margin-left: 25px;
 }
-
-
 
 .trail-in-trailName-parkName {
-    // display: flex;
-    // justify-content: flex-end;
-    // flex-direction: column;
-    // border-bottom: solid gray 2px;
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 .trail-in-park-name {
-    font-family: 'Montserrat';
-    font-size: 16px;
- 
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: rgb(82, 80, 80);
+  font-weight: 700;
 }
 
 .trail-in-park-park-name {
-    font-family: 'Montserrat'; 
-    padding-top: 2px;
-    padding-left: 0px;
-    font-size: 12px; 
-    color: gray; 
-    
+  font-family: "Montserrat";
+  padding-top: 2px;
+  padding-left: 0px;
+  font-size: 12px;
+  color: gray;
 }
 
 .trail-in-park-indepth-details-cont {
-    // border-bottom: solid gray 2px;
-    padding-bottom: 6px;
-    // font-size: 17px;
-    margin-bottom: 20px;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
 }
 
-.trail-in-park-diff-rating-cont{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Montserrat'; 
-    // justify-content: space-between;
-    // width: 100%;
+.trail-in-park-diff-rating-cont {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat";
 }
-// .trail-in-park-difficulty{
-//     padding-right: 25px;
-//     color: gray; 
-//     font-size: 12px; 
-//     // padding-left: 13px;
-// }
 
-        .trail-difficulty {
-            margin-top: 10px; 
-            padding: 4px 14px;
-            color: white;
-            border-radius: 4px;
-            font-family: "Montserrat";
-            font-size: 11px;
-            background: green; 
-        }
+.trail-difficulty {
+  margin-top: 10px;
+  padding: 4px 14px;
+  color: white;
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-size: 11px;
+  background: green;
+}
 
+.moderate {
+  background-color: $button;
+}
 
-        .moderate {
-            background-color: $button;
-        }
+.hard {
+  background-color: gray;
+}
 
-        .hard {
-            background-color: gray;
-        }
-
-        .easy {
-            background-color: green;
-        }
+.easy {
+  background-color: green;
+}
 
 .trail-in-park-length-container {
-    display: flex;
-    flex-direction: row;
-    font-family: 'Montserrat'; 
-    font-size: 12px; 
-    color: gray; 
-
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat";
+  font-size: 12px;
+  color: gray;
 }
-.trail-in-park-length-container > p{
-    padding-right: 7px;
-    padding-top: 10px 
+.trail-in-park-length-container > p {
+  padding-right: 7px;
+  padding-top: 10px;
 }
 .trail-in-park-desc-container {
-    font-family: 'Montserrat';
-    font-size: 16px; 
-    color: gray; 
-    line-height: 1.5em; 
-    // font-size: 20px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5em;
 }
-
 
 .trail-left99 {
   width: 950px;
-  // padding-right: 25px;
 }
 
 .trail-right43 {
@@ -352,9 +287,5 @@
 }
 
 .trail-left43 {
-  width: 700px; 
-}
-
-.trail-left-3 {
-  // width: 100%
+  width: 700px;
 }

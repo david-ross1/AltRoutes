@@ -4,99 +4,79 @@
 
 @import "../vars.scss";
 
-// .searchtainer {
-//   height: 40px 
-// }
-
 .results-container {
-  text-align: left; 
-
+  text-align: left;
 }
 
 .result-name {
-  font-size: 16px; 
+  font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .res-name {
-  display: flex; 
-  flex-direction: column; 
-  align-items: flex-start; 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .locale {
-  font-size: 10px 
+  font-size: 10px;
 }
 
 .result-container {
   background: white;
   color: rgb(75, 74, 74);
-  // width: 500px;
-  // overflow-y: scroll;
-  // max-height: 300px;
 }
 
 .search-box-placeholder {
-  font-size: 20px; 
-  color: black; 
+  font-size: 20px;
+  color: black;
 }
 
 .search-res-container {
-  // padding-top: 40px; 
   max-height: 600px;
   overflow-y: scroll;
   background: black;
   margin: 0px auto;
-  position: relative; 
-  top: 65px; 
-  left: 0; 
-  // min-width: 400px; 
+  position: relative;
+  top: 65px;
+  left: 0;
   width: 50%;
-  // margin-top: 400px; 
-  padding-top: 40px; 
-  background: white; 
+  padding-top: 40px;
+  background: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding-bottom: 15px; 
-
+  padding-bottom: 15px;
 
   li {
     display: flex;
     align-items: center;
     justify-content: left;
-    color: $darkGrey;
+    color: $dg;
     align-items: center;
     padding: 3.5px 7px 3.5px 7px;
     font-size: 14px;
     font-weight: 300;
-    padding-left: 25px; 
-    text-align: center; 
+    padding-left: 25px;
+    text-align: center;
   }
-
 }
-
- 
-
-
 
 .res-icon-park {
   font-size: 20px;
-  margin-left: 3px; 
-  // padding-bottom: 10px;  
+  margin-left: 3px;
 }
-
 
 .res-icon-trail {
   font-size: 20px;
-  padding-top: 18px 
-  // padding-bottom: 10px;  
+  padding-top: 18px;
 }
 
-.result-trail-icon, 
+.result-trail-icon,
 .result-park-icon {
   color: green;
-  display: flex; 
+  display: flex;
 }
 
 .res-name {
@@ -109,16 +89,15 @@
   margin-left: 30px;
   color: rgb(75, 75, 75);
   margin-top: 20px;
-  font-size: 16px; 
-  font-family: "Montserrat"; 
+  font-size: 16px;
+  font-family: "Montserrat";
 }
 
 .search-bar {
-
-  position: absolute; 
-  min-width: 400px; 
+  position: absolute;
+  min-width: 400px;
   top: 50px;
-  left: 25%; 
+  left: 25%;
   width: 50%;
   margin: 40px auto;
   font-size: 22px;
@@ -127,296 +106,49 @@
 }
 
 .fa-search {
-  color: rgb(63, 63, 63); 
-  margin-left: 15px; 
-  margin-top: 26px ;
-  font-size: 14px; 
-  padding-right: 10px; 
+  color: rgb(63, 63, 63);
+  margin-left: 15px;
+  margin-top: 26px;
+  font-size: 14px;
+  padding-right: 10px;
   padding-left: 10px;
-
 }
 
 .fa-circle-right {
-  font-size: 40px; 
-  margin-top: 0px; 
-  padding-top: 4px; 
-  padding-right: 15px; 
-  color: green; 
+  font-size: 40px;
+  margin-top: 0px;
+  padding-top: 4px;
+  padding-right: 15px;
+  color: green;
 }
 
 .search-input {
-
   -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
   -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-  // box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-      box-shadow: 0px  1px 10px rgb(84, 83, 83);
+  box-shadow: 0px 1px 10px rgb(84, 83, 83);
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
   display: flex;
   justify-content: left;
   background-color: white;
-  // background-clip: padding-box;
   border-radius: 32px;
-  height: 65px; 
+  height: 65px;
 
   input {
     width: 100%;
     color: rgb(51, 50, 50);
     text-align: left;
-    padding-left: 10px; 
-      // -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-  // -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-  // box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
-
-  // filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
-  // -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
-  // zoom: 1;
-    // height: 30px; 
+    padding-left: 10px;
   }
 
   input::placeholder {
     color: rgb(77, 75, 75);
-    font-size: 16px; 
-    font-weight: 300; 
+    font-size: 16px;
+    font-weight: 300;
   }
 
   button {
     background-color: transparent;
-    // // padding: 10px 20px;
-    // padding-left: 6px; 
-    // border-top-right-radius: 6px;
-    // border-bottom-right-radius: 6px;
-    // cursor: pointer;
-    // border-radius: 30px; 
-    // border-top-right-radius: 30px; 
-    // border-bottom-right-radius: 30px;
-  }
-
-  button:hover {
-    // background-color: $buttonHoverGreen;
-  }
-
-  // svg {
-  //     color: $lighterGrey;
-  //     padding: 25px;
-  //     cursor: text;
-  //     font-size: 15px;
-  //     font-weight: 400;
-  // }
-
-  // path {
-  //     width: 10px;
-  // }
-}
-
-// .search-results {
-//     // font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-//     // font-size: 50%;
-//     // margin-top: 0px;
-//     margin: 0px auto;
-//     padding-top: 0px;
-//     padding-bottom: 0;
-//     // z-index: -2;
-//     // background-color: #ffff;
-//     // border-style: solid;
-//     width: 70%;
-//     // border-bottom-right-radius: 8px;
-//     // border-bottom-left-radius: 8px;
-//     // border: $contentBorder;
-//     // height: 100px;
-//     // overflow-y: scroll;
-
-//     li {
-//         display: flex;
-//         align-items: center;
-//         justify-content: left;
-//         color: $darkGrey;
-//         align-items: center;
-//         padding: 3.5px 7px 3.5px 7px;
-//         font-size: 16px;
-
-//     }
-
-//     li:last-child {
-//         border-bottom-right-radius: 8px;
-//         border-bottom-left-radius: 8px;
-//     }
-
-//     a {
-//         display: flex;
-//         flex-direction: row;
-//         align-items: center;
-//         text-align: center;
-
-//         div {
-//             color: white;
-//             width: 33px;
-//             padding: 8px;
-//             border-radius: 4px;
-//             margin-right: 8px;
-
-//         }
-
-//     }
-
-//     li:hover {
-//         background-color: green;
-//         color: white;
-
-//         .result-hike-icon {
-//             background-color: white;
-//             color: green;
-
-//         }
-
-//         .result-park-icon {
-//             background-color: white;
-//             color: $orange;
-//         }
-//     }
-
-//     .result-park-icon {
-//         background-color: $orange;
-//         color: white
-//     }
-
-//     .result-hike-icon {
-//         background-color: green;
-//         color: white;
-//     }
-
-// }
-
-//SubNav Search
-
-.sub-search-bar {
-  position: relative;
-  width: 326px;
-  font-weight: 400;
-}
-
-.sub-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  max-width: 1024px;
-  margin: auto;
-  // padding-left: 58%;
-}
-
-.breadcrumbs {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  color: $lighterGrey;
-  font-family: gray, Arial, sans-serif;
-
-  p {
-    padding: 5px;
-    font-size: 12px;
-    line-height: normal;
-  }
-
-  svg {
-    padding: 5px;
-    font-size: 7px;
-  }
-}
-
-.sub-search-input {
-  display: flex;
-  border-radius: 8px;
-  flex-direction: row;
-  width: 326px;
-  font-family: gray, Arial, sans-serif;
-  font-size: 13px;
-  border: 1px solid #e6e6e6;
-  color: #414141;
-  vertical-align: middle;
-  padding-left: 7px;
-  background-color: white;
-
-  input {
-    width: 100%;
-    color: $darkGrey;
-    text-align: left;
-  }
-
-  .search-icon {
-    color: black;
-    font-size: 33px; 
-    background-color: green;
-    border: 1px solid green;
-    padding: 10px 10px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    cursor: pointer;
-  }
-}
-
-.sub-search-results {
-  position: absolute;
-  background-color: white;
-  width: 333px;
-  top: 113px;
-  z-index: 9999;
-  color: $darkGrey;
-  border: $contentBorder;
-  font-family: gray, Arial, sans-serif;
-  font-size: 13px;
-
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    color: $darkGrey;
-    align-items: center;
-    padding: 3.5px 7px 3.5px 7px;
-    font-size: 13px;
-  }
-
-  a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-
-    div {
-      color: white;
-      width: 33px;
-      padding: 8px;
-      border-radius: 4px;
-      margin-right: 8px;
-      background: yellow;
-    }
-  }
-
-  li:hover {
-    background-color: green;
-    color: white;
-
-    .result-trail-icon {
-      // background-color: white;
-      color: green;
-
-    }
-
-    .result-park-icon {
-      background-color: white;
-      color: $orange;
-    }
-  }
-
-  .result-park-icon {
-    background-color: $orange;
-    color: green;
-  }
-
-  .result-trail-icon {
-
-    color: green;
   }
 }

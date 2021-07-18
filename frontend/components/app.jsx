@@ -7,7 +7,7 @@ import NavBarContainer from "./nav/nav_container";
 import Footer from "../components/nav/footer";
 import TrailShowContainer from "../components/trails/trails_show_container";
 import MainPageContainer from "./main_page/main_page_container";
-import ParkShowContainer from "./parks/parks_show_container";
+import ParkContainer from "./parks/parks_container";
 
 const App = () => (
   <div>
@@ -17,7 +17,7 @@ const App = () => (
       <AuthRoute exact path="/signup" component={SignupFormContainer} />
       <Route exact path="/trails/:trailId" component={TrailShowContainer} />
       <Route exact path="/" component={MainPageContainer} />
-      <Route exact path="/parks/:parkId" component={ParkShowContainer} />
+      <Route exact path="/parks/:parkId" component={ParkContainer} />
       <Redirect to="/" />
     </Switch>
     <Footer />

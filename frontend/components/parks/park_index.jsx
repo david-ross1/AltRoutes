@@ -10,7 +10,7 @@ class ParkTrailsIndex extends React.Component {
   }
 
   render() {
-    const { parkTrails, parkName } = this.props;
+    const { parkTrails, name } = this.props;
     if (!parkTrails) {
       return null;
     }
@@ -21,7 +21,7 @@ class ParkTrailsIndex extends React.Component {
           <ParkTrailItem
             key={trail.id}
             trail={trail}
-            parkName={parkName}
+            name={name}
             photo={trail.coverPhotoURL}
           />
         ))}

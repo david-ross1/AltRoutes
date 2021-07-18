@@ -31,7 +31,7 @@ const ParkTrailItem = props => {
             <p>{trail.name}</p>
           </div>
           <div className="trail-pk-name">
-            <p>{props.parkName}</p>
+            <p>{props.name}</p>
           </div>
         </div>
         <div className="pk-trail-infotainer">

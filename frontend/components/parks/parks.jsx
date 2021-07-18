@@ -74,7 +74,7 @@ class ParkShow extends React.Component {
               {
                 <ParkTrails
                   parkId={this.props.park.id}
-                  parkName={this.props.park.name}
+                  name={this.props.park.name}
                 />
               }
             </div>

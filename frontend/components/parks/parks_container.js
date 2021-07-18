@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { fetchPark } from "../../actions/park_actions";
-import ParkShow from "./parks_show";
+import ParkShow from "./parks";
 import { fetchTrail, fetchTrails } from "../../actions/trail_actions";
 
 const mapStateToProps = (state, ownProps) => ({

@@ -29,12 +29,12 @@
   color: rgb(75, 74, 74);
 }
 
-.search-box-placeholder {
+.placeholder-search {
   font-size: 20px;
   color: black;
 }
 
-.search-res-container {
+.search-tainer {
   max-height: 600px;
   overflow-y: scroll;
   background: black;
@@ -63,18 +63,18 @@
   }
 }
 
-.res-icon-park {
+.res-park-fa {
   font-size: 20px;
   margin-left: 3px;
 }
 
-.res-icon-trail {
+.res-fa {
   font-size: 20px;
   padding-top: 18px;
 }
 
-.result-trail-icon,
-.result-park-icon {
+.res-icon-fa,
+.res-park-icon-fa {
   color: green;
   display: flex;
 }
@@ -85,7 +85,7 @@
   margin-top: 20px;
 }
 
-.res-name-park {
+.res-parkname {
   margin-left: 30px;
   color: rgb(75, 75, 75);
   margin-top: 20px;

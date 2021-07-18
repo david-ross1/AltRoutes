@@ -10,10 +10,20 @@ class SearchBar extends React.Component {
       focus: false,
     };
 
-    this.update = this.update.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleFocus = this.handleFocus.bind(this);
     this.handleBlur = this.handleBlur.bind(this);
+    this.update = this.update.bind(this);
+    this.handleFocus = this.handleFocus.bind(this);
+  }
+
+  handleSubmit(e) {
+    if (this.state.query === "") {
+      this.props.clearSearchData();
+    } else this.props.fetchSearchData(this.state.query);
+  }
+
+  handleBlur() {
+    this.setState({ focus: false });
   }
 
   update() {
@@ -26,16 +36,6 @@ class SearchBar extends React.Component {
     this.setState({ focus: true });
   }
 
-  handleBlur() {
-    this.setState({ focus: false });
-  }
-
-  handleSubmit(e) {
-    if (this.state.query === "") {
-      this.props.clearSearchData();
-    } else this.props.fetchSearchData(this.state.query);
-  }
-
   render() {
     const { data } = this.props;
 
@@ -43,8 +43,8 @@ class SearchBar extends React.Component {
       <>
         <div
           className="search-bar"
-          onFocus={this.handleFocus}
           onBlur={this.handleBlur}
+          onFocus={this.handleFocus}
         >
           <form onSubmit={this.handleSubmit} className="search-input">
             <div className="fa-search">
@@ -52,7 +52,7 @@ class SearchBar extends React.Component {
             </div>
             <input
               type="text"
-              className="search-box-placeholder"
+              className="placeholder-search"
               placeholder="Search by park or trail name"
               onChange={this.update()}
             />
@@ -63,8 +63,8 @@ class SearchBar extends React.Component {
         </div>
         {this.state.query !== "" ? (
           <SearchResults
-            data={data}
             query={this.state.query}
+            data={data}
             fetchSearchData={this.props.fetchSearchData}
           />
         ) : null}

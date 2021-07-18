@@ -100,7 +100,6 @@ const Search = () => {
             return (
               <div
                 onClick={() => history.push(`/parks/${park.id}`)}
-                className="dropdown-container__item"
               >
                 {park.park_name}
               </div>
@@ -112,7 +111,6 @@ const Search = () => {
             return (
               <div
                 onClick={() => history.push(`/trails/${trail.id}`)}
-                className="dropdown-container__item"
               >
                 {trail.trail_name}
               </div>

@@ -7,7 +7,7 @@ class TrailsInParkIndex extends React.Component {
         // console.log("Yo from TrailsInParkIndex", this.props);
     }
     componentDidMount() {
-        this.props.fetchTrailsInPark(this.props.parkId);
+        this.props.fetchParkTrails(this.props.parkId);
     }
 
     render() {

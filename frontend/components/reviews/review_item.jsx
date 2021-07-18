@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHiking, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 import { FaUserCircle } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUsers } from "../../actions/user_actions";
-import { deleteReview, fetchReviews } from "../../util/reviews_api_util";
+// import { deleteReview, fetchReviews } from "../../util/reviews_api_util";
+import { fetchReviews } from "../../util/reviews_api_util";
 import { useParams } from "react-router-dom";
 
 const ReviewItem = props => {

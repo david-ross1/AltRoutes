@@ -11,5 +11,6 @@ json.array! @trails do |trail|
                        :lat, 
                        :lon, 
                        :locale
+                       
   json.coverPhotoURL url_for(trail.coverPhoto)
 end

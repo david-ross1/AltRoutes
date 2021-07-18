@@ -162,14 +162,9 @@ class SessionForm extends React.Component {
               </div>
             </div>
           </div>
-
-          <div>
-            <div className="create-share"></div>
-          </div>
           <div className="main-page22">
             <div className="main-page-content22"></div>
           </div>
-
           <div className="main-page-sub">
             <h2>Pick the right trail for your day</h2>
             <div className="phone-flex">

@@ -98,18 +98,18 @@ class ParkShow extends React.Component {
                   <div className="reviews-main"></div>
                 </div>
               </div>
-              <div className="nearby-trails-container">
-                <div className="nearby-trails-sub-container">
-                  <div className="nearby-trails-header"></div>
-                  <div className="nearby-trails-info"></div>
+              <div className="local-trails-container">
+                <div className="local-trails-sub-container">
+                  <div className="local-trails-header"></div>
+                  <div className="local-trails-info"></div>
                 </div>
               </div>
             </div>
             <div className="trail-side-43"></div>
           </div>
           <div className="trail-right43">
-            <div className="nearby-trails-wrapper">
-              <h3 className="nearby-trails header-text3"></h3>
+            <div className="local-trails-container">
+              <h3 className="local-trails header-text3"></h3>
             </div>
           </div>
         </div>

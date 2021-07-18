@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { fetchTrailsInPark } from "../../actions/park_actions";
+import { fetchParkTrails } from "../../actions/park_actions";
 import { fetchTrail, fetchTrails } from "../../actions/trail_actions";
 import TrailsInParkIndex from "./trails_in_park_index";
 
@@ -11,7 +11,7 @@ const mSTP = (state, ownProps) => ({
 });
 
 const mDTP = dispatch => ({
-  fetchTrailsInPark: trailId => dispatch(fetchTrailsInPark(trailId)),
+  fetchParkTrails: trailId => dispatch(fetchParkTrails(trailId)),
   fetchTrail: trailId => dispatch(fetchTrail(trailId)),
   fetchTrails: () => dispatch(fetchTrails()),
 });

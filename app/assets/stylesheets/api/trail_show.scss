@@ -90,12 +90,12 @@
   font-weight: 300;
   font-size: 13px;
 }
-.nearby-trails-wrapper {
+.local-trails-container {
   width: 100%;
   grid-row: 2;
   margin-top: 35px;
 
-  .nearby-trails {
+  .local-trails {
     margin-left: 25px;
     margin-bottom: 0px;
     font-family: $tFont;
@@ -171,5 +171,5 @@
   margin-top: 8px;
   font-size: 14px;
   font-weight: 300;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }

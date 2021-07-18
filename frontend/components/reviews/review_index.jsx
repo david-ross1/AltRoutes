@@ -23,12 +23,12 @@ class ReviewIndex extends React.Component {
 
     return (
       <div>
-        {this.props.reviews.reverse().map(review => {
+        {reviews.reverse().map(review => {
           return (
             <ReviewItem
               key={review.id}
               review={review}
-              deleteReview={this.props.deleteReview}
+              // deleteReview={this.props.deleteReview}
             />
           );
         })}

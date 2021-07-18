@@ -3,7 +3,7 @@ import ReviewForm from "./review_form";
 import { login } from "../../actions/session_actions";
 import {
   createReview,
-  deleteReview,
+  // deleteReview,
 } from "../../actions/review_actions";
 import { fetchReviews } from "../../util/reviews_api_util";
 
@@ -22,7 +22,7 @@ const mapStateToProps = (state, ownProps) => {
 };
 const mapDispatchToProps = dispatch => ({
   action: review => dispatch(createReview(review)),
-  deleteReview: reviewId => dispatch(deleteReview(reviewId)),
+  // deleteReview: reviewId => dispatch(deleteReview(reviewId)),
   fetchReviews: trail_id => dispatch(fetchReviews(trail_id)),
   login: user => dispatch(login(user)),
 });

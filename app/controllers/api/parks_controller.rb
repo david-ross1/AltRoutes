@@ -11,7 +11,7 @@ class Api::ParksController < ApplicationController
   end
 
  def park_trails
-    temp_park = Park.find(params[:id])
-    @park_trails = Trail.select('*').where('park_id = ?', temp_park.id)
+    park = Park.find(params[:id])
+    @park_trails = Trail.select('*').where('park_id = ?', park.id)
   end
 end

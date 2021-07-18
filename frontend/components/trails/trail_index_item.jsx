@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, matchPath } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class TrailIndexItem extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class TrailIndexItem extends React.Component {
   }
 
   render() {
-    const { trail, park } = this.props;
+    const { trail } = this.props;
 
     const mainPageIndex = (
       <Link to={`/trails/${trail.id}`} className="trail-card">
@@ -21,9 +21,7 @@ class TrailIndexItem extends React.Component {
 
             <div className="truncated-name">
               {this.truncateName(trail.name)}
-
               <div className="item-locale">{trail.locale}</div>
-
               <div className="item-difficulty-rating">
                 <div className="diff-contain">
                   <span

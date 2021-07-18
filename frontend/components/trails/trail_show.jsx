@@ -119,8 +119,8 @@ class TrailShow extends React.Component {
             <div className="map-box">
               <TrailMap lon={trail.lon} lat={trail.lat} />
             </div>
-            <div className="nearby-trails-wrapper">
-              <h3 className="nearby-trails header-text3"></h3>
+            <div className="local-trails-container">
+              <h3 className="local-trails header-text3"></h3>
               <TrailIndexItemContainer />
             </div>
           </div>

@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 class TrailIndexItem extends React.Component {
   constructor(props) {
@@ -7,7 +7,7 @@ class TrailIndexItem extends React.Component {
   }
 
   truncateName(name) {
-    return name.length > 29 ? name.slice(0, 29) + "..." : name;
+    return name.length > 29 ? `${name.slice(0, 29)}...` : name;
   }
 
   render() {
@@ -79,7 +79,7 @@ class TrailIndexItem extends React.Component {
 
     return (
       <div>
-        {this.props.ownProps.match.url.startsWith("/trails/")
+        {this.props.ownProps.match.url.startsWith('/trails/')
           ? showPageIndex
           : mainPageIndex}
       </div>

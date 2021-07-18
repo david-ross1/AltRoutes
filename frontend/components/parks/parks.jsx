@@ -1,11 +1,11 @@
-import React from "react";
-import ParkTrails from "./park_trails";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPrint,
   faShare,
   faArrowsAlt,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
+import ParkTrails from './park_trails';
 
 class ParkShow extends React.Component {
   constructor(props) {
@@ -40,19 +40,31 @@ class ParkShow extends React.Component {
           </div>
           <div className="cover-photo-buttons-container">
             <div className="trail-button">
-              <a target="_blank" href={`https://www.google.com/maps`}>
+              <a
+                target="_blank"
+                href="https://www.google.com/maps"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faArrowsAlt} />
                 <p>Directions</p>
               </a>
             </div>
             <div className="trail-button">
-              <a href="javascript:window.print()" target="_blank">
+              <a
+                href="javascript:window.print()"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faPrint} />
                 <p>Print map</p>
               </a>
             </div>
             <div className="trail-button">
-              <a target="_blank" href="https://wwww.facebook.com/">
+              <a
+                target="_blank"
+                href="https://wwww.facebook.com/"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faShare} />
                 <p>Share</p>
               </a>
@@ -71,40 +83,38 @@ class ParkShow extends React.Component {
               <div className="best-trails-in-park">
                 <p>Best trails in {park.name}</p>
               </div>
-              {
-                <ParkTrails
-                  parkId={this.props.park.id}
-                  name={this.props.park.name}
-                />
-              }
+              <ParkTrails
+                parkId={this.props.park.id}
+                name={this.props.park.name}
+              />
             </div>
-            <div className="trail-statistic-sub"></div>
+            <div className="trail-statistic-sub" />
             <div>
               <div className="reviews-container">
                 <div className="reviews-content">
                   <div className="header-review">
-                    {this.props.match.url.startsWith("/trails/") ? (
+                    {this.props.match.url.startsWith('/trails/') ? (
                       <p>Reviews</p>
                     ) : (
-                      ""
+                      ''
                     )}
                   </div>
-                  <div className="add-review-container"></div>
-                  <div className="reviews-main"></div>
+                  <div className="add-review-container" />
+                  <div className="reviews-main" />
                 </div>
               </div>
               <div className="local-trails-container">
                 <div className="local-trails-sub-container">
-                  <div className="local-trails-header"></div>
-                  <div className="local-trails-info"></div>
+                  <div className="local-trails-header" />
+                  <div className="local-trails-info" />
                 </div>
               </div>
             </div>
-            <div className="trail-side-43"></div>
+            <div className="trail-side-43" />
           </div>
           <div className="trail-right43">
             <div className="local-trails-container">
-              <h3 className="local-trails header-text3"></h3>
+              <h3 className="local-trails header-text3" />
             </div>
           </div>
         </div>

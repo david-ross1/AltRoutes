@@ -1,5 +1,5 @@
-import React from "react";
-import ReviewItem from "./review_item";
+import React from 'react';
+import ReviewItem from './review_item';
 
 class ReviewIndex extends React.Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class ReviewIndex extends React.Component {
   }
 
   render() {
-    let { reviews } = this.props;
+    const { reviews } = this.props;
 
     if (!this.props.reviews) {
       return null;
@@ -23,9 +23,9 @@ class ReviewIndex extends React.Component {
 
     return (
       <div>
-        {reviews.reverse().map(review => {
-          return <ReviewItem key={review.id} review={review} />;
-        })}
+        {reviews.reverse().map((review) => (
+          <ReviewItem key={review.id} review={review} />
+        ))}
       </div>
     );
   }

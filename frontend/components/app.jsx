@@ -1,13 +1,13 @@
-import React from "react";
-import { Route, Redirect, Switch } from "react-router-dom";
-import LoginFormContainer from "../components/session_form/login_form_container";
-import SignupFormContainer from "../components/session_form/signup_form_container";
-import { AuthRoute } from "../util/route_util";
-import NavBarContainer from "./nav/nav_container";
-import Footer from "../components/nav/footer";
-import TrailShowContainer from "../components/trails/trails_show_container";
-import MainPageContainer from "./main_page/main_page_container";
-import ParkContainer from "./parks/parks_container";
+import React from 'react';
+import { Route, Redirect, Switch } from 'react-router-dom';
+import LoginFormContainer from './session_form/login_form_container';
+import SignupFormContainer from './session_form/signup_form_container';
+import { AuthRoute } from '../util/route_util';
+import NavBarContainer from './nav/nav_container';
+import Footer from './nav/footer';
+import TrailShowContainer from './trails/trails_show_container';
+import MainPageContainer from './main_page/main_page_container';
+import ParkContainer from './parks/parks_container';
 
 const App = () => (
   <div>

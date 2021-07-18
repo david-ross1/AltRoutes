@@ -1,8 +1,8 @@
-import React from "react";
-import mapboxgl from "!mapbox-gl";
+import React from 'react';
+import mapboxgl from '!mapbox-gl';
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3EwZXc2cmIwM2p5MzJxbjdyNTQyaHd4In0.fFMeIQHinrStEv1JU8x0AA";
+  'pk.eyJ1IjoiZGF2aWRyNzcxMSIsImEiOiJja3EwZXc2cmIwM2p5MzJxbjdyNTQyaHd4In0.fFMeIQHinrStEv1JU8x0AA';
 
 class TrailMap extends React.Component {
   constructor(props) {
@@ -20,11 +20,11 @@ class TrailMap extends React.Component {
 
     this.map = new mapboxgl.Map({
       container: this.mapContainer.current,
-      lon: lon,
-      lat: lat,
+      lon,
+      lat,
       center: [lon, lat],
-      zoom: zoom,
-      style: "mapbox://styles/davidr7711/ckr8b2d6b45xm18nyixqw4dz5",
+      zoom,
+      style: 'mapbox://styles/davidr7711/ckr8b2d6b45xm18nyixqw4dz5',
     });
 
     const Pin = (

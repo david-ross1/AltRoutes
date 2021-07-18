@@ -1,12 +1,12 @@
-import { connect } from "react-redux";
-import NavBar from "./nav_bar";
-import { logout } from "../../actions/session_actions";
+import { connect } from 'react-redux';
+import NavBar from './nav_bar';
+import { logout } from '../../actions/session_actions';
 
 const mapStateToProps = ({ session, entities: { users } }) => ({
   currentUser: users[session.id],
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = (dispatch) => ({
   logout: () => dispatch(logout()),
 });
 

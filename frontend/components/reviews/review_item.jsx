@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { FaUserCircle } from "react-icons/fa";
-import { fetchUsers } from "../../actions/user_actions";
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { FaUserCircle } from 'react-icons/fa';
+import { fetchUsers } from '../../actions/user_actions';
 
-const ReviewItem = props => {
+const ReviewItem = (props) => {
   const { rating } = props.review;
   const dispatch = useDispatch();
 
@@ -40,10 +40,10 @@ const ReviewItem = props => {
               <div>
                 {props.review.reviewer.first_name.length > 1
                   ? `${props.review.reviewer.first_name}  `
-                  : ""}
+                  : ''}
                 {props.review.reviewer.last_name.length > 1
                   ? props.review.reviewer.last_name
-                  : ""}
+                  : ''}
               </div>
               <div className="startainer">
                 <div className="rev-star-rating">{stars}</div>

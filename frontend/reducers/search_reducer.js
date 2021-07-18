@@ -1,7 +1,7 @@
 import {
   RECEIVE_SEARCH_DATA,
   CLEAR_SEARCH_DATA,
-} from "../actions/search_actions";
+} from '../actions/search_actions';
 
 const searchReducer = (state = [], action) => {
   Object.freeze(state);

@@ -1,12 +1,12 @@
-import React from "react";
-import { FaArrowAltCircleRight, FaSearch } from "react-icons/fa";
-import SearchResults from "./search_data";
+import React from 'react';
+import { FaArrowAltCircleRight, FaSearch } from 'react-icons/fa';
+import SearchResults from './search_data';
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      query: "",
+      query: '',
       focus: false,
     };
 
@@ -17,7 +17,7 @@ class SearchBar extends React.Component {
   }
 
   handleSubmit(e) {
-    if (this.state.query === "") {
+    if (this.state.query === '') {
       this.props.clearSearchData();
     } else this.props.fetchSearchData(this.state.query);
   }
@@ -27,7 +27,7 @@ class SearchBar extends React.Component {
   }
 
   update() {
-    return e => {
+    return (e) => {
       this.setState({ query: e.target.value }, this.handleSubmit);
     };
   }
@@ -57,11 +57,11 @@ class SearchBar extends React.Component {
               onChange={this.update()}
             />
             <button className="fa-circle-right">
-              {<FaArrowAltCircleRight />}
+              <FaArrowAltCircleRight />
             </button>
           </form>
         </div>
-        {this.state.query !== "" ? (
+        {this.state.query !== '' ? (
           <SearchResults
             query={this.state.query}
             data={data}

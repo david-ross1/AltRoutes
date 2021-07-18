@@ -1,15 +1,15 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPrint,
   faShare,
   faArrowsAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import TrailIndexItemContainer from "./trail_index_container";
-import TrailMap from "../map/trail_map";
+} from '@fortawesome/free-solid-svg-icons';
+import TrailIndexItemContainer from './trail_index_container';
+import TrailMap from '../map/trail_map';
 
-import ReviewIndexContainer from "../reviews/review_index_container";
-import ReviewFormContainer from "../reviews/review_form_container";
+import ReviewIndexContainer from '../reviews/review_index_container';
+import ReviewFormContainer from '../reviews/review_form_container';
 
 class TrailShow extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ class TrailShow extends React.Component {
   }
 
   render() {
-    let { trail } = this.props;
+    const { trail } = this.props;
     if (trail === undefined) {
       return null;
     }
@@ -55,6 +55,7 @@ class TrailShow extends React.Component {
               <a
                 target="_blank"
                 href={`https://www.google.com/maps/dir/Current+Location/${trail.lat},${trail.lon}`}
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={faArrowsAlt} />
                 <p>Directions</p>
@@ -67,7 +68,11 @@ class TrailShow extends React.Component {
               </a>
             </div>
             <div className="trail-button">
-              <a target="_blank" href="https://www.facebook.com/">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/"
+                rel="noreferrer"
+              >
                 <FontAwesomeIcon icon={faShare} />
                 <p>Share</p>
               </a>
@@ -101,7 +106,7 @@ class TrailShow extends React.Component {
                 <p>{trail.description}</p>
               </div>
             </div>
-            <div className="trail-statistic-sub"></div>
+            <div className="trail-statistic-sub" />
 
             <div>
               <div className="header-review">
@@ -110,17 +115,19 @@ class TrailShow extends React.Component {
               <div>
                 <ReviewFormContainer trail_id={this.props.trail.id} />
               </div>
-              <div className="reviews-main">{<ReviewIndexContainer />}</div>
+              <div className="reviews-main">
+                <ReviewIndexContainer />
+              </div>
             </div>
 
-            <div className="trail-side-4"></div>
+            <div className="trail-side-4" />
           </div>
           <div className="trail-right4">
             <div className="map-box">
               <TrailMap lon={trail.lon} lat={trail.lat} />
             </div>
             <div className="local-trails-container">
-              <h3 className="local-trails header-text3"></h3>
+              <h3 className="local-trails header-text3" />
               <TrailIndexItemContainer />
             </div>
           </div>

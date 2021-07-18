@@ -1,17 +1,17 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { faTree } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaMapMarkerAlt } from 'react-icons/fa';
+import { faTree } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 class SearchResults extends React.Component {
   render() {
-    const noData = <li className={`res data`}>No Results Found</li>;
+    const noData = <li className="res data">No Results Found</li>;
 
     const searchData = this.props.data.map((data, idx) => (
       <div className="result-container">
-        <li className={`res data`} key={idx}>
-          {data.category === "Trail" ? (
+        <li className="res data" key={idx}>
+          {data.category === 'Trail' ? (
             <Link to={`/trails/${data.id}`}>
               <div className="res-icon-fa">
                 <div className="res-fa">
@@ -39,7 +39,7 @@ class SearchResults extends React.Component {
 
     return (
       <div className="search-tainer">
-        <ul className={`search-data`}>
+        <ul className="search-data">
           {this.props.data.length ? searchData : noData}
         </ul>
       </div>

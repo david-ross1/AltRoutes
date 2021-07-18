@@ -1,10 +1,11 @@
-import React from "react";
-import ParkTrailItem from "./park_trail_item";
+import React from 'react';
+import ParkTrailItem from './park_trail_item';
 
 class ParkTrailsIndex extends React.Component {
   constructor(props) {
     super(props);
   }
+
   componentDidMount() {
     this.props.fetchParkTrails(this.props.parkId);
   }
@@ -17,7 +18,7 @@ class ParkTrailsIndex extends React.Component {
 
     return (
       <div>
-        {parkTrails.map(trail => (
+        {parkTrails.map((trail) => (
           <ParkTrailItem
             key={trail.id}
             trail={trail}

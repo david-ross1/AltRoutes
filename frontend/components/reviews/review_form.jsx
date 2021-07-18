@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class ReviewForm extends React.Component {
   constructor(props) {
@@ -21,9 +21,9 @@ class ReviewForm extends React.Component {
     this.props.action(this.state);
 
     this.setState({
-      date: "",
+      date: '',
       rating: 1,
-      text: "",
+      text: '',
     });
   }
 
@@ -47,7 +47,7 @@ class ReviewForm extends React.Component {
   }
 
   update(field) {
-    return e => this.setState({ [field]: e.currentTarget.value });
+    return (e) => this.setState({ [field]: e.currentTarget.value });
   }
 
   render() {
@@ -82,7 +82,7 @@ class ReviewForm extends React.Component {
                   className="review-date-input"
                   type="date"
                   value={date}
-                  onChange={this.update("date")}
+                  onChange={this.update('date')}
                 />
               </div>
               <div className="review-rating-container">
@@ -97,13 +97,13 @@ class ReviewForm extends React.Component {
                     onMouseEnter={() => this.updateHoveredRating(1)}
                     onClick={() => this.updateRating(1)}
                     className={`star ${
-                      this.state.hovered !== -1 && 1 <= this.state.hovered
-                        ? "selected-star"
-                        : ""
+                      this.state.hovered !== -1 && this.state.hovered >= 1
+                        ? 'selected-star'
+                        : ''
                     } ${
                       this.state.hovered === -1 && this.state.value >= 1
-                        ? "selected-star"
-                        : ""
+                        ? 'selected-star'
+                        : ''
                     }`}
                   >
                     ★
@@ -115,13 +115,13 @@ class ReviewForm extends React.Component {
                     onMouseEnter={() => this.updateHoveredRating(2)}
                     onClick={() => this.updateRating(2)}
                     className={`star ${
-                      this.state.hovered !== -1 && 2 <= this.state.hovered
-                        ? "selected-star"
-                        : ""
+                      this.state.hovered !== -1 && this.state.hovered >= 2
+                        ? 'selected-star'
+                        : ''
                     } ${
                       this.state.hovered === -1 && this.state.value >= 2
-                        ? "selected-star"
-                        : ""
+                        ? 'selected-star'
+                        : ''
                     }`}
                   >
                     ★
@@ -133,13 +133,13 @@ class ReviewForm extends React.Component {
                     onMouseEnter={() => this.updateHoveredRating(3)}
                     onClick={() => this.updateRating(3)}
                     className={`star ${
-                      this.state.hovered !== -1 && 3 <= this.state.hovered
-                        ? "selected-star"
-                        : ""
+                      this.state.hovered !== -1 && this.state.hovered >= 3
+                        ? 'selected-star'
+                        : ''
                     } ${
                       this.state.hovered === -1 && this.state.value >= 3
-                        ? "selected-star"
-                        : ""
+                        ? 'selected-star'
+                        : ''
                     }`}
                   >
                     ★
@@ -151,13 +151,13 @@ class ReviewForm extends React.Component {
                     onMouseEnter={() => this.updateHoveredRating(4)}
                     onClick={() => this.updateRating(4)}
                     className={`star ${
-                      this.state.hovered !== -1 && 4 <= this.state.hovered
-                        ? "selected-star"
-                        : ""
+                      this.state.hovered !== -1 && this.state.hovered >= 4
+                        ? 'selected-star'
+                        : ''
                     } ${
                       this.state.hovered === -1 && this.state.value >= 4
-                        ? "selected-star"
-                        : ""
+                        ? 'selected-star'
+                        : ''
                     }`}
                   >
                     ★
@@ -169,13 +169,13 @@ class ReviewForm extends React.Component {
                     onMouseEnter={() => this.updateHoveredRating(5)}
                     onClick={() => this.updateRating(5)}
                     className={`star ${
-                      this.state.hovered !== -1 && 5 <= this.state.hovered
-                        ? "selected-star"
-                        : ""
+                      this.state.hovered !== -1 && this.state.hovered >= 5
+                        ? 'selected-star'
+                        : ''
                     } ${
                       this.state.hovered === -1 && this.state.value >= 5
-                        ? "selected-star"
-                        : ""
+                        ? 'selected-star'
+                        : ''
                     }`}
                   >
                     ★
@@ -186,13 +186,13 @@ class ReviewForm extends React.Component {
 
             <div className="review-text-container">
               <div className="review-title">
-                <p></p>
+                <p />
               </div>
               <div className="review-text-area-cont">
                 <textarea
                   className="review-text-input"
                   value={text}
-                  onChange={this.update("text")}
+                  onChange={this.update('text')}
                   placeholder="write a review..."
                 />
               </div>

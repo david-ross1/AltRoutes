@@ -1,22 +1,22 @@
-import React from "react";
-import { useHistory } from "react-router";
+import React from 'react';
+import { useHistory } from 'react-router';
 
-const ParkTrailItem = props => {
+const ParkTrailItem = (props) => {
   const { trail } = props;
   const history = useHistory();
 
-  const handlePark = e => {
+  const handlePark = (e) => {
     e.preventDefault();
 
     history.push(`/trails/${trail.id}`);
   };
 
   const difficultyClass =
-    trail.difficulty === "hard"
-      ? "hard"
-      : trail.difficulty === "moderate"
-      ? "moderate"
-      : "easy";
+    trail.difficulty === 'hard'
+      ? 'hard'
+      : trail.difficulty === 'moderate'
+      ? 'moderate'
+      : 'easy';
 
   return (
     <div onClick={handlePark} className="pk-trails-cont">
@@ -36,7 +36,7 @@ const ParkTrailItem = props => {
         </div>
         <div className="pk-trail-infotainer">
           <div className="pk-trail-difficulty-container">
-            <div className={"trail-difficulty" + " " + difficultyClass}>
+            <div className={`${'trail-difficulty' + ' '}${difficultyClass}`}>
               {trail.difficulty}
             </div>
             <div className="pk-trail-rating">
@@ -51,7 +51,7 @@ const ParkTrailItem = props => {
         </div>
         <div className="pk-trail-description">
           {trail.description.length > 220
-            ? trail.description.slice(0, 220) + "..."
+            ? `${trail.description.slice(0, 220)}...`
             : trail.description}
         </div>
       </div>

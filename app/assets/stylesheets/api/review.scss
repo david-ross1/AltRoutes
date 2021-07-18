@@ -5,7 +5,7 @@
 }
 
 .review-card-user-name {
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 14px;
   font-weight: bold;
   color: rgb(68, 68, 68);
@@ -22,7 +22,7 @@
 
 .review-card-date {
   margin-left: 10px;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 12px;
   font-weight: lighter;
 }
@@ -57,21 +57,21 @@
   height: 20px;
   font-size: 12px;
   border-radius: 3px;
-  font-family: "Montserrat";
+  font-family: $tFont;
   margin-right: 30px;
 }
 
 .review-rating-container {
   display: flex;
   flex-direction: row;
-  font-family: "Montserrat";
+  font-family: $tFont;
   align-items: center;
 }
 
 .review-text-container {
   display: flex;
   flex-direction: column;
-  font-family: "Montserrat";
+  font-family: $tFont;
 }
 
 .review-rating-stars {
@@ -98,7 +98,7 @@
   text-align: center;
   text-decoration: none;
   color: rgb(173, 168, 168);
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 12px;
   font-weight: 500;
   margin-left: 20px;
@@ -125,7 +125,7 @@
 
 .review-title {
   font-size: 16px;
-  font-family: "Montserrat";
+  font-family: $tFont;
   padding-right: 5px;
   padding-top: 3px;
 }
@@ -145,7 +145,7 @@
   border-radius: 5px;
   text-align: center;
   color: white;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-weight: 600;
   font-size: 14px;
 }
@@ -159,7 +159,7 @@
   text-align: center;
   text-decoration: none;
   color: whitesmoke;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 13px;
   font-weight: 600;
   align-items: center;
@@ -180,7 +180,7 @@
   text-align: center;
   text-decoration: none;
   color: whitesmoke;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 13px;
   font-weight: 600;
   align-items: center;
@@ -248,14 +248,14 @@
   padding-left: 3px;
   padding-right: 3px;
   padding-bottom: 5px;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 14px;
   color: rgb(86, 83, 83);
   line-height: 1.6em;
 }
 
 .reviews-header {
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 15px;
   width: 30px;
   font-weight: 600;

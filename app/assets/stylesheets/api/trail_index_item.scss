@@ -38,7 +38,7 @@
 .truncated-name {
   padding-left: 20px;
   font-weight: bold;
-  font-family: "Montserrat";
+  font-family: $tFont;
   color: rgb(92, 89, 89);
   padding-bottom: 20px;
 }
@@ -48,7 +48,7 @@
   padding: 2px 12px;
   color: white;
   border-radius: 6px;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 11px;
   font-weight: 300;
 }

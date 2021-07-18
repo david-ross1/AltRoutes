@@ -1,7 +1,7 @@
 .truncated-name {
   padding-left: 20px;
   font-weight: bold;
-  font-family: "Montserrat";
+  font-family: $tFont;
   color: rgb(92, 89, 89);
   padding-bottom: 20px;
 }
@@ -11,7 +11,7 @@
   padding: 2px 12px;
   color: white;
   border-radius: 6px;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 11px;
   font-weight: 300;
 }
@@ -73,7 +73,7 @@
 }
 
 .main-truncated-name {
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-weight: 600;
   color: rgb(65, 62, 62);
   margin-left: 20px;
@@ -98,7 +98,7 @@
   .nearby-trails {
     margin-left: 25px;
     margin-bottom: 0px;
-    font-family: "Montserrat";
+    font-family: $tFont;
     color: gray;
     font-weight: 600;
     font-size: 18px;

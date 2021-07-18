@@ -11,7 +11,7 @@
   }
 
   p {
-    font-family: "Montserrat";
+    font-family: $tFont;
     line-height: 1;
     color: $mg;
     font-weight: 375;
@@ -88,14 +88,14 @@
   border-bottom: $contentBorder;
   padding: 20px 0;
   margin: 0 24px;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 16px;
   line-height: 1.44;
   color: $mg;
   font-weight: 375;
 
   p {
-    font-family: "Montserrat";
+    font-family: $tFont;
   }
 }
 
@@ -118,7 +118,7 @@
   background-color: green;
   border: 2px solid green;
   color: white;
-  font-family: "Montserrat";
+  font-family: $tFont;
 }
 
 .write-review-button:hover {
@@ -148,7 +148,7 @@
       padding: 4px 14px;
       color: white;
       border-radius: 4px;
-      font-family: "Montserrat";
+      font-family: $tFont;
       font-size: 11px;
     }
 
@@ -167,12 +167,12 @@
     h1 {
       color: white;
       font-size: 30px;
-      font-family: "Montserrat";
+      font-family: $tFont;
       font-weight: 600;
     }
 
     p {
-      font-family: "Montserrat";
+      font-family: $tFont;
       font-weight: 300;
       font-size: 14px;
       padding: 8px 0;
@@ -238,7 +238,7 @@
     p {
       color: white;
       margin-top: 8px;
-      font-family: "Montserrat";
+      font-family: $tFont;
     }
 
     a {
@@ -305,7 +305,7 @@
 
 .trail-left-1 {
   background-color: white;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 18px;
   line-height: 1.44;
   color: $mg;
@@ -330,7 +330,7 @@
     flex: 1;
 
     p {
-      font-family: "Montserrat";
+      font-family: $tFont;
       line-height: 1.44;
       color: $mg;
       font-weight: 375;
@@ -338,7 +338,7 @@
     }
 
     span {
-      font-family: "Montserrat";
+      font-family: $tFont;
       color: $dg;
       font-weight: 600;
       font-size: 15px;
@@ -349,7 +349,7 @@
 
 .trail-left-3 {
   background-color: white;
-  font-family: "Montserrat";
+  font-family: $tFont;
   font-size: 18px;
   line-height: 1.44;
   color: $mg;
@@ -363,7 +363,7 @@
 }
 
 .trail-tab {
-  font-family: "Montserrat";
+  font-family: $tFont;
   color: $dg;
   font-weight: 600;
   font-size: 15px;
@@ -380,7 +380,7 @@
   .nearby-trails {
     margin-left: 25px;
     margin-bottom: 0px;
-    font-family: "Montserrat";
+    font-family: $tFont;
     color: $dg;
     font-weight: 600;
     font-size: 18px;

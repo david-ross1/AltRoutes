@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { FaUserCircle } from "react-icons/fa";
 import { fetchUsers } from "../../actions/user_actions";
 
@@ -10,10 +10,6 @@ const ReviewItem = props => {
   useEffect(() => {
     dispatch(fetchUsers());
   }, [props.review]);
-
-  const currentUser = useSelector(
-    state => state.entities.users[state.session.id]
-  );
 
   const date = new Date(props.review.date).toDateString();
   const stars = [];

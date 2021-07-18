@@ -6,13 +6,13 @@ class ReviewForm extends React.Component {
 
     this.state = {
       ...this.props.review,
-      starValueSelected: 1,
-      starValueHovered: -1,
-      toggleReviewContainer: false,
+      value: 1,
+      hovered: -1,
+      toggled: false,
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.toggleReviewHandler - this.toggleReviewHandler.bind(this);
+    this.handleToggle - this.handleToggle.bind(this);
   }
 
   handleSubmit(e) {
@@ -27,23 +27,23 @@ class ReviewForm extends React.Component {
     });
   }
 
-  updateSelectedStar(idx) {
+  updateRating(idx) {
     this.setState({
       ...this.state,
-      starValueSelected: idx,
+      value: idx,
       rating: idx,
     });
   }
 
-  toggleReviewHandler() {
+  handleToggle() {
     this.setState({
       ...this.state,
-      toggleReviewContainer: !this.state.toggleReviewContainer,
+      toggled: !this.state.toggled,
     });
   }
 
-  updateStarValueHovered(idx) {
-    this.setState({ ...this.state, starValueHovered: idx });
+  updateHoveredRating(idx) {
+    this.setState({ ...this.state, hovered: idx });
   }
 
   update(field) {
@@ -57,14 +57,11 @@ class ReviewForm extends React.Component {
     if (!currentUserId) {
       return <div className="login-to-comment">Please log in to comment</div>;
     }
-    if (!this.state.toggleReviewContainer) {
+    if (!this.state.toggled) {
       return (
         <div className="review-container">
           <div className="review-action-buttons">
-            <button
-              className="rev-button"
-              onClick={() => this.toggleReviewHandler()}
-            >
+            <button className="rev-button" onClick={() => this.handleToggle()}>
               Write review
             </button>
           </div>
@@ -95,18 +92,16 @@ class ReviewForm extends React.Component {
                 <div className="review-rating-stars">
                   <div
                     onMouseLeave={() =>
-                      this.setState({ ...this.state, starValueHovered: -1 })
+                      this.setState({ ...this.state, hovered: -1 })
                     }
-                    onMouseEnter={() => this.updateStarValueHovered(1)}
-                    onClick={() => this.updateSelectedStar(1)}
+                    onMouseEnter={() => this.updateHoveredRating(1)}
+                    onClick={() => this.updateRating(1)}
                     className={`star ${
-                      this.state.starValueHovered !== -1 &&
-                      1 <= this.state.starValueHovered
+                      this.state.hovered !== -1 && 1 <= this.state.hovered
                         ? "selected-star"
                         : ""
                     } ${
-                      this.state.starValueHovered === -1 &&
-                      this.state.starValueSelected >= 1
+                      this.state.hovered === -1 && this.state.value >= 1
                         ? "selected-star"
                         : ""
                     }`}
@@ -115,18 +110,16 @@ class ReviewForm extends React.Component {
                   </div>
                   <div
                     onMouseLeave={() =>
-                      this.setState({ ...this.state, starValueHovered: -1 })
+                      this.setState({ ...this.state, hovered: -1 })
                     }
-                    onMouseEnter={() => this.updateStarValueHovered(2)}
-                    onClick={() => this.updateSelectedStar(2)}
+                    onMouseEnter={() => this.updateHoveredRating(2)}
+                    onClick={() => this.updateRating(2)}
                     className={`star ${
-                      this.state.starValueHovered !== -1 &&
-                      2 <= this.state.starValueHovered
+                      this.state.hovered !== -1 && 2 <= this.state.hovered
                         ? "selected-star"
                         : ""
                     } ${
-                      this.state.starValueHovered === -1 &&
-                      this.state.starValueSelected >= 2
+                      this.state.hovered === -1 && this.state.value >= 2
                         ? "selected-star"
                         : ""
                     }`}
@@ -135,18 +128,16 @@ class ReviewForm extends React.Component {
                   </div>
                   <div
                     onMouseLeave={() =>
-                      this.setState({ ...this.state, starValueHovered: -1 })
+                      this.setState({ ...this.state, hovered: -1 })
                     }
-                    onMouseEnter={() => this.updateStarValueHovered(3)}
-                    onClick={() => this.updateSelectedStar(3)}
+                    onMouseEnter={() => this.updateHoveredRating(3)}
+                    onClick={() => this.updateRating(3)}
                     className={`star ${
-                      this.state.starValueHovered !== -1 &&
-                      3 <= this.state.starValueHovered
+                      this.state.hovered !== -1 && 3 <= this.state.hovered
                         ? "selected-star"
                         : ""
                     } ${
-                      this.state.starValueHovered === -1 &&
-                      this.state.starValueSelected >= 3
+                      this.state.hovered === -1 && this.state.value >= 3
                         ? "selected-star"
                         : ""
                     }`}
@@ -155,18 +146,16 @@ class ReviewForm extends React.Component {
                   </div>
                   <div
                     onMouseLeave={() =>
-                      this.setState({ ...this.state, starValueHovered: -1 })
+                      this.setState({ ...this.state, hovered: -1 })
                     }
-                    onMouseEnter={() => this.updateStarValueHovered(4)}
-                    onClick={() => this.updateSelectedStar(4)}
+                    onMouseEnter={() => this.updateHoveredRating(4)}
+                    onClick={() => this.updateRating(4)}
                     className={`star ${
-                      this.state.starValueHovered !== -1 &&
-                      4 <= this.state.starValueHovered
+                      this.state.hovered !== -1 && 4 <= this.state.hovered
                         ? "selected-star"
                         : ""
                     } ${
-                      this.state.starValueHovered === -1 &&
-                      this.state.starValueSelected >= 4
+                      this.state.hovered === -1 && this.state.value >= 4
                         ? "selected-star"
                         : ""
                     }`}
@@ -175,18 +164,16 @@ class ReviewForm extends React.Component {
                   </div>
                   <div
                     onMouseLeave={() =>
-                      this.setState({ ...this.state, starValueHovered: -1 })
+                      this.setState({ ...this.state, hovered: -1 })
                     }
-                    onMouseEnter={() => this.updateStarValueHovered(5)}
-                    onClick={() => this.updateSelectedStar(5)}
+                    onMouseEnter={() => this.updateHoveredRating(5)}
+                    onClick={() => this.updateRating(5)}
                     className={`star ${
-                      this.state.starValueHovered !== -1 &&
-                      5 <= this.state.starValueHovered
+                      this.state.hovered !== -1 && 5 <= this.state.hovered
                         ? "selected-star"
                         : ""
                     } ${
-                      this.state.starValueHovered === -1 &&
-                      this.state.starValueSelected >= 5
+                      this.state.hovered === -1 && this.state.value >= 5
                         ? "selected-star"
                         : ""
                     }`}
@@ -214,7 +201,7 @@ class ReviewForm extends React.Component {
               <button className="rev-button-1">Submit Review</button>
               <button
                 className="rev-button-2"
-                onClick={() => this.toggleReviewHandler()}
+                onClick={() => this.handleToggle()}
               >
                 Cancel
               </button>

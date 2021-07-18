@@ -1,34 +1,16 @@
-export const fetchReviews = trail_id => {
-  return $.ajax({
+export const fetchReviews = trail_id =>
+  $.ajax({
     url: `/api/trails/${trail_id}/reviews`,
   });
-};
 
-export const fetchReview = reviewId => {
-  return $e.ajax({
+export const fetchReview = reviewId =>
+  $.ajax({
     url: `/api/reviews/${reviewId}`,
   });
-};
 
-export const createReview = review => {
-  return $.ajax({
+export const createReview = review =>
+  $.ajax({
     url: "/api/reviews",
     method: "POST",
     data: { review },
   });
-};
-
-// export const updateReview = review => {
-//   return $.ajax({
-//     method: "PATCH",
-//     url: `/api/reviews/${review.id}`,
-//     data: { review },
-//   });
-// };
-
-// export const deleteReview = reviewId => {
-//   return $.ajax({
-//     method: "DELETE",
-//     url: `/api/reviews/${reviewId}`,
-//   });
-// };

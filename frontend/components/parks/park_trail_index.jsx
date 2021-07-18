@@ -1,5 +1,5 @@
 import React from "react";
-import ParkTrailItem from "./park_item";
+import ParkTrailItem from "./park_trail_item";
 
 class ParkTrailsIndex extends React.Component {
   constructor(props) {

@@ -1,0 +1,150 @@
+@import "../vars.scss";
+
+.data-container {
+  text-align: left;
+}
+
+.result-name {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.res-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.locale {
+  font-size: 10px;
+}
+
+.result-container {
+  background: white;
+  color: rgb(75, 74, 74);
+}
+
+.placeholder-search {
+  font-size: 20px;
+  color: black;
+}
+
+.search-tainer {
+  max-height: 600px;
+  overflow-y: scroll;
+  background: black;
+  margin: 0px auto;
+  position: relative;
+  top: 65px;
+  left: 0;
+  width: 50%;
+  padding-top: 40px;
+  background: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 15px;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: $dg;
+    align-items: center;
+    padding: 3.5px 7px 3.5px 7px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 25px;
+    text-align: center;
+  }
+}
+
+.res-park-fa {
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+.res-fa {
+  font-size: 20px;
+  padding-top: 18px;
+}
+
+.res-icon-fa,
+.res-park-icon-fa {
+  color: green;
+  display: flex;
+}
+
+.res-name {
+  margin-left: 30px;
+  color: rgb(75, 75, 75);
+  margin-top: 20px;
+}
+
+.res-parkname {
+  margin-left: 30px;
+  color: rgb(75, 75, 75);
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: $tFont;
+}
+
+.search-bar {
+  position: absolute;
+  min-width: 400px;
+  top: 50px;
+  left: 25%;
+  width: 50%;
+  margin: 40px auto;
+  font-size: 22px;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.fa-search {
+  color: rgb(63, 63, 63);
+  margin-left: 15px;
+  margin-top: 26px;
+  font-size: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.fa-circle-right {
+  font-size: 40px;
+  margin-top: 0px;
+  padding-top: 4px;
+  padding-right: 15px;
+  color: green;
+}
+
+.search-input {
+  -moz-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  -webkit-box-shadow: 7px 7px 7px rgba(68, 68, 68, 0.7);
+  box-shadow: 0px 1px 10px rgb(84, 83, 83);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+  display: flex;
+  justify-content: left;
+  background-color: white;
+  border-radius: 32px;
+  height: 65px;
+
+  input {
+    width: 100%;
+    color: rgb(51, 50, 50);
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  input::placeholder {
+    color: rgb(77, 75, 75);
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  button {
+    background-color: transparent;
+  }
+}

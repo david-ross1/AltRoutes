@@ -1,8 +1,13 @@
+.footerh2 {
+  margin-bottom: 15px;
+}
+
 footer {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
-  height: 140px;
+  height: 60px;
+  width: 90vw;
 }
 
 .links a {
@@ -15,13 +20,16 @@ footer {
 .footer-mountain-logo {
   margin: 8px;
   color: green;
-  font-size: 32px;
+  font-size: 25px;
+  position: relative;
+  top: 14px;
 }
 
 .footer-content {
   align-items: center;
   display: flex;
-  width: 100vw;
+  width: 90vw;
+  margin-left: 1%;
 }
 
 .footer-logo {
@@ -31,13 +39,15 @@ footer {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-family: 'Montserrat';
-  font-size: 40px;
+  font-family: $tFont;
+  font-size: 30px;
+  margin-bottom: 0px;
+  padding-left: 160px;
 
   a {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 0px;
   }
 }
-

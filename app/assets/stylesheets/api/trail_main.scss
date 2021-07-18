@@ -1,450 +1,418 @@
-
-.title-box {
-    position: relative;
-    width: 1024px;
-    margin: auto;
-
-    .trail-title-content {
-        position: absolute;
-        color: white;
-        top: 200px;
-        left: 24px;
-        margin: auto;
-
-
-        .trail-difficulty {
-            margin-top: 10px; 
-            padding: 4px 14px;
-            color: white;
-            border-radius: 4px;
-            font-family: "Montserrat";
-            font-size: 11px;
-        }
-
-        .moderate {
-            background-color: $button;
-        }
-
-        .hard {
-            background-color: gray;
-        }
-
-        .easy {
-            background-color: green;
-        }
-
-        h1 {
-            color: white;
-            font-size: 30px; 
-            font-family: "Montserrat";
-            font-weight: 600; 
-    
-        }
-
-        p {
-            font-family: "Montserrat";
-            font-weight: 300;
-            font-size: 14px;
-            padding: 8px 0;
-            margin-top: 4px;
-        }
-
-        .difficulty-rating{
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-
-            p {
-                padding-left: 7px;
-                font-size: 12px;
-                line-height: .75;
-            }
-        }
-
-        .react-stars > * {
-            margin-left: 7px;
-
-        }
-    }
-
-    
-}
-
-
-.title-photo-box {
-    width: 1024px;
-    height: 312px;
-    overflow: hidden;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-
-    img {
-        width: 1024px;
-
-    }
-}
-
-.trail-page-background {
-    background-color: #F2F2F2;
-    height: 100%;
-    width: 100%;
-    z-index: -1000;
-}
-
-.trail-actions-wrap{
-    background: #428a13;
-    height: 55px;
-    width: 1024px;
-    margin: auto;
-    margin-bottom: 0;
-    border-top: none;
-    display: flex;
-    justify-content: space-around;
-
-    .trail-action {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: green;
-
-        p {
-            color: white;
-            margin-top: 8px;
-            font-family: "Montserrat";
-        }
-
-        a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            cursor: pointer;
-            background: inherit;
-            border: none;
-            outline: none;
-            margin-top: -22px;
-        }
-
-        svg {
-            font-size: 16px;
-            padding: 15px;
-            border-radius: 50%;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
-            background-color: white;
-        }
-    }   
-
-
-}
-
-.trail-info{
-    position: relative;
-    width: 1024px;
-    border: 1px solid #d6d6d6;
-    background-color: white;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 66.6666667% 33.33333334%;
-}
-
-.trail-right {
-    background-color:white;
-    display: grid;
-    grid-template-rows: 25%;
-    width: 100%;
-    margin: auto;
-    margin-top: 5px;
-    padding: 3px 0;
-
-    .trail-map{
-        width: inherit;
-         padding-left: 5px;
-
-        .trail-map-container {
-            width: 330px;
-            height: 280px;
-            border-radius: 8px;
-            padding: 4px;
-            display: flex;
-            cursor: pointer;
-        }
-
-    }
-}
-
-.trail-left {
-    background-color: white;
-    border-right: $contentBorder;
-
-}
-
-.trail-left-1 {
-    background-color: white;
-    font-family: "Montserrat";
-    font-size: 18px;
-    line-height: 1.44;
-    color: $mediumGrey;
-    font-weight: 375;
-    padding: 20px 0;
-    border-bottom: $contentBorder;
-    margin: 0 24px;
-
-}
-
-.trail-left-2 {
-    background-color: white;
-    margin: 0 24px;
-    padding-top: 24px;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-around;
-    padding-bottom: 10px;
-
-    .trail-stat {
-        padding-bottom: 6px;
-        flex: 1;
-
-        p {
-            font-family: "Montserrat";
-            line-height: 1.44;
-            color: $mediumGrey;
-            font-weight: 375;
-            font-size: 12px;
-        }
-
-        span {
-            font-family: "Montserrat";
-            color: $darkGrey;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 1.38;
-        }
-        
-    }
-}
-
-.trail-left-3 {
-    background-color: white;
-    // height: 15%;
-    font-family: "Montserrat";
-    font-size: 18px;
-    line-height: 1.44;
-    color: $mediumGrey;
-    font-weight: 375;
-    padding: 20px 0;
-    margin: 0 24px;
-    
-
-
-    p {
-        font-size: 16px;
-    }
-}
-
-.trail-tab {
-        font-family: "Montserrat";
-        color: $darkGrey;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 1.38;
-        padding: 20px;
-        background-color: #F2F2F2;
-}
-
-
-.nearby-trails-wrapper {
-    width: 100%;
-    grid-row: 2;
-    margin-top: 35px;
-
-    .nearby-trails{
-        margin-left: 25px;
-        margin-bottom: 0px;
-        font-family: "Montserrat";
-        color: $darkGrey;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 1.38;
-    }
-
-    .nearby-trail-index {
-        margin: auto; 
-        margin-left: 25px;
-
-        .nearby-trail-item {
-            display: flex;
-            flex-direction: column;
-            width: 291px;
-            height: 236px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
-            background-color: #fff;
-            overflow: hidden;
-            cursor: pointer;
-            position: relative;
-            margin-bottom: 24px;
-
-            img {
-                margin-top: -60px;
-                // height: 128px;
-                width: 291px;
-                border-radius: 0;
-            }
-        }
-
-        .nearby-trail-index {
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-   
-        }
-    }
-
-
-}
-
 .nearby-trail-item-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 16px;
+  padding-top: 4px;
+
+  .trail-description {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  .trail-difficulty {
+    padding: 4px 12px;
+    margin-right: 5px;
+    color: white;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0 16px;
-    padding-top: 4px;
+  }
 
-    
-    h3 {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+  p {
+    font-family: $tFont;
+    line-height: 1;
+    color: $mg;
+    font-weight: 375;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
 
-     p {
-        font-family: "Montserrat";
-        line-height: 1;
-        color: $mediumGrey;
-        font-weight: 375;
-        font-size: 14px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-     }
+  .moderate {
+    background-color: $button;
+  }
 
-     .trail-description {
-         margin-top: 24px;
-         font-size: 16px;
-     }
+  .hard {
+    background-color: gray;
+  }
 
-     .trail-difficulty {
-        padding: 4px 12px;
-        margin-right: 5px;
-        color: white;
-        border-radius: 8px;
-        font-family: inherit;
-        font-size: 11px;
-        margin-bottom: 10px;
-    }
+  .easy {
+    background-color: green;
+  }
 
-    // .num-reviews {
-    //     margin-left: 5px;
-    // }
-
-    .moderate {
-        background-color: $button;
-    }
-
-    .hard {
-        background-color: gray;
-    }
-
-    .easy {
-        background-color: green;
-    }
-
-    .difficulty-rating {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        span {
-            margin-right: 5px;
-        }
-        
-    }
-}
-
-
-.review-text {
-    padding-top: 10px;
-}
-.review-header {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    margin-left: 10px;
-
-    span {
-        margin-right: 5px;
-    }
-}
-
-
-.star-date {
-    margin-top: 3px;
+  .trail-diff-rating {
     display: flex;
     flex-direction: row;
-    font-size: 14px;
     align-items: center;
-    
-    p{ 
-        margin-left: 5px;   
+
+    span {
+      margin-right: 5px;
     }
+  }
+}
+
+.review-text {
+  padding-top: 10px;
+}
+.review-header {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 10px;
+
+  span {
+    margin-right: 5px;
+  }
+}
+
+.star-date {
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  align-items: center;
+
+  p {
+    margin-left: 5px;
+  }
 }
 
 .review-item {
-    border-bottom: $contentBorder;
-    padding: 20px 0;
-    margin: 0 24px;
-    font-family: "Montserrat";
-    font-size: 16px;
-    line-height: 1.44;
-    color: $mediumGrey;
-    font-weight: 375;
+  border-bottom: $contentBorder;
+  padding: 20px 0;
+  margin: 0 24px;
+  font-family: $tFont;
+  font-size: 16px;
+  line-height: 1.44;
+  color: $mg;
+  font-weight: 375;
 
-    p {
-        font-family: "Montserrat";
-    }
+  p {
+    font-family: $tFont;
+  }
 }
 
 .review-pic-name {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .write-review-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 15px;
-    width: 188px;
-    height: 40px;
-    border-radius: 8px;
-    margin: 35px auto;
-    background-color: green;
-    border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 15px;
+  width: 188px;
+  height: 40px;
+  border-radius: 8px;
+  margin: 35px auto;
+  background-color: green;
+  border: 2px solid green;
+  color: white;
+  font-family: $tFont;
+}
+
+.write-review-button:hover {
+  background-color: $buttonG;
+  border: 2px solid $buttonG;
+  cursor: pointer;
+}
+
+.trail-side-4 {
+  overflow-y: auto;
+  padding: 20px;
+}
+.trail-bg-container {
+  position: relative;
+  width: 1024px;
+  margin: auto;
+
+  .trail-title-info {
+    position: absolute;
     color: white;
-    font-family: "Montserrat";
+    top: 200px;
+    left: 24px;
+    margin: auto;
+
+    .trail-difficulty {
+      margin-top: 10px;
+      padding: 4px 14px;
+      color: white;
+      border-radius: 4px;
+      font-family: $tFont;
+      font-size: 11px;
+    }
+
+    .moderate {
+      background-color: $button;
+    }
+
+    .hard {
+      background-color: gray;
+    }
+
+    .easy {
+      background-color: green;
+    }
+
+    h1 {
+      color: white;
+      font-size: 30px;
+      font-family: $tFont;
+      font-weight: 600;
+    }
+
+    p {
+      font-family: $tFont;
+      font-weight: 300;
+      font-size: 14px;
+      padding: 8px 0;
+      margin-top: 4px;
+    }
+
+    .trail-diff-rating {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      p {
+        padding-left: 7px;
+        font-size: 12px;
+        line-height: 0.75;
+      }
+    }
+
+    .react-stars > * {
+      margin-left: 7px;
+    }
+  }
 }
 
-.write-review-button:hover{
-    background-color: $buttonHoverGreen;
-    border: 2px solid $buttonHoverGreen;
-    cursor: pointer;
+.trail-title-pic-container {
+  width: 1024px;
+  height: 312px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  img {
+    width: 1024px;
+  }
 }
 
-.trail-left-4{
-    overflow-y: auto;
-    height: 800px;
+.cover-photo-buttons-container {
+  background: #428a13;
+  height: 55px;
+  width: 1024px;
+  margin: auto;
+  margin-bottom: 0;
+  border-top: none;
+  display: flex;
+  justify-content: space-around;
+  
+  .trail-button {
+    display: flex;
+    align-items: center;
+    color: green;
+    flex-direction: column;
+    
+    p {
+      margin-top: 8px;
+      font-family: $tFont;
+      color: white;
+    }
+    
+    a {
+      border: none;
+      outline: none;
+      margin-top: -22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      background: inherit;
+      height: 50px;
+    }
+    
+    svg {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
+      background-color: white;
+      font-size: 18px;
+      padding: 15px;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+.trail-right {
+  background-color: white;
+  margin: auto;
+  padding: 3px 0;
+  display: grid;
+  grid-template-rows: 25%;
+  width: 100%;
+  margin-top: 5px;
+  
+  .trail-map {
+    padding-left: 5px;
+    width: inherit;
+    
+    .trail-map-container {
+      display: flex;
+      width: 330px;
+      height: 280px;
+      padding: 4px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+.trail-side {
+  background-color: white;
+  border-right: 0;
+}
+
+.trail-side-1 {
+  font-weight: 375;
+  padding: 20px 0;
+  border-bottom: $contentBorder;
+  margin: 0 24px;
+  background-color: white;
+  font-family: $tFont;
+  font-size: 18px;
+  line-height: 1.44;
+  color: $mg;
+}
+
+.trail-side-2 {
+  margin: 0 24px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: left;
+  background-color: white;
+  padding-bottom: 10px;
+  
+  .trail-statistics {
+    flex: 1;
+    padding-bottom: 6px;
+    
+    p {
+      font-family: $tFont;
+      color: $mg;
+      font-weight: 400;
+      line-height: 1.5;
+      font-size: 12px;
+    }
+    
+    span {
+      font-family: $tFont;
+      color: $dg;
+      line-height: 1.5;
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
+}
+
+.trail-side-3 {
+  font-family: $tFont;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: white;
+  line-height: 1.5;
+  margin: 0 24px;
+  padding: 20px 0;
+  color: $mg;
+  
+  p {
+    font-size: 16px;
+  }
+}
+
+.trail-statistic-sub {
+  font-family: $tFont;
+  color: $dg;
+  padding: 20px;
+  font-weight: 600;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.local-trails-container {
+  width: 100%;
+  grid-row: 2;
+  margin-top: 35px;
+  
+  .local-trails {
+    font-family: $tFont;
+    color: $dg;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .nearby-trail-index {
+    margin: auto;
+    margin-left: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+    .nearby-trail-item {
+      display: flex;
+      flex-direction: column;
+      width: 291px;
+      height: 236px;
+      margin-bottom: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
+      background-color: #fff;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      
+      img {
+        margin-top: -60px;
+        border-radius: 0;
+        width: 290px;
+      }
+    }
+  }
+}
+
+.trail-info {
+  position: relative;
+  margin: auto;
+  width: 1024px;
+  border: 1px solid #d6d6d6;
+  grid-template-columns: 66.6666667% 33.33333334%;
+  background-color: white;
+  display: grid;
+  
+}
+
+.trail-bg {
+  background-color: #f2f2f2;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
 }

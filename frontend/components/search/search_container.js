@@ -1,17 +1,14 @@
 import { connect } from "react-redux";
 import SearchBar from "./search_bar";
-import {
-  fetchSearchResults,
-  clearSearchResults,
-} from "../../actions/search_actions";
+import { fetchSearchData, clearSearchData } from "../../actions/search_actions";
 
 const mapStateToProps = state => ({
-  results: state.search,
+  data: state.search,
 });
 
 const mapDispatchToProps = dispatch => ({
-  clearSearchResults: () => dispatch(clearSearchResults()),
-  fetchSearchResults: query => dispatch(fetchSearchResults(query)),
+  clearSearchData: () => dispatch(clearSearchData()),
+  fetchSearchData: query => dispatch(fetchSearchData(query)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);

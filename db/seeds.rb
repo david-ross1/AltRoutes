@@ -11,17 +11,17 @@ require "open-uri"
 User.destroy_all
 
 demo = User.create!(first_name: "demo user", last_name: "!", email: "demo11", password: "passwordz")
-u1 = User.create!(first_name: "Rodney", last_name: "Sakaguchi", email: "sakaguchi@rodney.com", password: "nicebreeze")
+u1 = User.create!(first_name: "Pete", last_name: "Ichien", email: "sakaguchi@rodney.com", password: "nicebreeze")
 u2 = User.create!(first_name: "Julia", last_name: "Follestad", email: "follestad@julia.com", password: "nicebreeze")
-u3 = User.create!(first_name: "Khalil", last_name: "Bey", email: "bey@khalil.com", password: "nicebreeze")
-u4 = User.create!(first_name: "Jimonte", last_name: "Valdez", email: "valdez@jimonte.com", password: "nicebreeze")
-u5 = User.create!(first_name: "Priyanka", last_name: "Singh", email: "singh@priyanka.com", password: "nicebreeze")
+u3 = User.create!(first_name: "Kate", last_name: "Meyers", email: "bey@khalil.com", password: "nicebreeze")
+u4 = User.create!(first_name: "Jameson", last_name: "Moore", email: "valdez@jimonte.com", password: "nicebreeze")
+u5 = User.create!(first_name: "Amy", last_name: "Emerson", email: "singh@priyanka.com", password: "nicebreeze")
 
 u6 = User.create!(first_name: "Ashby", last_name: "Kearnin", email: "ashby@kearnin.com", password: "nicebreeze")
-u7 = User.create!(first_name: "Jaime", last_name: "Camaray", email: "camaray@jaime.com", password: "nicebreeze")
-u8 = User.create!(first_name: "Nathan", last_name: "Tsang", email: "tsang@nathan.com", password: "nicebreeze")
-u9 = User.create!(first_name: "Demitrias", last_name: "Farley", email: "farley@demitrias.com", password: "nicebreeze")
-u10 = User.create!(first_name: "Jennifer", last_name: "Ong", email: "ong@jennifer.com", password: "nicebreeze")
+u7 = User.create!(first_name: "Michelle", last_name: "Camaray", email: "camaray@jaime.com", password: "nicebreeze")
+u8 = User.create!(first_name: "Nathan", last_name: "Lan", email: "tsang@nathan.com", password: "nicebreeze")
+u9 = User.create!(first_name: "Alyson", last_name: "Price", email: "farley@demitrias.com", password: "nicebreeze")
+u10 = User.create!(first_name: "Jen", last_name: "Wells", email: "ong@jennifer.com", password: "nicebreeze")
 
 
 
@@ -35,6 +35,11 @@ p1 = Park.create!(name: "Point Reyes National Seashore",
                   park_type: "National",
                   lat: 38.0512, 
                   lon: 122.8663) 
+
+p1_parkpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/point-reyes-bg.png")
+p1.backgroundPhoto.attach(io: p1_parkpic, filename: "point-reyes-bg.png")
+
+
 #______________________________________________________________________________________________
 
 
@@ -45,6 +50,12 @@ p2 = Park.create!(name: "Sequoia National Park",
                   park_type: "National",
                   lat: 36.4864, 
                   lon: 118.5658) 
+
+p2_parkpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/sequoia-bg.png")
+p2.backgroundPhoto.attach(io: p2_parkpic, filename: "sequoia-bg.png")
+
+
+
 #______________________________________________________________________________________________
 
 p3 = Park.create!(name: "Mt. Diablo State Park", 
@@ -54,6 +65,12 @@ p3 = Park.create!(name: "Mt. Diablo State Park",
                   park_type: "State",
                   lat: 37.8816, 
                   lon: 121.9142) 
+
+p3_parkpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/mt-diablo-bg.png")
+p3.backgroundPhoto.attach(io: p3_parkpic, filename: "mt-diablo-bg.png")
+
+                  
+
 #______________________________________________________________________________________________
 
 p4 = Park.create!(name: "Tilden Regional Park", 
@@ -63,6 +80,11 @@ p4 = Park.create!(name: "Tilden Regional Park",
                   park_type: "State",
                   lat: 37.8928, 
                   lon: 122.2424) 
+
+
+p4_parkpic = URI.open("https://more-trails-seeds.s3-us-west-1.amazonaws.com/tilden-bg.png")
+p4.backgroundPhoto.attach(io: p4_parkpic, filename: "tilden-bg.png")
+
 
 Trail.destroy_all
 #______________________________________________________________________________________________
@@ -376,7 +398,7 @@ t19 = Trail.create!(name: "Lomas Cantadas to Skyline",
                     distance: 11.0, 
                     route_type: "Out & back",
                     lat: 37.87979,
-                    lon: 122.22145,
+                    lon: -122.22145,
                     elevation_gain: 2309,
                     time: "Est. 6 h 12 m",
                     locale: "Tilden Regional Park, Berkeley, California",
@@ -703,7 +725,7 @@ r20 = Review.create!(
 r21 = Review.create!(
                          rating: 5, 
                          user_id: u1.id, 
-                         trail_id: t6.id,
+                         trail_id: t5.id,
                          text: " The trails undulate a lot: up and over coastal hill after coastal hill which means the views are always changing.  Parts of the trail are through bright tall forests with oaks, parts go through pines, and parts go through denser woods with lots of underbrush. There are many, many kinds of ferns and moss and mushrooms everywhere. Parts of the trail are on coastal grassland. Some parts of the trail are shared with cyclists, some with horses and some with ranger trucks. ", 
                          date: "2021-03-23"
                         )
@@ -711,7 +733,7 @@ r21 = Review.create!(
 r22 = Review.create!(
                          rating: 5, 
                          user_id: u2.id, 
-                         trail_id: t6.id,
+                         trail_id: t5.id,
                          text: "On the day of my hike, the Tule Elk were in abundance.  Docents were stationed in a few keys areas with binoculars and talking with hikers.  It was a great day with mild weather.  The inclines are not difficult even for a beginner level hiker.  A great 4 hour hike!", 
                          date: "2021-03-23"
                         )
@@ -719,7 +741,7 @@ r22 = Review.create!(
 r23 = Review.create!(
                          rating: 5, 
                          user_id: u3.id, 
-                         trail_id: t6.id,
+                         trail_id: t5.id,
                          text: "Nice way to get out in the bay aera for the weekend. We started down at the visitors center and hiked in to one of the beach campsites. Campfires are aloud on the beach. Made for a great weekend.", 
                          date: "2021-03-23"
                         )
@@ -727,7 +749,7 @@ r23 = Review.create!(
 r24 = Review.create!(
                          rating: 3, 
                          user_id: u4.id, 
-                         trail_id: t6.id,
+                         trail_id: t5.id,
                          text: "This was a pretty intense hike. We started from Muddy Hollow trail heading toward the beach. Then we hiked up the mountain. Took us 7 hrs to complete. We ran into a mountain lion. If I do this hike again I will start Sky trail side and towards the beach. Be ready this is an intense hike.", 
                          date: "2021-03-23"
                         )

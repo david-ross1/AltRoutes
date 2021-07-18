@@ -1,15 +1,16 @@
-import React from 'react'; 
-import { Link } from 'react-router-dom';
-import SearchBarContainer from '../search/search_container'
-import TrailIndexContainer from '../../components/trails/trail_index_container'
+import React from "react";
+import SearchBarContainer from "../search/search_container";
+import TrailIndexContainer from "../../components/trails/trail_index_container";
 
-const MainPage = ({ currentUser }) => {
+const MainPage = () => {
   return (
     <div>
       <div className="main-page">
         <div className="main-page-content">
-          <h1>Find your next trail</h1>
-          {/* <SearchBarContainer />  */}
+          <h1 className="find-next-text">Find your next trail</h1>
+          <div className="searchtainer">
+            <SearchBarContainer />{" "}
+          </div>
         </div>
       </div>
       <TrailIndexContainer />
@@ -21,23 +22,15 @@ const MainPage = ({ currentUser }) => {
           <p className="phone-text">
             All our trails are verified by experts and reviewed by our global
             community of adventurers like you. <br /> <br />
-            {/* Whether you’re a hiker, biker or
-            trail runner, we’ll help you find your next adventure. */}
           </p>
         </div>
       </div>
-      <TrailIndexContainer />
-      <div className="main-page2">
-        <div className="main-page-content2">
-          {/* <h1>more text and stuff</h1> */}
-        </div>
+      <div className="main-page-2-img-container">
+        <div className="main-page2"></div>
+        <div className="main-page-content2"></div>
       </div>
-      {/* <div className="main-page-3">
-        <div className="main-page-content-3">
-        </div>
-      </div> */}
     </div>
   );
-}
+};
 
-export default MainPage; 
+export default MainPage;

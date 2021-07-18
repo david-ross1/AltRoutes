@@ -1,99 +1,85 @@
-@import '../vars.scss';
-
+@import "../vars.scss";
 
 .nav-bar {
-    display: flex;
-    height: 60px;
-    margin: 0 8px;
-    font-family: "Montserrat"
+  display: flex;
+  height: 60px;
+  margin: 0 8px;
+  font-family: $tFont;
 }
 
 .logo-title-div {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: gray;
-    font-size: 25px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 25px;
 }
 
 .nav-links {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.nav-buttons{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.nav-buttons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .logo-title {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-stretch: extra-condensed;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-stretch: extra-condensed;
+  font-weight: 500;
 }
 
 .mountain-logo {
-    color: rgb(46, 163, 46);
-    margin-right: 2px; 
-    font-size: 25px;
+  color: rgb(46, 163, 46);
+  margin-right: 2px;
+  font-size: 25px;
 }
-
 
 .login-button {
   font-size: 13px;
-  margin-right:3px;
+  margin-right: 3px;
   font-weight: 500;
   padding: 10px 15px;
   border-radius: 8px;
   margin-left: 8px;
-  border: 2px solid #219AD8;
-  color:  #219AD8;
+  border: 2px solid #219ad8;
+  color: #219ad8;
 }
-
 
 .login-button:hover {
-    color: rgb(87, 149, 194);
-    border: 2px solid  rgb(87, 149, 194);
+  color: rgb(87, 149, 194);
+  border: 2px solid rgb(87, 149, 194);
 }
 
-
-.sign-up-button, .upgrade {
-    font-size: 13px;
-    font-weight: 500;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin-left: 8px;
-    background-color: #219AD8;
-    border: 2px solid #219AD8;
-    color: white;
+.sign-up-button,
+.upgrade {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-left: 8px;
+  background-color: #219ad8;
+  border: 2px solid #219ad8;
+  color: white;
 }
 
 .sign-up-button:hover {
-    background-color:  rgb(106, 190, 243);
-    border: 2px solid rgb(106, 190, 243);
+  background-color: rgb(106, 190, 243);
+  border: 2px solid rgb(106, 190, 243);
 }
-
 
 .user-dropdown:hover {
-    display: block;
+  display: block;
 }
-
-
-.pro-tag {
-  width: 60px;
-  height: 37px; 
-  background: image-url('ppro1.png');
-  display: block; 
-  margin-left: 5px;
-}
-
 
 .profile-pic {
   background: image-url("user_icon.png");
@@ -112,7 +98,7 @@
   border-radius: 8px;
   width: 190px;
   z-index: 1;
-  color: $darkGrey;
+  color: $dg;
 
   button {
     display: block;
@@ -122,7 +108,7 @@
   }
 
   .dd-logout {
-    padding: 10px 0px 10px 20px; 
+    padding: 10px 0px 10px 20px;
     display: block;
     font-size: 13px;
     color: #777474;
@@ -145,7 +131,7 @@
   display: block;
 }
 
-.dropdown-select {
+.profile-dropdown {
   position: relative;
   cursor: pointer;
   display: flex;
@@ -153,7 +139,7 @@
   padding: 8px;
 }
 
-.dropdown-select:hover + .user-dropdown {
+.profile-dropdown:hover + .user-dropdown {
   cursor: pointer;
   display: block;
   background-color: white;
@@ -162,5 +148,3 @@
   width: 190px;
   z-index: 3;
 }
-
-

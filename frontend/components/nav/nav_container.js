@@ -6,7 +6,7 @@ const mapStateToProps = ({ session, entities: { users } }) => ({
   currentUser: users[session.id],
 });
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = dispatch => ({
   logout: () => dispatch(logout()),
 });
 

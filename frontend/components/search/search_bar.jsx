@@ -1,75 +1,76 @@
-import React from 'react';
-// import { FontAwesomIcon } from '@fortawesome/react-fontawesome';
-// import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
-import { FaSearch } from 'react-icons/fa'
-import SearchResults from './search_results'; 
+import React from "react";
+import { FaArrowAltCircleRight, FaSearch } from "react-icons/fa";
+import SearchResults from "./search_data";
 
 class SearchBar extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      query: '',
-      focus: false
-    }
+      query: "",
+      focus: false,
+    };
 
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleBlur = this.handleBlur.bind(this);
     this.update = this.update.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this); 
-    this.handleFocus = this.handleFocus.bind(this); 
-    this.handleBlur = this.handleBlur.bind(this); 
-  }
-
-  update() {
-    return(e) => {
-      this.setState({ query: e.target.value }, this.handleSubmit)
-    }
-  }
-
-  handleFocus() {
-    this.setState({ focus: true })
-  }
-
-  handleBlur() {
-    this.setState({ focus: false }); 
+    this.handleFocus = this.handleFocus.bind(this);
   }
 
   handleSubmit(e) {
-    this.state.query === '' ? 
-      this.props.clearSearchresults() : this.props.fetchSearchResults(this.state.query); 
+    if (this.state.query === "") {
+      this.props.clearSearchData();
+    } else this.props.fetchSearchData(this.state.query);
   }
 
-  render () {
-    const { results } = this.props
-    
-    return(
+  handleBlur() {
+    this.setState({ focus: false });
+  }
+
+  update() {
+    return e => {
+      this.setState({ query: e.target.value }, this.handleSubmit);
+    };
+  }
+
+  handleFocus() {
+    this.setState({ focus: true });
+  }
+
+  render() {
+    const { data } = this.props;
+
+    return (
       <>
-        <div 
-          className='search-bar' 
-          onFocus={this.handleFocus} 
+        <div
+          className="search-bar"
           onBlur={this.handleBlur}
-          >
-            <form 
-              onSubmit={this.handleSubmit} 
-              className='search-input'>
+          onFocus={this.handleFocus}
+        >
+          <form onSubmit={this.handleSubmit} className="search-input">
+            <div className="fa-search">
               <FaSearch />
-              
-              <input 
-                type='text' 
-                placeholder='Enter a trail or park name'
-                onChange={this.update()}
-                /> 
-                <button>Search</button>
-              </form>
-          </div>
-          {this.state.query !== '' ? (
-            <SearchResults 
-              results={results}
-              query={this.state.query}
-              fetchSearchResults={this.props.fetchSearchResults}
+            </div>
+            <input
+              type="text"
+              className="placeholder-search"
+              placeholder="Search by park or trail name"
+              onChange={this.update()}
             />
-          ) : null }
-          </>
+            <button className="fa-circle-right">
+              {<FaArrowAltCircleRight />}
+            </button>
+          </form>
+        </div>
+        {this.state.query !== "" ? (
+          <SearchResults
+            query={this.state.query}
+            data={data}
+            fetchSearchData={this.props.fetchSearchData}
+          />
+        ) : null}
+      </>
     );
-   }
+  }
 }
 
-export default SearchBar; 
+export default SearchBar;

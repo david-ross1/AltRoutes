@@ -1,192 +1,69 @@
-
-.nearby-trails-wrapper {
-    width: 100%;
-    grid-row: 2;
-    margin-top: 35px;
-
-    .nearby-trails{
-        margin-left: 25px;
-        margin-bottom: 0px;
-        font-family: "Montserrat";
-        color: gray;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 1.38;
-    }
-
-    .nearby-trail-index {
-        margin: auto; 
-        margin-left: 25px;
-
-        .nearby-trail-item {
-            display: flex;
-            flex-direction: column;
-            width: 291px;
-            height: 236px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,.24), 0 0 8px 0 rgba(0,0,0,.08);
-            background-color: #fff;
-            overflow: hidden;
-            cursor: pointer;
-            position: relative;
-            margin-bottom: 24px;
-
-            img {
-                margin-top: -60px;
-                // height: 128px;
-                width: 291px;
-                border-radius: 0;
-            }
-        }
-
-        .nearby-trail-index {
-            padding-top: 20px;
-            padding-bottom: 20px;
-
-   
-        }
-    }
-
-
-}
-
-
-
-.index-trail-pic {
-  transition: transform 0.3s ease; 
-}
-
-.index-trail-pic:hover {
-  transform: scale(1.04); 
-}
-
-.index-trail-pic {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  width: 300px;
-  height: 130px; 
-  margin: 10px; 
-
-}
-
-// .outer-trailtainer {
-//   margin-left: 10px;
-// }
-
-.index-trailtainer {
-  margin-left: 20px; 
-  display: flex; 
-  overflow-x: auto;
-  max-height: 400px; 
-  min-height: 0;
-}
-.index-trailtainer::-webkit-scrollbar {    display: none;}
-
-.trail-icc {
-  display: flex; 
-}
-
-.item-locale {
-  margin-top: 8px;
-  font-size: 14px; 
-  font-weight: 300;
-}
-
-// .trail-info {
-//   position: absolute;
-//   color: white; 
-//   top: 150px; 
-//   left: 24px; 
-//   margin: auto; 
-// }
-
-
-
-
-// .trail-pic-container:hover {
-//     position:relative;
-//     top:-25px;
-//     left:-35px;
-//     width:500px;
-//     height:auto;
-//     display:block;
-//     z-index:999;
-// }
-
-
 .truncated-name {
-  padding-left: 20px; 
-  font-weight: bold; 
-  font-family: "Montserrat";
+  padding-left: 20px;
+  font-weight: bold;
+  font-family: $tFont;
   color: rgb(92, 89, 89);
   padding-bottom: 20px;
 }
 
 .trail-item-difficulty {
-    margin-top: 14px; 
-    padding: 2px 12px;
-    color: white;
-    border-radius: 6px;
-    font-family: "Montserrat";
-    font-size: 11px;
-    font-weight: 300;
-}
-
-.moderate {
-    background-color: #5bbcec;
-}
-
-.hard {
-    background-color: gray;
-}
-
-.easy {
-    background-color: green;
-}
-
-
-.item-distance-div {
-  margin-top: 10px; 
-}
-
-.item-difficulty-rating {
-  margin-top: 8px; 
-}
-
-.item-distance {
-  font-size: 14px; 
+  margin-top: 14px;
+  padding: 2px 12px;
+  color: white;
+  border-radius: 6px;
+  font-family: $tFont;
+  font-size: 11px;
   font-weight: 300;
 }
 
+.moderate {
+  background-color: #5bbcec;
+}
 
+.hard {
+  background-color: gray;
+}
+
+.easy {
+  background-color: green;
+}
+
+.item-distance-div {
+  margin-top: 10px;
+}
+
+.item-trail-diff-rating {
+  margin-top: 8px;
+}
+
+.item-distance {
+  font-size: 14px;
+  font-weight: 300;
+}
 
 .test {
-  width: 320px; 
+  width: 320px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-
 .show-outer-trailtainer {
-  display: flex; 
-  flex-direction: column; 
-  width: 350px; 
-
+  display: flex;
+  flex-direction: column;
+  width: 350px;
 }
 
 .align-right-trailtainer {
   float: right;
-  display: float; 
+  display: float;
 }
-
-
 
 .trail-sidebar {
-  width: 300px; 
-  height: 600px; 
+  width: 300px;
+  height: 600px;
 }
 .main-test {
-  width: 320px; 
+  width: 320px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -196,20 +73,103 @@
 }
 
 .main-truncated-name {
-  font-family: "Montserrat"; 
+  font-family: $tFont;
   font-weight: 600;
   color: rgb(65, 62, 62);
-  margin-left: 20px 
+  margin-left: 20px;
 }
 
 .main-item-locale {
   font-size: 12px;
-  margin: 6px 0;  
-  font-weight: 300; 
+  margin: 6px 0;
+  font-weight: 300;
 }
 
-.main-item-distance { 
-  margin: 8px 0;  
-  font-weight: 300; 
+.main-item-distance {
+  margin: 8px 0;
+  font-weight: 300;
   font-size: 13px;
+}
+.local-trails-container {
+  width: 100%;
+  grid-row: 2;
+  margin-top: 35px;
+
+  .local-trails {
+    margin-left: 25px;
+    margin-bottom: 0px;
+    font-family: $tFont;
+    color: gray;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .nearby-trail-index {
+    margin: auto;
+    margin-left: 25px;
+
+    .nearby-trail-item {
+      display: flex;
+      flex-direction: column;
+      width: 291px;
+      height: 236px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.08);
+      background-color: #fff;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      margin-bottom: 24px;
+
+      img {
+        margin-top: -60px;
+        width: 291px;
+        border-radius: 0;
+      }
+    }
+
+    .nearby-trail-index {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.index-trail-pic {
+  transition: transform 0.3s ease;
+}
+
+.index-trail-pic:hover {
+  transform: scale(1.04);
+}
+
+.index-trail-pic {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 300px;
+  height: 130px;
+  margin: 10px;
+}
+
+.index-trailtainer {
+  margin-left: 20px;
+  display: flex;
+  overflow-x: auto;
+  max-height: 400px;
+  min-height: 0;
+}
+.index-trailtainer::-webkit-scrollbar {
+  display: none;
+}
+
+.trail-icc {
+  display: flex;
+}
+
+.item-locale {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 5px;
 }

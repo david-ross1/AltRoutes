@@ -1,4 +1,4 @@
-export const fetchSearchResults = (query) =>
+export const fetchSearchData = query =>
   $.ajax({
-    url: `api/searches?query=${query}`,
+    url: `/api/searches?query=${query}`,
   });

@@ -18,12 +18,10 @@ const mapStateToProps = ({ errors }) => ({
   navLink: <Link to="/login">Log in</Link>,
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  processForm: (user) => dispatch(signup(user)),
-  login: (user) => dispatch(login(user)),
+const mapDispatchToProps = dispatch => ({
+  processForm: user => dispatch(signup(user)),
+  login: user => dispatch(login(user)),
   clearErrors: () => dispatch(clearErrors()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);
-
-// heroku

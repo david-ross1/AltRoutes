@@ -4,9 +4,15 @@ Rails.application.routes.draw do
   namespace :api, defaults: { formats: :json } do 
     resource :session, only: [:create, :destroy]
     resource :user, only: [:create]
-    resources :reviews, only: [:create, :index, :update, :destroy]
-    resources :trails, only: [:show, :index]
+    resources :reviews, only: [:create, :show, :new]
+    resources :searches, only: [:index]
+    resources :trails, only: [:show, :index] do 
+      resources :reviews, only: [:index]
+    end
     resources :parks, only: [:show, :index]
+    resources :users, only: [:create, :index, :new]
+    get 'trails/nearby_trails/:id', to: 'trails#nearby_trails' 
+    get 'parks/park_trails/:id', to: 'parks#park_trails'
   end
 end
 

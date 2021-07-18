@@ -1,0 +1,294 @@
+@import "./vars";
+
+.best-trails-in-park {
+  font-family: $tFont;
+  font-size: 20px;
+  color: gray;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.parkstar {
+  font-size: 16px;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.park-des {
+  margin-bottom: 40px;
+  font-family: $tFont;
+  line-height: 1.5em;
+  margin-left: 20px;
+  font-size: 18px;
+  color: rgb(90, 88, 88);
+}
+
+.park-show-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.park-pic-container {
+  width: 100%;
+  height: 331px;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.park-pic-container > img {
+  width: 100%;
+  height: 100%;
+}
+.park-content {
+  width: 100%;
+}
+
+.park-title-container {
+  width: 100%;
+  height: 60px;
+  font-family: $tFont;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+}
+
+.rating-container {
+  width: 100%;
+  height: 40px;
+  font-family: $tFont;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.rating-container > p {
+  margin-right: 5px;
+}
+
+.park-summary {
+  width: 100%;
+  height: 120px;
+  font-family: $tFont;
+  font-size: 20px;
+}
+
+.park-description-header {
+  width: 100%;
+  height: 60px;
+  font-family: $tFont;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 25px;
+}
+
+.park-description-body {
+  font-size: 20px;
+  font-family: $tFont;
+}
+
+.park-map-container {
+  height: 295px;
+  width: 800px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $tFont;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.other-park-actions {
+  display: flex;
+  flex-direction: row;
+  font-family: $tFont;
+  font-size: 45px;
+  color: #e6692a;
+  width: 69%;
+}
+
+.park-information-container {
+  width: 100%;
+  height: 125px;
+}
+
+.park-information-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 47%;
+  font-family: $tFont;
+  font-size: 20px;
+}
+
+.park-information-details > p {
+  padding-bottom: 5px;
+}
+
+.park-directions-container > a {
+  color: #e6692a;
+}
+
+.trails-in-park-container {
+  width: 100%;
+}
+
+.pk-trails-cont {
+  display: flex;
+  flex-direction: row;
+}
+.pk-trails-cont:hover {
+  cursor: pointer;
+}
+
+.park-directions-container {
+  padding-left: 40px;
+  color: #e6692a;
+}
+
+.pk-img-cont {
+  margin-left: 20px;
+  height: 260px;
+  width: 300px;
+  font-family: $tFont;
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.pk-trail-rating {
+  display: flex;
+  font-size: 12px;
+  color: gray;
+  flex-direction: row;
+}
+
+.pk-img {
+  width: 290px;
+  height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-size: cover;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.pk-img > img {
+  height: 100%;
+  width: 100%;
+}
+
+.trail-in-park-details-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.pk-trail-cont {
+  width: 100%;
+  margin-left: 25px;
+}
+
+.pk-trail-name {
+  font-family: $tFont;
+  font-size: 16px;
+  color: rgb(82, 80, 80);
+  font-weight: 700;
+}
+
+.pk-trail-name-cont {
+  margin-bottom: 6px;
+}
+
+.trail-pk-name {
+  font-family: $tFont;
+  padding-top: 2px;
+  padding-left: 0px;
+  font-size: 12px;
+  color: gray;
+}
+
+.pk-trail-infotainer {
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.pk-trail-difficulty-container {
+  display: flex;
+  flex-direction: row;
+  font-family: $tFont;
+}
+
+.trail-difficulty {
+  margin-top: 10px;
+  padding: 4px 14px;
+  color: white;
+  border-radius: 4px;
+  font-family: $tFont;
+  font-size: 11px;
+  background: green;
+}
+
+.moderate {
+  background-color: $button;
+}
+
+.hard {
+  background-color: gray;
+}
+
+.easy {
+  background-color: green;
+}
+
+.pk-trail-length {
+  display: flex;
+  flex-direction: row;
+  font-family: $tFont;
+  font-size: 12px;
+  color: gray;
+}
+.pk-trail-length > p {
+  padding-right: 7px;
+  padding-top: 10px;
+}
+.pk-trail-description {
+  font-family: $tFont;
+  font-size: 16px;
+  color: gray;
+  line-height: 1.5em;
+}
+
+.trail-left99 {
+  width: 950px;
+}
+
+.trail-right43 {
+  width: 0;
+}
+
+.trail-left43 {
+  width: 700px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .park-show-container {
+    align-items: flex-start;
+  }
+}
+.park-information-header {
+  width: 100%;
+  height: 60px;
+  font-family: $tFont;
+  font-size: 30px;
+  font-weight: 25px;
+  display: flex;
+  align-items: center;
+}

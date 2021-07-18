@@ -1,5 +1,4 @@
-export const fetchUsers = () => {
-  return $.ajax({
+export const fetchUsers = () =>
+  $.ajax({
     url: "/api/users",
   });
-};

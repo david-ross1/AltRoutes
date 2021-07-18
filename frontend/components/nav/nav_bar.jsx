@@ -13,7 +13,7 @@ const Nav = props => {
       >
         <button className="upgrade">Upgrade to Pro</button>
       </a>
-      <div className="dropdown-select">
+      <div className="profile-dropdown">
         <div className="profile-pic"></div>
       </div>
       <ul className="user-dropdown">

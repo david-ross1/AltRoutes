@@ -131,7 +131,7 @@
   display: block;
 }
 
-.dropdown-select {
+.profile-dropdown {
   position: relative;
   cursor: pointer;
   display: flex;
@@ -139,7 +139,7 @@
   padding: 8px;
 }
 
-.dropdown-select:hover + .user-dropdown {
+.profile-dropdown:hover + .user-dropdown {
   cursor: pointer;
   display: block;
   background-color: white;

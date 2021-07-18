@@ -79,7 +79,7 @@ class ParkShow extends React.Component {
               }
             </div>
             <div className="trail-statistic-sub"></div>
-            <div className="something">
+            <div>
               <div className="reviews-container">
                 <div className="reviews-content">
                   <div className="header-review">

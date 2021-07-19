@@ -14,8 +14,8 @@
  *= require_self
  */
 
+ @import "./vars.scss";
 @import "./reset.scss";
-@import "./vars.scss";
 @import "./api/session.scss";
 @import "./api/greeting.scss";
 @import "./api/footer.scss";

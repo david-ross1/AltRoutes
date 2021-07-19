@@ -23,9 +23,13 @@ their own pictures and reviews.
 + Get on-click directions to the trail or park 
 
 
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+<img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif" width="230" height="250"/> |  <img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/review.gif" width="350" height="250"/>
+
 <!-- ![readme_second](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif) -->
 
-<img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif" width="250" height="250"/>
+<!-- <img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif" width="250" height="250"/> -->
 
 ## Customized session error handling for better UI 
 

@@ -25,7 +25,9 @@ their own pictures and reviews.
 + Get on-click directions to the trail or park 
 
 
-![readme_second](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif)
+<!-- ![readme_second](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif) -->
+
+<img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif" width="250" height="250"/>
 
 ## Customized session error handling for better UI 
 

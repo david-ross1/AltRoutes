@@ -1,5 +1,7 @@
+@import "../vars.scss";
+
 .main-page-login {
-  background-image: image_url("square.png");
+  background-image: image_url("square.png"); 
   background-size: cover;
   position: relative;
   width: 100%;
@@ -19,7 +21,7 @@
 }
 
 .main-page22 {
-  background-image: image-url("ss_share.png");
+  background-image: image_url("ss_share.png");
   background-size: cover;
   position: relative;
   width: 100%;

@@ -3,17 +3,17 @@ import { fetchParkTrails } from '../../actions/park_actions';
 import { fetchTrail, fetchTrails } from '../../actions/trail_actions';
 import TrailsInParkIndex from './park_trail_index';
 
-const mSTP = (state, ownProps) => ({
+const mapStateToProps = (state, ownProps) => ({
   name: ownProps.name,
   trails: state.entities.trails.trail_list,
   parkTrails: state.entities.parks.parkTrails,
   ownProps,
 });
 
-const mDTP = (dispatch) => ({
+const mapDispatchToProps = (dispatch) => ({
   fetchTrail: (trailId) => dispatch(fetchTrail(trailId)),
   fetchParkTrails: (trailId) => dispatch(fetchParkTrails(trailId)),
   fetchTrails: () => dispatch(fetchTrails()),
 });
 
-export default connect(mSTP, mDTP)(TrailsInParkIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(TrailsInParkIndex);

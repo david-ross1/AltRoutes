@@ -202,12 +202,12 @@ class ReviewForm extends React.Component {
               </div>
             </div>
             <div className="review-form-buttons">
-              <button type="button" className="rev-button-1">
+              <button className="rev-button-1">
                 Submit Review
               </button>
               <button
                 className="rev-button-2"
-                type="button"
+                // type="button"
                 onClick={() => this.handleToggle()}
               >
                 Cancel

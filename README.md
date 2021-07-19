@@ -7,7 +7,7 @@ Curated trail content with detailed information is provided along with the abili
 their own pictures and reviews. 
 
 <!-- ![info]('https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_first.gif') -->
-![gif1](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_main.gif)
+![gif1](https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif)
 
  ## Technologies 
  * Amazon AWS cloud storage for user and trail pictures 
@@ -27,7 +27,7 @@ their own pictures and reviews.
 
 <!-- ![readme_second](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif) -->
 
-<img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif" width="250" height="250"/>
+<img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif" width="250" height="250"/>
 
 ## Customized session error handling for better UI 
 

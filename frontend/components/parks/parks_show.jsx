@@ -36,7 +36,12 @@ class ParkShow extends React.Component {
             <img src={this.props.park.backgroundPhotoURL} />
           </div>
           <div className="trail-title-info">
-            <h1>{park.name}</h1>
+            {/* <h1>{park.name}</h1> */}
+            {this.props.match.url.startsWith("/parks/") ? (
+              <h1>{park.name}</h1>
+            ) : (
+              ''
+            )}
           </div>
           <div className="cover-photo-buttons-container">
             <div className="trail-button">

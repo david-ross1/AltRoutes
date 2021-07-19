@@ -6,9 +6,7 @@ MoreTrails is an AllTrails clone that connects users with nature and each other.
 Curated trail content with detailed information is provided along with the ability for users to contribute
 their own pictures and reviews. 
 
-<!-- ![info]('https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_first.gif') -->
-![gif1](https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif)
-
+<img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif" width="450" height="450"/>
  ## Technologies 
  * Amazon AWS cloud storage for user and trail pictures 
  * React 

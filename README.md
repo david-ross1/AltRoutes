@@ -1,4 +1,4 @@
-# <div align="center"> ![Logo](app/assets/images/readme_logo.png)
+<!-- # <div align="center"> ![Logo](app/assets/images/readme_logo.png) -->
 #### <div align="center">  [Live Site](https://more-trails.herokuapp.com/#/)
 
 # About

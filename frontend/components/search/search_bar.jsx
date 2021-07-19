@@ -26,14 +26,14 @@ class SearchBar extends React.Component {
     this.setState({ focus: false });
   }
 
+  handleFocus() {
+    this.setState({ focus: true });
+  }
+
   update() {
     return (e) => {
       this.setState({ query: e.target.value }, this.handleSubmit);
     };
-  }
-
-  handleFocus() {
-    this.setState({ focus: true });
   }
 
   render() {
@@ -56,7 +56,7 @@ class SearchBar extends React.Component {
               placeholder="Search by park or trail name"
               onChange={this.update()}
             />
-            <button className="fa-circle-right">
+            <button type="button" className="fa-circle-right">
               <FaArrowAltCircleRight />
             </button>
           </form>

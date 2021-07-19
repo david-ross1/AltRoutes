@@ -14,18 +14,20 @@ const ReviewItem = (props) => {
   const date = new Date(props.review.date).toDateString();
   const stars = [];
 
-  for (let i = 1; i <= 5; i++) {
-    rating >= i
-      ? stars.push(
-          <div key={i} className="selected-star">
-            ★
-          </div>
-        )
-      : stars.push(
-          <div key={i} className="not-selected-star">
-            ★
-          </div>
-        );
+  for (let i = 1; i <= 5; i += 1) {
+    if (rating >= i) {
+      stars.push(
+        <div key={i} className="selected-star">
+          ★
+        </div>
+      );
+    } else {
+      stars.push(
+        <div key={i} className="not-selected-star">
+          ★
+        </div>
+      );
+    }
   }
 
   return (

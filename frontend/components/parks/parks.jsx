@@ -33,7 +33,7 @@ class ParkShow extends React.Component {
       <div className="trail-bg">
         <div className="trail-bg-container">
           <div className="trail-title-pic-container">
-            <img src={this.props.park.backgroundPhotoURL} />
+            <img src={this.props.park.backgroundPhotoURL} alt="park" />
           </div>
           <div className="trail-title-info">
             <h1>{park.name}</h1>

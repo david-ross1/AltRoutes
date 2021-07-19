@@ -22,7 +22,7 @@ const ParkTrailItem = (props) => {
     <div onClick={handlePark} className="pk-trails-cont">
       <div className="pk-img-cont">
         <div className="pk-img">
-          <img src={props.trail.coverPhotoURL} />
+          <img src={props.trail.coverPhotoURL} alt='trail-photo' />
         </div>
       </div>
       <div className="pk-trail-cont">

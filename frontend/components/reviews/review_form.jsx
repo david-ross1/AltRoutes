@@ -12,7 +12,7 @@ class ReviewForm extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleToggle - this.handleToggle.bind(this);
+    this.handleToggle = this.handleToggle.bind(this);
   }
 
   handleSubmit(e) {
@@ -27,18 +27,18 @@ class ReviewForm extends React.Component {
     });
   }
 
+  handleToggle() {
+    this.setState({
+      ...this.state,
+      toggled: !this.state.toggled,
+    });
+  }
+
   updateRating(idx) {
     this.setState({
       ...this.state,
       value: idx,
       rating: idx,
-    });
-  }
-
-  handleToggle() {
-    this.setState({
-      ...this.state,
-      toggled: !this.state.toggled,
     });
   }
 
@@ -198,9 +198,12 @@ class ReviewForm extends React.Component {
               </div>
             </div>
             <div className="review-form-buttons">
-              <button className="rev-button-1">Submit Review</button>
+              <button type="button" className="rev-button-1">
+                Submit Review
+              </button>
               <button
                 className="rev-button-2"
+                type="button"
                 onClick={() => this.handleToggle()}
               >
                 Cancel

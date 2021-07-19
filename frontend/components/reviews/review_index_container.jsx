@@ -8,7 +8,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchReviews: (trail_id) => dispatch(fetchReviews(trail_id)),
+  fetchReviews: (trailId) => dispatch(fetchReviews(trailId)),
 });
 
 export default withRouter(

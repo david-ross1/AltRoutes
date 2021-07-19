@@ -17,7 +17,11 @@ class TrailIndexItem extends React.Component {
       <Link to={`/trails/${trail.id}`} className="trail-card">
         <div className="">
           <div className="test">
-            <img className="index-trail-pic" src={trail.coverPhotoURL} />
+            <img
+              className="index-trail-pic"
+              src={trail.coverPhotoURL}
+              alt="trail"
+            />
 
             <div className="truncated-name">
               {this.truncateName(trail.name)}
@@ -50,7 +54,11 @@ class TrailIndexItem extends React.Component {
       <Link to={`/trails/${trail.id}`} className="main-trail-card">
         <div className="show-card">
           <div className="main-test">
-            <img className="index-trail-pic" src={trail.coverPhotoURL} />
+            <img
+              className="index-trail-pic"
+              src={trail.coverPhotoURL}
+              alt="trail"
+            />
 
             <div className="main-truncated-name">
               {this.truncateName(trail.name)}

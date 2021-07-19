@@ -23,7 +23,7 @@ yarn-error.log*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-
+bundle.js*
 /node_modules
 /yarn-error.log
 

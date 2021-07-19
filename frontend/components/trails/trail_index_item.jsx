@@ -7,7 +7,7 @@ class TrailIndexItem extends React.Component {
   }
 
   truncateName(name) {
-    return name.length > 29 ? `${name.slice(0, 29)}...` : name;
+    return name.length > 29 ? `${name.substring(0, 29)}...` : name;
   }
 
   render() {

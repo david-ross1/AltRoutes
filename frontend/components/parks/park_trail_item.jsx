@@ -51,7 +51,7 @@ const ParkTrailItem = (props) => {
         </div>
         <div className="pk-trail-description">
           {trail.description.length > 220
-            ? `${trail.description.slice(0, 220)}...`
+            ? `${trail.description.substring(0, 220)}...`
             : trail.description}
         </div>
       </div>

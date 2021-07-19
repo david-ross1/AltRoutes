@@ -61,7 +61,11 @@ class ReviewForm extends React.Component {
       return (
         <div className="review-container">
           <div className="review-action-buttons">
-            <button className="rev-button" onClick={() => this.handleToggle()}>
+            <button
+              type="button"
+              className="rev-button"
+              onClick={() => this.handleToggle()}
+            >
               Write review
             </button>
           </div>

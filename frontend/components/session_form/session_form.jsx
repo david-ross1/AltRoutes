@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -18,10 +18,10 @@ class SessionForm extends React.Component {
 
   clearState() {
     this.setState({
-      first_name: "",
-      last_name: "",
-      email: "",
-      password: "",
+      first_name: '',
+      last_name: '',
+      email: '',
+      password: '',
     });
   }
 
@@ -33,60 +33,60 @@ class SessionForm extends React.Component {
 
   demo(e) {
     e.preventDefault();
-    this.props.login({ email: "demo11", password: "passwordz" });
+    this.props.login({ email: 'demo11', password: 'passwordz' });
   }
 
   setErrorClass(keyword) {
-    return this.props.errors.join(" ").includes(keyword)
-      ? "errored"
-      : "login-input";
+    return this.props.errors.join(' ').includes(keyword)
+      ? 'errored'
+      : 'login-input';
   }
 
   update(field) {
-    return e => this.setState({ [field]: e.currentTarget.value });
+    return (e) => this.setState({ [field]: e.currentTarget.value });
   }
 
   render() {
     const firstNameLastNameFormField =
-      this.props.formType === "Sign Up" ? (
+      this.props.formType === 'Sign Up' ? (
         <>
           <label className="form-input">
             <input
               type="text"
               value={this.state.first_name}
-              onChange={this.update("first_name")}
+              onChange={this.update('first_name')}
               placeholder="First name"
-              className={this.setErrorClass("First")}
+              className={this.setErrorClass('First')}
             />
 
-            {this.props.errors.map(error =>
-              error.includes("First") ? (
+            {this.props.errors.map((error) =>
+              error.includes('First') ? (
                 <div className="error-text">Enter your first name.</div>
               ) : (
-                ""
+                ''
               )
             )}
           </label>
           <br />
-          <label className={`form-input${this.setErrorClass("Last")}`}>
+          <label className={`form-input${this.setErrorClass('Last')}`}>
             <input
               type="text"
               value={this.state.last_name}
-              onChange={this.update("last_name")}
-              className={this.setErrorClass("Last")}
+              onChange={this.update('last_name')}
+              className={this.setErrorClass('Last')}
               placeholder="Last name"
             />
-            {this.props.errors.map(error =>
-              error.includes("Last") ? (
+            {this.props.errors.map((error) =>
+              error.includes('Last') ? (
                 <div className="error-text">Enter your last name.</div>
               ) : (
-                ""
+                ''
               )
             )}
           </label>
         </>
       ) : (
-        ""
+        ''
       );
 
     return (
@@ -104,14 +104,14 @@ class SessionForm extends React.Component {
                   placeholder="Email"
                   type="text"
                   value={this.state.email}
-                  onChange={this.update("email")}
-                  className={this.setErrorClass("Email")}
+                  onChange={this.update('email')}
+                  className={this.setErrorClass('Email')}
                 />
-                {this.props.errors.map(error =>
-                  error.includes("Email") ? (
+                {this.props.errors.map((error) =>
+                  error.includes('Email') ? (
                     <div className="error-text">Email is not valid.</div>
                   ) : (
-                    ""
+                    ''
                   )
                 )}
               </label>
@@ -121,17 +121,17 @@ class SessionForm extends React.Component {
                 <input
                   type="password"
                   value={this.state.password}
-                  onChange={this.update("password")}
+                  onChange={this.update('password')}
                   placeholder="Password"
-                  className={this.setErrorClass("Password")}
+                  className={this.setErrorClass('Password')}
                 />
-                {this.props.errors.map(error =>
-                  error.includes("Email") ? (
+                {this.props.errors.map((error) =>
+                  error.includes('Email') ? (
                     <div className="error-text">
                       Password must be 6 characters long.
                     </div>
                   ) : (
-                    ""
+                    ''
                   )
                 )}
               </label>

@@ -17,9 +17,6 @@ yarn-error.log*
 /.bundle
 # Ignore bundler config.
 /.bundle
-/readme_images/
-.readme_images 
-/readme_images*
 
 # Ignore all logfiles and tempfiles.
 /log/*

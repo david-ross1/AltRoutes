@@ -1,4 +1,4 @@
-<!-- # <div align="center"> ![Logo](app/assets/images/readme_logo.png) -->
+# <div align="center"> ![Logo](app/assets/images/readme_logo.png)
 #### <div align="center">  [Live Site](https://more-trails.herokuapp.com/#/)
 
 # About
@@ -6,8 +6,9 @@ MoreTrails is an AllTrails clone that connects users with nature and each other.
 Curated trail content with detailed information is provided along with the ability for users to contribute
 their own pictures and reviews. 
 
-![image info]('https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_first.gif')
- 
+<!-- ![info]('https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_first.gif') -->
+![gif1](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_main.gif)
+
  ## Technologies 
  * Amazon AWS cloud storage for user and trail pictures 
  * React 
@@ -24,18 +25,18 @@ their own pictures and reviews.
 + Get on-click directions to the trail or park 
 
 
-![image ]('https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif')
+![readme_second](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif)
 
 ## Customized session error handling for better UI 
 
-![image]('https://more-trails-seeds.s3.us-west-1.amazonaws.com/codez.png')
+![codez](https://more-trails-seeds.s3.us-west-1.amazonaws.com/codez.png)
 
 
 
 ---
 ## Click-for-directions, click-to-print, and click-to-social
 
-![image ](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_directions.png)
+![readme_directions ](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_directions.png)
 
 
-![image ](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_codez2.png)
+![readme_codez2 ](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_codez2.png)

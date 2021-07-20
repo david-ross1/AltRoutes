@@ -18,19 +18,16 @@ their own pictures and reviews.
 
 ### Key Features 
 + Session: Secure user authentication and account creation
-+ Search trails by name
++ Search by trail or by park
 + View use interactive maps via the Mapbox API
 + View relevant trail information such as estimated travel time, distance, difficulty
-+ Get on-click directions to the trail or park 
++ Get on-click directions to the trail or park and share on social media
 
 
 Search by park or trail    |  Read and leave reviews
 :-------------------------:|:-------------------------:
 <img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif" width="270" height="300"/> |  <img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/review.gif" width="420" height="300"/>
 
-<!-- ![readme_second](https://more-trails-seeds.s3.us-west-1.amazonaws.com/readme_second.gif) -->
-
-<!-- <img src="https://more-trails-seeds.s3.us-west-1.amazonaws.com/search.gif" width="250" height="250"/> -->
 
 ## Customized session error handling for better UI 
 Secure Login               |  Clear Alerts

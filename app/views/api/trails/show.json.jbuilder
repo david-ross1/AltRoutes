@@ -13,7 +13,7 @@ json.extract! @trail, :id,
                       :locale
                       
 json.coverPhotoURL url_for(@trail.coverPhoto)
-json.name @trail.park.name 
+json.parkName @trail.park.name 
 json.parkDescription @trail.park.description 
 
 
